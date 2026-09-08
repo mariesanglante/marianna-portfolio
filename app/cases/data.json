@@ -1,5 +1,35 @@
 [
   {
+    "slug": "simcare",
+    "name": "SimCare",
+    "title": "A connected website for counseling education.",
+    "category": "Web",
+    "role": "Website UX/UI · Product storytelling · Responsive design",
+    "summary": "Five connected pages covering AI simulations, FieldX, course discovery, pricing, and support, brought into an animated website prototype.",
+    "source": "https://www.figma.com/design/vmAh6XN6flDftgJKjhE9zd/Simcare.ai?node-id=0-1",
+    "sections": [],
+    "period": "Latest August design iterations",
+    "status": "Animated website",
+    "accent": "purple",
+    "image": "/images/simcare/simulations-1.png",
+    "caption": "Counseling conversation imagery from the SimCare website design."
+  },
+  {
+    "slug": "causal-labs",
+    "name": "Causal Labs",
+    "title": "Weather intelligence for aviation decisions.",
+    "category": "Product",
+    "role": "Interface design · Interaction flows · Prototype specification",
+    "summary": "Connecting weather events, airport impact, and forecast detection in a map-based experience, with an animated interactive prototype.",
+    "source": "https://www.figma.com/design/VjoMjcvVOToZtwj4Ekfd5f/Causal-Labs-Demo?node-id=2279-9702",
+    "sections": [],
+    "period": "Design prototype",
+    "status": "Interactive prototype",
+    "accent": "green",
+    "image": "/images/causal/temperature.png",
+    "caption": "Weather map artwork from the Causal Labs Figma design."
+  },
+  {
     "slug": "cloudbilling",
     "name": "CloudBilling",
     "title": "Complex billing, clearly explained.",

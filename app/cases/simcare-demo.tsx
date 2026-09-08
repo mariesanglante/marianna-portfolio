@@ -1,0 +1,5 @@
+'use client';
+import { useState } from 'react';
+import { ArrowUpRight } from 'lucide-react';
+const pages=[['simulations','Simulations'],['fieldx','FieldX'],['courses','Course Catalog'],['pricing','Pricing'],['support','Support']];
+export function SimcareDemo(){const [page,setPage]=useState('simulations');return <div className="simcase-demo"><div className="simcase-demo-nav"><div role="tablist" aria-label="Website pages">{pages.map(([key,label])=><button key={key} role="tab" aria-selected={page===key} aria-controls="simcare-page-preview" onClick={()=>setPage(key)}>{label}</button>)}</div><a href={`/simcare/${page}`} target="_blank" rel="noreferrer" aria-label="Open selected page full size" title="Open full size"><ArrowUpRight size={20}/></a></div><iframe id="simcare-page-preview" key={page} src={`/simcare/${page}`} title={`SimCare ${pages.find(p=>p[0]===page)?.[1]} animated website`} loading="lazy"/><p>Portfolio prototype. Content and imagery follow the supplied design; product claims, prices, and testimonials are not independently verified. Forms and simulation previews do not connect to live services.</p></div>;}
