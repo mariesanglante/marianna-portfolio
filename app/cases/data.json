@@ -1,0 +1,804 @@
+[
+  {
+    "slug": "semaverse",
+    "name": "Semaverse",
+    "title": "Clarity in a world of complex data.",
+    "category": "Product",
+    "role": "Solo Product Designer",
+    "summary": "Redesigning the workflows behind an AI investment platform: from uploading a document to understanding what the system has done with it.",
+    "source": "/Marianna-Gonchar-CV.pdf",
+    "sections": [
+      {
+        "title": "The challenge",
+        "body": [
+          "Investment work depends on complex documents, structured financial data, and a reliable record of changes. Adding AI makes the interface responsible for explaining both the information and the system’s actions.",
+          "At Semaverse, I led the end-to-end redesign and rollout of core product workflows. My focus was making document handling, financial data, and AI interactions predictable enough to support confident decisions."
+        ]
+      },
+      {
+        "title": "My contribution",
+        "body": [
+          "As the solo product designer, I worked across research, interaction design, interface design, and implementation with engineers. My scope included document upload, saving, versioning, management, data tables, forms, and AI-agent interactions.",
+          "I conducted user research and usability testing, then worked with engineering to make the proposed behavior feasible and resilient to edge cases."
+        ]
+      },
+      {
+        "title": "Make the document lifecycle explicit",
+        "body": [
+          "I redesigned the upload, save, version, and document-management flows as connected parts of one experience. Clear progression mattered because people needed to know where a document stood before relying on it.",
+          "I defined distinct viewing, editing, processing, and saved states. These states made the difference between a user action and a completed system action visible, supporting transparency and auditability."
+        ]
+      },
+      {
+        "title": "Give AI actions a readable context",
+        "body": [
+          "I designed interactions with agents that analyze, interpret, and help people navigate documents. The interaction work focused on making AI actions and the current system state understandable.",
+          "The same principle carried into structured financial data: predictable flows, legible tables, and clear forms helped users move between source material and analysis."
+        ]
+      },
+      {
+        "title": "Design for the whole system",
+        "body": [
+          "Reusable interaction rules and patterns connected the individual workflows. This gave engineering a consistent basis for implementation rather than a collection of unrelated screens.",
+          "Collaboration continued through technical constraints and edge cases, where a visually complete screen still needed precise behavior."
+        ]
+      },
+      {
+        "title": "What changed",
+        "body": [
+          "The work improved the usability and reliability of core workflows, reduced confusion around AI actions and system states, and strengthened traceability. These are qualitative outcomes documented in my CV; no numerical performance claims are attached to this project."
+        ]
+      }
+    ],
+    "period": "2023–2026",
+    "image": "/images/semaverse-vault.webp",
+    "caption": "Current public Semaverse product image. Shown for product context; it may include changes made after my engagement ended in January 2026.",
+    "accent": "blue",
+    "facts": [
+      [
+        "Ownership",
+        "End to end"
+      ],
+      [
+        "Focus",
+        "AI + documents"
+      ],
+      [
+        "Foundation",
+        "Reusable patterns"
+      ]
+    ],
+    "credit": false
+  },
+  {
+    "slug": "lumio-couples",
+    "name": "Lumio · Couples spending",
+    "title": "Shared money. Individual lives.",
+    "category": "Product",
+    "role": "Sole Designer · Research to release",
+    "summary": "Helping Lumio move from automatic savings to shared finances, grounded in the way couples actually manage money.",
+    "source": "https://mariesanglante.notion.site/Product-Case-I-Lumio-Couples-Spending-JTBD-approach-05c2d903471a44279db10de6967bd975",
+    "sections": [
+      {
+        "title": "A new direction for Lumio",
+        "body": [
+          "Lumio was evolving from saving on autopilot into a product for couples’ finances. The design challenge was to identify a useful first shared experience without assuming every couple wanted to combine everything.",
+          "I led design from research and product definition through the interface, design system, testing, and delivery. The work also included brand identity and support for launch."
+        ]
+      },
+      {
+        "title": "Start with the job, not the feature",
+        "body": [
+          "I reviewed more than 25 articles about couples’ finances in the UK. A cross-functional workshop produced seven macro jobs to be done, giving the team a common language for the opportunity.",
+          "We scheduled 35 interviews and completed 32. The research pointed to a practical need: understanding money across different bank accounts and keeping track of shared expenses."
+        ]
+      },
+      {
+        "title": "Choose a valuable first release",
+        "body": [
+          "Shared spending became the priority. It addressed a concrete need while keeping the scope workable for a small team. Competitor research helped examine the smaller tasks inside that experience.",
+          "I brought the team together through workshops and storyboards. We used Wow–How–Now prioritization to weigh value against backend and frontend effort, separating what we could deliver now from later opportunities."
+        ]
+      },
+      {
+        "title": "Together, with control",
+        "body": [
+          "The solution brought spending breakdowns, recurring costs, and each partner’s contribution into a shared view. A pie chart and collaborator cards made the breakdown readable.",
+          "People could share or hide individual transactions. Upcoming payments and account or payment labels added context, helping couples understand shared commitments while keeping control over what they disclosed."
+        ]
+      },
+      {
+        "title": "Make the decisions buildable",
+        "body": [
+          "An existing token-based, atomic design system let me move quickly into high-fidelity prototypes without rebuilding the foundations.",
+          "The delivery included more than 14 microprototypes and over 200 screens, alongside design-system updates. Before launch, the whole team worked through test cases using test accounts."
+        ]
+      },
+      {
+        "title": "Outcome and context",
+        "body": [
+          "The case documents a delivered couples-spending experience and the design work that supported Lumio’s wider product evolution.",
+          "The original presentation also reports company-level growth and usage figures. Those figures are not isolated measurements of this feature, so they are not presented here as its causal impact."
+        ]
+      }
+    ],
+    "period": "From 2022",
+    "image": "/images/lumio-phones.png",
+    "caption": "Lumio’s public product presentation of shared spending and recurring expenses.",
+    "accent": "pink",
+    "facts": [
+      [
+        "32",
+        "Completed interviews"
+      ],
+      [
+        "7",
+        "Macro jobs to be done"
+      ],
+      [
+        "200+",
+        "Screens delivered"
+      ]
+    ],
+    "credit": true
+  },
+  {
+    "slug": "lumio-activation",
+    "name": "Lumio · Activation",
+    "title": "Less friction. More first steps.",
+    "category": "Product",
+    "role": "Senior Product Designer",
+    "summary": "Using funnel analysis, research, and a focused experiment to help couples reach their first shared value.",
+    "source": "https://mariesanglante.notion.site/Product-Case-II-Lumio-Activation-of-clients-f4bd988351144f61b1a5bdcdcfff8441",
+    "sections": [
+      {
+        "title": "Define the moment that matters",
+        "body": [
+          "The team needed more people to become activated couples, not simply complete registration. I worked with the CEO and COO to define what a successful experience looked like.",
+          "From that outcome, I mapped the journey backwards to the first actions a person needed to take. This helped connect onboarding decisions to the product’s shared value."
+        ]
+      },
+      {
+        "title": "Find the two barriers",
+        "body": [
+          "Mixpanel analysis showed a substantial drop-off around creating a Shared Space. This suggested that asking users to configure the space was getting in the way of reaching its value.",
+          "Bank connection introduced a different problem: hesitation. People wanted security reassurance, a clearer reason to connect, and the ability to explore before committing."
+        ]
+      },
+      {
+        "title": "Reduce work and explain value",
+        "body": [
+          "We considered automating Shared Space creation to remove an unnecessary setup step. For bank connection, the design explored how reassurance and an explanation of value could support the decision.",
+          "I kept the proposed delivery small enough to test. Product and engineering workshops helped turn the hypotheses into a feasible first change."
+        ]
+      },
+      {
+        "title": "Explore broadly, then narrow",
+        "body": [
+          "I developed four flow options and shortlisted two. Competitor review helped examine relevant interaction patterns without losing focus on our specific drop-off points.",
+          "Backend work could begin while the UI was being developed. Internal prototype tests informed a second iteration, followed by TestFlight test cases before the experiment."
+        ]
+      },
+      {
+        "title": "The reported result",
+        "body": [
+          "The original case reports a 30-day A/B test in which Variant A moved partner invitations from 19% to 44%, a 25 percentage-point increase. Bank connections moved from 55% to 71%, a 16 percentage-point increase.",
+          "The source does not include sample sizes, complete control data, or statistical significance. These figures describe the reported experiment results, rather than a claim of proven long-term impact."
+        ]
+      },
+      {
+        "title": "The product lesson",
+        "body": [
+          "A setup journey asks users to do work before they have experienced the benefit. This project examined both sides of that exchange: reducing unnecessary tasks and making the value of the remaining steps easier to understand."
+        ]
+      }
+    ],
+    "period": "Lumio",
+    "accent": "green",
+    "facts": [
+      [
+        "19 → 44%",
+        "Partner invitations"
+      ],
+      [
+        "55 → 71%",
+        "Bank connections"
+      ],
+      [
+        "30 days",
+        "Reported test period"
+      ]
+    ],
+    "credit": true
+  },
+  {
+    "slug": "trucking",
+    "name": "Trucking app",
+    "title": "Designed for the realities of the road.",
+    "category": "Product",
+    "role": "Senior Product Designer",
+    "summary": "A tablet-first logistics experience for drivers managing pickups, deliveries, and shifting conditions in the field.",
+    "source": "https://mariesanglante.notion.site/NDA-by-request-Startup-Designing-a-Next-Generation-Trucking-App-6b683e0f6ca0441e917d032879c7edd5",
+    "sections": [
+      {
+        "title": "The working environment",
+        "body": [
+          "Drivers manage time-sensitive pickups and deliveries in remote locations, with intermittent connectivity and frequent changes. The redesign had to account for these conditions, as well as the information needed for operations and billing."
+        ]
+      },
+      {
+        "title": "Scope and constraints",
+        "body": [
+          "The initial release targeted iPads, with Android and possible smartphone adaptation in mind. I used the company’s branding as a foundation while moving beyond the legacy app’s visual approach.",
+          "The source case is marked NDA. This page summarizes the shared project description; detailed screens and a walkthrough are available by request."
+        ]
+      },
+      {
+        "title": "Make the next action clear",
+        "body": [
+          "The core workflows covered arrival, load management, and departure. Drivers could confirm or decline a new pickup and review a load before or during a trip.",
+          "Contact management accounted for information learned in the field: adding, editing, and removing a person with multiple phone numbers directly from pickup or drop details."
+        ]
+      },
+      {
+        "title": "Handle operational detail",
+        "body": [
+          "Tank sections supported multiple tanks and different gauging methods. Horizontally scrolling tabs and overflow menus accommodated that complexity without crowding the main task.",
+          "Duration tracking captured arrival, loading, and waiting times. Photo and video attachments supported receipts and other documentation. Field-level validation and general errors guided correction."
+        ]
+      },
+      {
+        "title": "Account for shared devices and night work",
+        "body": [
+          "Two or three regular drivers could use the same device, and a driver might work with different trucks or transporters. The sign-in and shift flows needed to accommodate those changes, including signing out after choosing the wrong transporter.",
+          "Night mode responded to night driving, while an offline-first approach reflected unreliable connectivity. These were core working conditions, not optional aesthetic preferences."
+        ]
+      },
+      {
+        "title": "Iteration and delivery",
+        "body": [
+          "Stakeholder feedback, including drivers and internal teams, informed the prototypes. Testing with representative users helped refine usability. The work also included a UI kit; the shared source does not report quantified post-launch results."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "blue",
+    "nda": true,
+    "credit": true
+  },
+  {
+    "slug": "pearl",
+    "name": "Pearl",
+    "title": "One language for a growing product.",
+    "category": "Systems",
+    "role": "Senior UX Designer",
+    "summary": "Consolidating a token-based design system for a platform connecting creators and fan communities.",
+    "source": "https://mariesanglante.notion.site/NDA-by-request-Startup-Pearl-Creating-a-Workload-and-Comprehensive-Design-System-4bddd181f4794a4b916653c531830162",
+    "sections": [
+      {
+        "title": "The product context",
+        "body": [
+          "Pearl brought together exclusive content, paid interactions, and audio chatrooms. These experiences needed a consistent foundation that could expand as the product developed."
+        ]
+      },
+      {
+        "title": "My focus",
+        "body": [
+          "My work centered on the design system and planning the design workload. I defined a week-by-week plan with milestones and deliverables, and worked on a standardized, expandable, token-based system."
+        ]
+      },
+      {
+        "title": "Audit before adding",
+        "body": [
+          "I reviewed the existing UI kit and Figma designs to understand the library’s structure. I then identified unique elements that had not yet been integrated.",
+          "This separated genuinely new component needs from existing patterns, creating a basis for consolidation."
+        ]
+      },
+      {
+        "title": "Integrate and document",
+        "body": [
+          "I brought buttons, icons, typography, and UI components into the existing library while maintaining visual and interaction consistency.",
+          "Documentation covered each component’s purpose, usage, variants, and specifications so designers and developers could work from the same reference."
+        ]
+      },
+      {
+        "title": "Outcome",
+        "body": [
+          "The expanded library provided a more coherent foundation and made the design process easier to reuse across the product. The source describes qualitative improvements to consistency and efficiency, without numerical measurements. Detailed system artifacts are available by request."
+        ]
+      }
+    ],
+    "accent": "pink",
+    "nda": true,
+    "credit": true
+  },
+  {
+    "slug": "coinflix",
+    "name": "Coinflix",
+    "title": "Entertainment with creators at its center.",
+    "category": "Product",
+    "role": "Senior Product Designer",
+    "summary": "Full mobile product design for a blockchain-powered entertainment platform combining short-form content, community, and creator monetization.",
+    "source": "https://mariesanglante.notion.site/Startup-Coinflix-app-design-3b603ca43cc84372a4af5a917fdf67c1",
+    "sections": [
+      {
+        "title": "The challenge",
+        "body": [
+          "Coinflix explored how creators could distribute micro shows, engage an audience, and monetize their work through blockchain-based features. The interface needed to connect those ambitions to a familiar content experience."
+        ]
+      },
+      {
+        "title": "Research and definition",
+        "body": [
+          "I used surveys and competitor analysis to investigate preferences around entertainment, creator compensation, and short-form content. Personas and journey maps represented both creators and viewers.",
+          "The design opportunity combined content discovery, social interaction, and rewards. Each served a different part of the relationship between an audience and a creator."
+        ]
+      },
+      {
+        "title": "From flows to interface",
+        "body": [
+          "I moved through paper sketches, low- and mid-fidelity wireframes, and high-fidelity designs, refining the experience through feedback."
+        ]
+      },
+      {
+        "title": "The core experience",
+        "body": [
+          "A short-form content feed supported discovery. Likes, comments, and sharing connected that experience to community participation.",
+          "Tokenized rewards were part of the proposed creator and viewer experience. A creator dashboard brought engagement, earnings, and performance information together."
+        ]
+      },
+      {
+        "title": "Delivered work",
+        "body": [
+          "The case presents the full app design. It does not document validated commercial or engagement outcomes, so the work is presented as a product-design case rather than a growth claim."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "purple",
+    "credit": true,
+    "showcase": "https://www.behance.net/gallery/144019691/Awesomic"
+  },
+  {
+    "slug": "credit-decisioning",
+    "name": "Credit decisioning",
+    "title": "Making complex rules easier to work with.",
+    "category": "Product",
+    "role": "UX & UI Designer",
+    "summary": "An interface for credit teams to define decision logic through a drag-and-drop model.",
+    "source": "https://mariesanglante.notion.site/Designing-a-Credit-Decisioning-Engine-8836188dc02f45288c6cfde5a3aeb211",
+    "sections": [
+      {
+        "title": "The problem",
+        "body": [
+          "Credit teams needed to express decision criteria and rules in a usable interface. The challenge was balancing the complexity of the logic with flexibility for different decision requirements."
+        ]
+      },
+      {
+        "title": "Clarify the model",
+        "body": [
+          "I worked with the client to clarify the tool’s purpose, user requirements, and core functionality. Client input and reference materials informed the initial wireframes and mockups."
+        ]
+      },
+      {
+        "title": "Make the logic approachable",
+        "body": [
+          "The proposed interaction model used drag and drop to define decision logic. The design also considered customization and communication between people working in the tool."
+        ]
+      },
+      {
+        "title": "Iterate with the client",
+        "body": [
+          "I incorporated feedback across multiple rounds of design refinement. The source records testing of the final design, but does not specify participants, methods, or measurements."
+        ]
+      },
+      {
+        "title": "Delivered work",
+        "body": [
+          "The output was an interface design for the credit-decisioning tool. No launch or business-performance results are documented in the shared case."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "blue",
+    "credit": true
+  },
+  {
+    "slug": "lumio-design-system",
+    "name": "Lumio · Design system",
+    "title": "A foundation for every next screen.",
+    "category": "Systems",
+    "role": "Senior Product Designer",
+    "summary": "A token-based atomic design system, brand guide, and illustration language for Lumio.",
+    "source": "https://mariesanglante.notion.site/NDA-by-request-Startup-Case-Lumio-design-system-7e550a81be25403abf12060c86a071ac",
+    "sections": [
+      {
+        "title": "The scope",
+        "body": [
+          "I changed Lumio’s appearance alongside a new brand book, illustrations, and a token-based atomic design system. This brought the visual language and the product’s reusable interface foundations together."
+        ]
+      },
+      {
+        "title": "A system in use",
+        "body": [
+          "The couples-spending case documents how the existing scalable system supported rapid high-fidelity prototyping, followed by further system updates during delivery. It was a working foundation for product design, not only a library of visual styles."
+        ]
+      },
+      {
+        "title": "Private walkthrough",
+        "body": [
+          "This project is marked NDA in the original portfolio. The full library, component details, and design-system walkthrough are available by request."
+        ]
+      }
+    ],
+    "period": "From 2022",
+    "accent": "pink",
+    "nda": true,
+    "credit": true
+  },
+  {
+    "slug": "lumio-visual-redesign",
+    "name": "Lumio · Visual redesign",
+    "title": "A new expression for everyday money.",
+    "category": "Systems",
+    "role": "Senior Product Designer",
+    "summary": "A full visual redesign of Lumio, connecting the app’s appearance with its evolving product direction.",
+    "source": "https://mariesanglante.notion.site/NDA-by-request-Startup-Case-Lumio-Full-visual-redesign-4c7fd258f7ab48fe91b767c1142ff8aa",
+    "sections": [
+      {
+        "title": "The work",
+        "body": [
+          "I led a full change to the way users see Lumio. The wider Lumio work included brand identity, illustration, the design system, and interfaces across web, iOS, and Android."
+        ]
+      },
+      {
+        "title": "Connected to product design",
+        "body": [
+          "This visual work sits alongside the couples-finance product work and the token-based system. Together, they connect the app’s expression with the repeated patterns people use to manage money."
+        ]
+      },
+      {
+        "title": "Private walkthrough",
+        "body": [
+          "The original case is marked NDA and contains very little written narrative. Before-and-after details are available by request; no additional process or measured outcomes are claimed here."
+        ]
+      }
+    ],
+    "period": "From 2022",
+    "accent": "pink",
+    "image": "/images/lumio-app-preview.png",
+    "caption": "Current public Lumio product presentation, shown for context rather than as a historical before-and-after comparison.",
+    "nda": true,
+    "credit": true
+  },
+  {
+    "slug": "luxury-furniture",
+    "name": "The Shop of Beautiful Things",
+    "title": "A considered home for beautiful objects.",
+    "category": "Web",
+    "role": "UX & UI Designer",
+    "summary": "Refining a luxury furniture homepage for stronger hierarchy and easier ongoing content updates.",
+    "source": "https://mariesanglante.notion.site/Luxury-Furniture-Website-redesign-c84f444fc96e470ab24d547fcb62e2c0",
+    "sections": [
+      {
+        "title": "The brief",
+        "body": [
+          "The client had an existing homepage and draft mockup. The redesign needed to better reflect the brand while supporting frequent updates with relevant content."
+        ]
+      },
+      {
+        "title": "Work within the platform",
+        "body": [
+          "The website used Squarespace, so design decisions had to respect its capabilities. I reviewed the draft and discussed the content-update needs before refining the layout."
+        ]
+      },
+      {
+        "title": "Refine the hierarchy",
+        "body": [
+          "I adjusted the visibility and arrangement of important content, then developed the imagery and visual elements within the brand’s established style. Client feedback informed successive revisions."
+        ]
+      },
+      {
+        "title": "Delivery",
+        "body": [
+          "The final work included the refined homepage, responsive adaptations, and a style guide. Design elements and icons were supplied in multiple formats to support future maintenance. The source reports design delivery, not measured conversion outcomes."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "sand",
+    "credit": true,
+    "showcase": "https://dribbble.com/shots/24048765-Luxury-furniture-landing-redesign"
+  },
+  {
+    "slug": "digitally",
+    "name": "Digitally",
+    "title": "Room for the work. Space for the people.",
+    "category": "Web",
+    "role": "UX & UI Designer",
+    "summary": "Extending an agency website with case-study and team pages that feel like part of the same brand.",
+    "source": "https://mariesanglante.notion.site/Digital-Agency-website-improvement-f992b25a82884f48b8e13d753b84c8dc",
+    "sections": [
+      {
+        "title": "The challenge",
+        "body": [
+          "Digitally needed additional pages and improvements to its existing website. The new sections had to communicate its services and team expertise while preserving the established visual identity."
+        ]
+      },
+      {
+        "title": "Understand the existing language",
+        "body": [
+          "I reviewed the current website, client specifications, and brand guidelines. I identified the content and key sections each new page needed before developing the layouts."
+        ]
+      },
+      {
+        "title": "Design the extensions",
+        "body": [
+          "Mockups and prototypes explored how to present case studies and individual team biographies. I refined the layouts with the client, keeping the new pages coherent with the existing site."
+        ]
+      },
+      {
+        "title": "Delivery",
+        "body": [
+          "The delivered work included a case-study page, team-member bio pages, and improvements to existing design elements. The shared case does not include measured engagement results."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "purple",
+    "credit": true
+  },
+  {
+    "slug": "opus",
+    "name": "Opus Rental Management",
+    "title": "A clear introduction to property care.",
+    "category": "Web",
+    "role": "UX & UI Designer",
+    "summary": "Creating a first landing page for a property-management business and its offer to property owners.",
+    "source": "https://mariesanglante.notion.site/Property-Management-Service-Website-d15e738ca137436780f51366f3f57b2e",
+    "sections": [
+      {
+        "title": "Starting from zero",
+        "body": [
+          "Opus had no existing website. The landing page needed to represent the brand, explain the service, and give property owners a reason to engage."
+        ]
+      },
+      {
+        "title": "Define the message",
+        "body": [
+          "I reviewed the client questionnaire, messaging documents, and competitor references. These helped establish the target audience, priorities, and visual direction."
+        ]
+      },
+      {
+        "title": "Explore and refine",
+        "body": [
+          "Wireframes and prototypes established the structure. I incorporated the brand and messaging into service and benefit sections, then offered design concepts and variations for client review."
+        ]
+      },
+      {
+        "title": "Delivery",
+        "body": [
+          "The final landing-page design incorporated client feedback and was delivered in Figma for collaboration and implementation. The case documents the design output rather than a measured acquisition result."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "sand",
+    "credit": true
+  },
+  {
+    "slug": "cyberknife-miami",
+    "name": "CyberKnife Miami",
+    "title": "A coherent experience for a specialist service.",
+    "category": "Web",
+    "role": "UX & UI Designer",
+    "summary": "Bringing a prostate-cancer center’s microsite into alignment with the parent website.",
+    "source": "https://mariesanglante.notion.site/Website-Redesign-Prostate-Cancer-Center-at-CyberKnife-Miami-cecbb1569a614148bfce70c3d4df22a9",
+    "sections": [
+      {
+        "title": "The challenge",
+        "body": [
+          "The specialist microsite had become visually disconnected from the main CyberKnife Miami website. The brief was to align the experience while clearly presenting the center’s information and services."
+        ]
+      },
+      {
+        "title": "Use the established foundation",
+        "body": [
+          "I reviewed the existing microsite and the updated main-site designs in Figma. Client discussions clarified the content and functional requirements for the landing page."
+        ]
+      },
+      {
+        "title": "Build a consistent page",
+        "body": [
+          "Wireframes and prototypes brought the new typography, color scheme, and visual elements into the microsite. I refined the service sections and overall hierarchy through client feedback."
+        ]
+      },
+      {
+        "title": "Delivery",
+        "body": [
+          "I provided a redesigned landing page and the final Figma concepts and assets for implementation. This case concerns communication and interface design; no clinical or patient-outcome claims are made."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "blue",
+    "credit": true,
+    "showcase": "https://dribbble.com/shots/24047816-Medical-landing-page"
+  },
+  {
+    "slug": "delta10",
+    "name": "Delta10 Learn",
+    "title": "Helping public servants find their next course.",
+    "category": "Web",
+    "role": "UX & UI Designer",
+    "summary": "Designing a learning platform for courses in digitalization, accessibility, and data management.",
+    "source": "https://mariesanglante.notion.site/UI-Design-for-learning-platform-10fd015a79314ade8095e9d419a0aa0c",
+    "sections": [
+      {
+        "title": "The audience",
+        "body": [
+          "Delta10 Learn serves civil servants seeking ongoing education. The interface needed to make relevant courses easy to explore and understand while carrying the Delta10 identity."
+        ]
+      },
+      {
+        "title": "Plan the content structure",
+        "body": [
+          "I reviewed the existing platform structure and brand guidelines, then clarified user requirements with the client. The structure covered the main page, course page, and section page."
+        ]
+      },
+      {
+        "title": "Support course discovery",
+        "body": [
+          "Course descriptions, audience information, partner logos, and contact details formed the key content. Low-fidelity wireframes established the layout before moving to high-fidelity prototypes."
+        ]
+      },
+      {
+        "title": "Refine and hand over",
+        "body": [
+          "Client feedback informed iterations in layout, color, and typography. I delivered the three page designs and their UI elements in Figma. The source does not provide measured learning or registration outcomes."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "green",
+    "credit": true,
+    "showcase": "https://dribbble.com/shots/24047904-Landing-Page"
+  },
+  {
+    "slug": "el-ticko",
+    "name": "El Ticko",
+    "title": "From finding a service to taking the next step.",
+    "category": "Web",
+    "role": "UX & UI Designer",
+    "summary": "Designing a website that helps New York residents understand and contact a tick-extermination service.",
+    "source": "https://mariesanglante.notion.site/Tick-Exterminator-Website-b9c4211d10174b46af5219be5c4702d8",
+    "sections": [
+      {
+        "title": "The challenge",
+        "body": [
+          "People needed accessible information about service areas, qualifications, pricing, and booking. The design brief brought those needs into a clearer service website."
+        ]
+      },
+      {
+        "title": "Research and structure",
+        "body": [
+          "The original case records approximately 67 survey responses and competitor research. Difficulty finding service information informed the task flows and information architecture."
+        ]
+      },
+      {
+        "title": "Develop the design",
+        "body": [
+          "I worked through a moodboard, concept agreement, and final design. The page set included Home, About Us, Tick Spraying, Contact Us, and Service Area, supported by a UI kit."
+        ]
+      },
+      {
+        "title": "Outcome and target",
+        "body": [
+          "The delivered work was the website design. The source names a 30% increase in customers as a launch goal; it is a target, not an achieved result."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "green",
+    "credit": true,
+    "showcase": "https://dribbble.com/shots/16664915-El-Ticko-Tick-Extermination-Service"
+  },
+  {
+    "slug": "luxury-real-estate",
+    "name": "Luxury real estate",
+    "title": "An editorial presence for property.",
+    "category": "Web",
+    "role": "UX & UI Designer",
+    "summary": "A luxury real-estate website redesign from my earlier web-design work.",
+    "source": "https://mariesanglante.notion.site/Luxury-Real-Estate-Website-cc19a180c4c3478c83acc0c068a067c3",
+    "sections": [
+      {
+        "title": "Project overview",
+        "body": [
+          "This project involved a real-estate website redesign, with UX, UI, and research listed as my scope in the original portfolio."
+        ]
+      },
+      {
+        "title": "Visual project archive",
+        "body": [
+          "The shared entry contains a short brief rather than a detailed process or outcome narrative. The original project remains linked here as a visual archive; further decisions and results are not yet documented."
+        ]
+      }
+    ],
+    "period": "2021",
+    "accent": "sand",
+    "credit": false,
+    "status": "Project overview"
+  },
+  {
+    "slug": "projector",
+    "name": "Projector Institute",
+    "title": "Helping designers build their own judgment.",
+    "category": "Teaching",
+    "role": "Mentor & Course Curator",
+    "summary": "Guiding students from a problem they care about to a complete mobile-app concept.",
+    "source": "https://mariesanglante.notion.site/My-Students-work-Projector-Mobile-Interfaces-1309f8a33a2a42cd802b4de59f29948e",
+    "sections": [
+      {
+        "title": "The learning challenge",
+        "body": [
+          "Students approached their coursework as if they were building a startup: choose a meaningful problem, investigate it, and develop a mobile-app solution. They could select their own topic or work from a suggested list."
+        ]
+      },
+      {
+        "title": "My role",
+        "body": [
+          "I guided the process as mentor and curator, supporting research, ideation, prototyping, testing, and iteration. The app concepts and designs belong to the students; my contribution is teaching and feedback."
+        ]
+      },
+      {
+        "title": "Connect foundations to practice",
+        "body": [
+          "The course covered iOS guidelines, Material Design, user flows, navigation, forms, typography, and visual hierarchy. Students applied these foundations within their own product concepts.",
+          "Later work included interaction patterns, prototyping, testing, animation, and an introduction to marketing. Research and user feedback helped students refine their proposals rather than stop at the first visual direction."
+        ]
+      },
+      {
+        "title": "The outcome",
+        "body": [
+          "Students produced full mobile-app design projects and gained experience carrying an idea through a structured process. The original showcase contains their coursework and is credited as student work."
+        ]
+      }
+    ],
+    "period": "Teaching since 2023",
+    "accent": "purple",
+    "credit": false
+  },
+  {
+    "slug": "usability-research",
+    "name": "Moderated usability research",
+    "title": "Test the first experience, before explaining it.",
+    "category": "Research",
+    "role": "Research planning",
+    "summary": "A work-in-progress plan for comparing sign-up, setup, and empty-space experiences.",
+    "source": "https://mariesanglante.notion.site/IN-PROGRESS-Moderated-Live-Delivery-phase-Usability-testing-d96ba9b891874dcaad49a7bd073aaa80",
+    "sections": [
+      {
+        "title": "The study plan",
+        "body": [
+          "The source outlines live, moderated testing during delivery. Three comparisons were planned: Sign-up A versus B, Setup A versus B, and Empty Space A versus B."
+        ]
+      },
+      {
+        "title": "Recruit for a relevant first encounter",
+        "body": [
+          "The plan calls for five to eight respondents from the target audience. Participants should not be the team, friends, or family, and should not have seen the setup or received the product link in advance."
+        ]
+      },
+      {
+        "title": "Work in progress",
+        "body": [
+          "This is a research plan, not a completed study. The shared material does not contain sessions, findings, or outcomes, so no results are presented."
+        ]
+      }
+    ],
+    "accent": "green",
+    "credit": false,
+    "status": "Research in progress"
+  }
+]
