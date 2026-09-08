@@ -212,6 +212,79 @@
     "credit": true
   },
   {
+    "slug": "oasive",
+    "name": "Oasive",
+    "title": "Making specialist finance feel clear.",
+    "category": "Web",
+    "role": "UX/UI Designer · Website design & refinement",
+    "period": "2026",
+    "summary": "A website for an AI fixed-income platform, connecting a complex product story with a clear visual hierarchy, interactive demonstrations, and considered motion.",
+    "source": "https://oasive.ai/",
+    "showcase": "https://www.figma.com/design/d8p1TjnaoiX5keDYjLptAk/Oasive?node-id=79-1252",
+    "image": "/images/oasive/live-og.webp",
+    "caption": "The final Oasive website’s public preview, retrieved from oasive.ai. Product content may evolve after handoff.",
+    "accent": "blue",
+    "credit": false,
+    "sections": [
+      {
+        "title": "The challenge",
+        "body": [
+          "Oasive brings research, screening, analysis, valuation, and reporting into one workflow for fixed-income professionals. The website needed to make that breadth understandable while retaining the credibility and precision expected in institutional finance.",
+          "My task was to translate a specialist product into a clear website experience: explain what it does, show how the workflow connects, and help visitors understand the available levels of access."
+        ]
+      },
+      {
+        "title": "My contribution",
+        "body": [
+          "I designed the website in Figma and directed its translation into a responsive implementation. My work covered the page structure, visual hierarchy, reusable interface patterns, product presentation, and the refinement of motion and responsive behavior.",
+          "I continued iterating after the initial handoff, revisiting the layout, animations, and adaptations that I felt needed more attention. That additional work brought the execution closer to the quality I wanted for the product."
+        ]
+      },
+      {
+        "title": "Explain a connected workflow",
+        "body": [
+          "The page moves from a concise product promise into the five stages of the fixed-income workflow: Research, Screen, Analyze, Value, and Report. Each stage has a specific job, rather than appearing as another disconnected feature.",
+          "The workflow ends with an investment decision and a feedback loop into the next research question. This makes the relationship between the stages visible and gives the product demonstrations that follow a useful context."
+        ]
+      },
+      {
+        "title": "Balance editorial clarity with technical detail",
+        "body": [
+          "The visual language pairs serif headlines with compact, monospaced labels and a restrained navy-and-teal palette. The large type establishes the message; smaller labels organize the technical content without making every element compete for attention.",
+          "I used the Figma styles, tokens, and component families as a consistent foundation for buttons, tabs, cards, plans, and navigation. During refinement, I adjusted spacing, section rhythm, borders, and the framing of the product visuals."
+        ]
+      },
+      {
+        "title": "Let the product explain itself",
+        "body": [
+          "The demo section organizes the platform into four entry points: research reports, Ask Oasive, the MBS dashboard, and valuation with scenario analysis. Short explanations sit alongside product demonstrations so visitors can connect a capability to something they can see.",
+          "The animated hero introduces the relationship between the workspace, research desk, and supporting evidence. I refined the presentation and motion around these materials as part of the website experience."
+        ]
+      },
+      {
+        "title": "Make the levels of access legible",
+        "body": [
+          "The pricing section distinguishes free research, macro research with chat, and the specialist agency MBS platform. Its hierarchy gives each plan a clear identity and separates the main offer, included capabilities, limitations, and next action.",
+          "Research articles and the founder section add context around the product. Their layouts needed enough space for substantive information while remaining consistent with the rest of the page."
+        ]
+      },
+      {
+        "title": "Carry the detail across screen sizes",
+        "body": [
+          "I revisited the desktop, tablet, and mobile layouts, including the product-demo tabs, text wrapping, and the proportions of the founder image. The aim was to preserve the reading order and the usefulness of each section as the available space changed.",
+          "Motion was refined alongside the layout, with reduced-motion support retained in the implementation. I treated animation as part of how the website explains the product, with readability and responsive behavior carrying equal weight."
+        ]
+      },
+      {
+        "title": "The final result",
+        "body": [
+          "The website is live at oasive.ai, bringing the product story, workflow, demonstrations, access plans, and company information into a coherent experience.",
+          "The delivered work brings together the Figma design foundation, a responsive website, product demonstrations, and motion refinements. My contribution connects product understanding with the practical details of bringing a website to completion."
+        ]
+      }
+    ]
+  },
+  {
     "slug": "trucking",
     "name": "Trucking app",
     "title": "Designed for the realities of the road.",
