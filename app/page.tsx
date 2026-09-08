@@ -5,7 +5,7 @@ export default function Home() {
       <a className="skip-link" href="#main">Skip to content</a>
       <header className="site-header wrap">
         <a className="wordmark" href="#main" aria-label="Marianna Gonchar, home">Marianna Gonchar<span className="wordmark-dot">.</span></a>
-        <nav aria-label="Main navigation"><a href="#cases">Cases</a><a href="#about">About</a><a href="/Marianna-Gonchar-CV.pdf" target="_blank" rel="noreferrer">CV <Arrow /></a><a className="nav-contact" href="mailto:marfantastik@gmail.com">Let’s talk <Arrow /></a></nav>
+        <nav aria-label="Main navigation"><a href="#cases">Cases</a><a href="#about">About</a><a href="/cv">CV <Arrow /></a><a className="nav-contact" href="mailto:marfantastik@gmail.com">Let’s talk <Arrow /></a></nav>
       </header>
       <main id="main">
         <section className="hero wrap" aria-labelledby="intro">
@@ -33,7 +33,7 @@ export default function Home() {
           </article>
           <div className="more-work"><span>More explorations, different challenges.</span><a href="/cases">Browse the case archive <Arrow /></a></div>
         </section>
-        <section id="about" className="about wrap" aria-labelledby="about-title"><div className="section-heading"><h2 id="about-title">A little about me</h2><span>Kyiv, Ukraine · Working internationally</span></div><div className="about-grid"><h3>Curious about people.<br/>Serious about <span className="serif">craft.</span></h3><div><p>I’m a Ukrainian product designer with 10+ years in the digital industry, working across startups, agencies, and complex products.</p><p>I connect research, product thinking, and hands-on design. Alongside my practice, I teach UX and mobile interface design at Projector Institute.</p><a className="text-link" href="/Marianna-Gonchar-CV.pdf" target="_blank" rel="noreferrer">More about my experience <Arrow /></a><a className="text-link design-room-link" href="/design-room">Visit my design room <Arrow /></a></div></div></section>
+        <section id="about" className="about wrap" aria-labelledby="about-title"><div className="section-heading"><h2 id="about-title">A little about me</h2><span>Kyiv, Ukraine · Working internationally</span></div><div className="about-grid"><h3>Curious about people.<br/>Serious about <span className="serif">craft.</span></h3><div><p>I’m a Ukrainian product designer with 10+ years in the digital industry, working across startups, agencies, and complex products.</p><p>I connect research, product thinking, and hands-on design. Alongside my practice, I teach UX and mobile interface design at Projector Institute.</p><a className="text-link" href="/cv">More about my experience <Arrow /></a><a className="text-link design-room-link" href="/design-room">Visit my design room <Arrow /></a></div></div></section>
       </main>
       <footer className="footer"><div className="wrap"><div className="footer-top"><p>A new product. A complex challenge. Your next teammate.</p><a href="mailto:marfantastik@gmail.com">Let’s make it <span className="serif">matter.</span><Arrow /></a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Marianna Gonchar</span><div><a href="https://www.linkedin.com/in/marianna-gonchar-15933aa8/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a><a href="mailto:marfantastik@gmail.com">Email <Arrow /></a><a href="#main">Back to top ↑</a></div></div></div></footer>
     </>
