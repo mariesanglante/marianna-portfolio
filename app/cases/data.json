@@ -1,5 +1,20 @@
 [
   {
+    "slug": "cloudbilling",
+    "name": "CloudBilling",
+    "title": "Complex billing, clearly explained.",
+    "category": "Web",
+    "role": "Website UX/UI Designer",
+    "summary": "A 2026 website revamp connecting a complex billing product with a clear narrative, technical illustrations and a responsive UI system.",
+    "source": "https://www.figma.com/design/qmnDuLgFWY37nE0i4EWhvX/Cloudbilling-Website-Revamp-2026?node-id=12-406",
+    "sections": [],
+    "period": "2026",
+    "status": "Latest · Launched",
+    "accent": "blue",
+    "image": "/images/cloudbilling/section.png",
+    "caption": "CloudBilling website design: explaining the billing engine."
+  },
+  {
     "slug": "semaverse",
     "name": "Semaverse",
     "title": "Clarity in a world of complex data.",
