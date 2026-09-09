@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Tab Bar Icon" clip-path="url(#clip0_0_877)">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M8.16634 22.1667C9.45501 22.1667 10.4997 21.122 10.4997 19.8333C10.4997 18.5447 9.45501 17.5 8.16634 17.5C6.87768 17.5 5.83301 18.5447 5.83301 19.8333C5.83301 21.122 6.87768 22.1667 8.16634 22.1667Z" stroke="#FFA666" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M19.8333 22.1667C21.122 22.1667 22.1667 21.122 22.1667 19.8333C22.1667 18.5447 21.122 17.5 19.8333 17.5C18.5447 17.5 17.5 18.5447 17.5 19.8333C17.5 21.122 18.5447 22.1667 19.8333 22.1667Z" stroke="#FFA666" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M5.83333 19.8333H3.5V7C3.5 6.69058 3.62292 6.39383 3.84171 6.17504C4.0605 5.95625 4.35725 5.83333 4.66667 5.83333H15.1667V19.8333H10.5H17.5M15.1667 7H21L24.5 12.8333V19.8333H22.1667M24.5 12.8333H15.1667" stroke="#FFA666" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_0_877">
+<rect width="28" height="28" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Tab Bar Icon" clip-path="url(#clip0_0_950)">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M21 7V7.01167" stroke="#87A1B3" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M20.9997 15.1666L16.9163 9.33332C16.5233 8.62285 16.3223 7.82212 16.3334 7.01024C16.3446 6.19836 16.5673 5.40343 16.9797 4.70399C17.392 4.00454 17.9798 3.4248 18.6848 3.02203C19.3898 2.61926 20.1877 2.40741 20.9997 2.40741C21.8116 2.40741 22.6095 2.61926 23.3146 3.02203C24.0196 3.4248 24.6073 4.00454 25.0197 4.70399C25.4321 5.40343 25.6548 6.19836 25.6659 7.01024C25.677 7.82212 25.4761 8.62285 25.083 9.33332L20.9997 15.1666Z" stroke="#87A1B3" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M12.25 5.54167L10.5 4.66667L3.5 8.16667V23.3333L10.5 19.8333L17.5 23.3333L24.5 19.8333V17.5" stroke="#87A1B3" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M10.5 4.66667V19.8333" stroke="#87A1B3" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M17.5 17.5V23.3333" stroke="#87A1B3" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_0_950">
+<rect width="28" height="28" fill="white"/>
+</clipPath>
+</defs>
+</svg>
