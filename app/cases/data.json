@@ -1,5 +1,19 @@
 [
   {
+    "slug": "rainforest",
+    "name": "Rainforest",
+    "title": "Making energy feel tangible.",
+    "category": "Product",
+    "role": "Product UX/UI · Interaction design",
+    "summary": "Connecting live energy, device setup, thermostat control, and car charging in one home-energy experience.",
+    "period": "Mobile & desktop",
+    "accent": "purple",
+    "status": "Interactive case study",
+    "sections": [],
+    "image": "/images/rainforest/home.png",
+    "caption": "Rainforest live home-energy dashboard"
+  },
+  {
     "slug": "simcare",
     "name": "SimCare",
     "title": "A connected website for counseling education.",
@@ -61,10 +75,10 @@
   {
     "slug": "semaverse",
     "name": "Semaverse",
-    "title": "Clarity in a world of complex data.",
+    "title": "Intelligence, made legible.",
     "category": "Product",
     "role": "Solo Product Designer",
-    "summary": "Redesigning the workflows behind an AI investment platform: from uploading a document to understanding what the system has done with it.",
+    "summary": "Making AI work understandable: connected research, visible progress, and document changes people can review and recover.",
     "source": "/Marianna-Gonchar-CV.pdf",
     "sections": [
       {
@@ -446,10 +460,10 @@
   {
     "slug": "coinflix",
     "name": "Coinflix",
-    "title": "Entertainment with creators at its center.",
+    "title": "A new stage for small stories.",
     "category": "Product",
     "role": "Senior Product Designer",
-    "summary": "Full mobile product design for a blockchain-powered entertainment platform combining short-form content, community, and creator monetization.",
+    "summary": "Designing Coinflix: short-form stories, creator communities, and an interactive journey from watching to publishing.",
     "source": "https://mariesanglante.notion.site/Startup-Coinflix-app-design-3b603ca43cc84372a4af5a917fdf67c1",
     "sections": [
       {
