@@ -445,5 +445,5 @@
     width: 100%;
   }
 }
-.cb-impact,.cb-narrative,.cb-map-controls,.cb-bottom{z-index:5}.cb-impact .cb-fold-grid>div{overflow:auto;max-height:calc(100dvh - 420px);min-height:0}.cb-impact>.cb-fold-toggle{position:sticky;top:0;background:#18181b;z-index:1}.cb-impact{max-height:calc(100% - 130px)}@media(max-width:700px){.cb-impact .cb-fold-grid>div{max-height:270px}}
+.cb-impact,.cb-narrative,.cb-map-controls,.cb-bottom{z-index:5}.cb-impact .cb-fold-grid>div{overflow:auto;max-height:calc(100dvh - 460px);min-height:0}.cb-impact>.cb-fold-toggle{position:sticky;top:0;background:#18181b;z-index:1}.cb-impact{max-height:calc(100% - 170px)}@media(max-width:700px){.cb-impact .cb-fold-grid>div{max-height:270px}}
 .cb-filter select{background:#18181b;color:#fafafa;padding:4px;width:100%;border:0;font:inherit}.cb-filter select:focus-visible,.cb-flight summary:focus-visible{outline:2px solid #55d097;outline-offset:2px}
