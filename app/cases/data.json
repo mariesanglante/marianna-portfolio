@@ -15,6 +15,20 @@
     "caption": "Counseling conversation imagery from the SimCare website design."
   },
   {
+    "slug": "ascy",
+    "name": "Ascy",
+    "title": "A thought. Already a note.",
+    "category": "Product",
+    "role": "Mobile UX & UI design",
+    "summary": "A voice-first notes experience, from a passing thought to an editable note or checklist. Explore the interface and interactive prototype.",
+    "source": "https://www.figma.com/design/5j3BUylTPv84ih27wujnc4/Ascy-TaskSetting?node-id=15-2023",
+    "sections": [],
+    "accent": "blue",
+    "status": "Interactive prototype",
+    "image": "/images/ascy/home.png",
+    "caption": "Ascy My Notes interface from the original Figma design."
+  },
+  {
     "slug": "causal-labs",
     "name": "Causal Labs",
     "title": "Weather intelligence for aviation decisions.",
