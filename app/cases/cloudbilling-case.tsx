@@ -1,3 +1,346 @@
-import {CaseHeader,CaseFooter} from './components';
-function Design({name,alt,caption}:{name:string;alt:string;caption?:string}){return <figure className="cb-figure"><a href={`/images/cloudbilling/${name}.png`} target="_blank" rel="noreferrer" aria-label={`Open full-size design: ${alt}`}><img src={`/images/cloudbilling/${name}.png`} alt={alt} loading="lazy"/></a>{caption&&<figcaption>{caption}</figcaption>}</figure>}
-export function CloudbillingCase(){return <><CaseHeader/><main id="main" className="cb-case"><section className="cb-intro wrap"><a className="case-back" href="/cases">← All cases</a><div className="eyebrow"><span className="status-dot"/>LATEST WORK · LAUNCHED 2026</div><h1>CloudBilling.<br/>Complex billing,<br/><i className="serif">clearly explained.</i></h1><div className="cb-intro-bottom"><p>A website revamp that gives a technical billing platform a clear story, a confident visual identity, and a consistent experience across screens.</p></div><dl className="case-details"><div><dt>My role</dt><dd>Website UX/UI design</dd></div><div><dt>Focus</dt><dd>B2B SaaS · Product storytelling · UI system</dd></div><div><dt>Year & status</dt><dd>2026 · Launched</dd></div></dl></section><div className="cb-stage"><div className="wrap"><span className="cb-stage-label">FROM RAW USAGE TO AN APPROVED INVOICE</span><Design name="section" alt="CloudBilling website section explaining the billing engine through four stages and a connected data-flow diagram"/></div></div><div className="wrap cb-content"><section className="cb-chapter"><div><span className="eyebrow">01 / THE CHALLENGE</span><h2>Make the product<br/><i className="serif">understandable.</i></h2></div><div><p>CloudBilling brings together usage, products, customers and pricing rules to generate invoices. Explaining that clearly means showing how the pieces fit together—without asking a visitor to understand every operational detail first.</p><p>My website design work gives the product a readable structure: distinguish the offers, explain the engine, and make the next step easy to find. The result combines product storytelling with a reusable UI foundation.</p></div></section><section className="cb-chapter"><div><span className="eyebrow">02 / PRODUCT STORY</span><h2>Three offers.<br/><i className="serif">One visual language.</i></h2></div><div><p>The product presentation separates CloudBilling Engine, Datasets and Managed Billing. A shared panel structure keeps the experience coherent while letting each offer explain its own value.</p><p>For the engine, the message leads with automated invoicing. The accompanying illustration connects billing inputs with the engine and its output, making an abstract capability easier to follow. A prominent demo action sits beside the explanation.</p></div></section><div className="cb-light-stage"><Design name="engine" alt="Desktop product panel with CloudBilling Engine, Datasets and Managed Billing tabs, product explanation and billing flow illustration" caption="Product panel · Desktop design"/></div><section className="cb-chapter"><div><span className="eyebrow">03 / EXPLAINING THE SYSTEM</span><h2>Show what happens<br/><i className="serif">under the hood.</i></h2></div><div><p>The technical story becomes a sequence: ingestion and resource mapping, pricing rules, invoice generation and approval, then delivery and exports. Each stage has a corresponding state in the section’s component set.</p><p>Dark surfaces give the technical diagrams their own space. A cyan highlight connects the active explanation to its place in the flow, helping visitors relate the words to the system they describe.</p></div></section><section className="cb-responsive"><div><span className="eyebrow">04 / RESPONSIVE DESIGN</span><h2>Same clarity.<br/><i className="serif">Smaller screen.</i></h2><p>The mobile product panel preserves the hierarchy while changing the composition. The explanation leads, the demo action becomes full-width, and the diagram follows in a dedicated card.</p><p>The UI kit also includes mobile navigation states and a mobile footer, carrying the system beyond a single resized screen.</p><div className="cb-tags"><span>Desktop & mobile</span><span>Navigation states</span><span>Reusable components</span></div></div><div className="cb-mobile-stage"><Design name="mobile" alt="Mobile CloudBilling product panel with a full-width demo button and stacked product diagram"/></div></section><section className="cb-chapter"><div><span className="eyebrow">05 / NAVIGATION</span><h2>Give complexity<br/><i className="serif">a place.</i></h2></div><div><p>The navigation groups content into Products, Solutions, Markets, Resources and Company. Within Products, the expanded menu distinguishes the billing platform, integrations and datasets, giving visitors a more specific route into the offering.</p></div></section><div className="cb-nav-stage"><Design name="navigation" alt="CloudBilling desktop navigation with the Products menu expanded into product, integrations and datasets groups" caption="Products menu · Expanded state"/></div><section className="cb-system"><div><span className="eyebrow">06 / VISUAL FOUNDATION</span><h2>A system built<br/>for <i className="serif">consistency.</i></h2><p>Deep blue anchors the identity, orange highlights primary actions, and green acts as a signal colour. General Sans and a restrained hierarchy connect marketing content with more technical material.</p><p>The component library specifies button sizes and hover states, navigation variants, expandable content, cards, pagination and responsive sections. These details give the website a repeatable foundation across its pages.</p><div className="cb-swatches" aria-label="Design palette"><span style={{background:'#01284f'}}>Deep blue</span><span style={{background:'#ff5b29'}}>CTA orange</span><span style={{background:'#fbfaf9',color:'#01284f'}}>Soft white</span></div></div><div className="cb-button-stage"><Design name="buttons" alt="CloudBilling large button component variants showing primary, secondary and tertiary default and hover states"/></div></section><section className="cb-outcome"><span className="eyebrow">THE RESULT / LAUNCHED</span><h2>A clearer introduction.<br/>A stronger <i className="serif">foundation.</i></h2><p>The 2026 website revamp brings the product narrative, technical illustrations and responsive UI into one coherent experience. This case presents the design work behind the launch.</p></section><a className="next-case" href="/cases/oasive"><div><span className="eyebrow">NEXT / OASIVE</span><h2>Making specialist finance feel clear.</h2></div><span aria-hidden="true">↗</span></a></div></main><CaseFooter/></>}
+import Link from 'next/link';
+import Image from 'next/image';
+import { CaseHeader, CaseFooter } from './components';
+import { BillingFlow, CloudbillingMotion } from '../cloudbilling/website';
+import '../cloudbilling/website.css';
+import './cloudbilling-case.css';
+export function CloudbillingCase() {
+  return (
+    <>
+      <CaseHeader />
+      <CloudbillingMotion />
+      <main id="main" className="cw-case">
+        <section className="cwc-intro wrap">
+          <Link className="case-back" href="/cases">
+            ← All cases
+          </Link>
+          <div className="cwc-meta">
+            <span>SELECTED WORK / 2026</span>
+            <span>B2B SAAS · WEBSITE EXPERIENCE</span>
+          </div>
+          <h1>
+            Complexity,
+            <br />
+            <i className="serif">beautifully connected.</i>
+          </h1>
+          <div className="cwc-deck">
+            <p>
+              A new digital expression for CloudBilling.
+              <br />
+              Turning a complex billing engine into a clear, confident story —
+              and an experience you can explore.
+            </p>
+            <Link href="/cloudbilling" className="cwc-launch">
+              Explore the website <span>↗</span>
+            </Link>
+          </div>
+          <dl className="case-details">
+            <div>
+              <dt>Client</dt>
+              <dd>CloudBilling</dd>
+            </div>
+            <div>
+              <dt>My role</dt>
+              <dd>Website UX/UI design</dd>
+            </div>
+            <div>
+              <dt>Scope</dt>
+              <dd>Product story · Visual system · Responsive UI</dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>2026 · Interactive portfolio prototype</dd>
+            </div>
+          </dl>
+        </section>
+        <section className="cwc-cover">
+          <div className="cwc-cover-top">
+            <span>CLOUDBILLING / A CONNECTED EXPERIENCE</span>
+            <span>DESIGN IN MOTION ↗</span>
+          </div>
+          <Link
+            href="/cloudbilling"
+            className="cwc-browser"
+            aria-label="Explore the interactive CloudBilling website"
+          >
+            <div className="cwc-browser-bar">
+              <span>● ● ●</span>
+              <span>CloudBilling — Website experience</span>
+              <span>↗</span>
+            </div>
+            <div className="cwc-browser-body">
+              <div>
+                <span className="cw-kicker">COMPLEXITY IN. CLARITY OUT.</span>
+                <h2>
+                  Billing.
+                  <br />
+                  Beautifully
+                  <br />
+                  <i>connected.</i>
+                </h2>
+                <p>Every source. Every customer. Every invoice.</p>
+                <span className="cwc-small-cta">Explore the experience ↗</span>
+              </div>
+              <Image
+                unoptimized
+                src="/images/cloudbilling/flow-hero.png"
+                alt="The CloudBilling ecosystem, connecting cloud providers and services to clear invoices"
+                width="676"
+                height="794"
+              />
+            </div>
+          </Link>
+          <div className="cwc-cover-bottom">
+            <span>A technical product. A human introduction.</span>
+            <Link href="/cloudbilling">Open full website ↗</Link>
+          </div>
+        </section>
+        <div className="wrap">
+          <section className="cwc-chapter" data-cw-reveal>
+            <div>
+              <span className="cw-kicker">01 / THE CHALLENGE</span>
+              <h2>
+                First, make
+                <br />
+                <i className="serif">the complex click.</i>
+              </h2>
+            </div>
+            <div>
+              <p className="cwc-lead">
+                CloudBilling connects usage, customers, products and pricing
+                rules. The website needed to connect those ideas for people.
+              </p>
+              <p>
+                The design challenge was to explain a technical platform without
+                making the visitor do the hard work. A list of capabilities
+                could describe the engine, but a connected story could show why
+                it matters.
+              </p>
+              <p>
+                The direction brings product positioning, information hierarchy
+                and technical illustration together. Visitors can understand the
+                offer first, then explore the detail at their own pace.
+              </p>
+            </div>
+          </section>
+          <div className="cwc-principles" data-cw-reveal>
+            {[
+              [
+                '01',
+                'Lead with clarity.',
+                'A benefit before a specification. A clear next step after each explanation.',
+              ],
+              [
+                '02',
+                'Make the system visible.',
+                'Connect inputs, rules and outputs so the product story has a shape.',
+              ],
+              [
+                '03',
+                'Let detail unfold.',
+                'Product tabs and progressive explanations keep depth within reach.',
+              ],
+            ].map(([n, t, p]) => (
+              <article key={n}>
+                <span>{n} / DESIGN PRINCIPLE</span>
+                <h3>{t}</h3>
+                <p>{p}</p>
+              </article>
+            ))}
+          </div>
+          <section className="cwc-chapter" data-cw-reveal>
+            <div>
+              <span className="cw-kicker">02 / THE EXPERIENCE</span>
+              <h2>
+                One platform.
+                <br />
+                <i className="serif">A clearer narrative.</i>
+              </h2>
+            </div>
+            <div>
+              <p className="cwc-lead">
+                Three offers, with a shared visual language and room for their
+                differences.
+              </p>
+              <p>
+                CloudBilling Engine, Datasets and Managed Billing sit inside a
+                consistent product panel. Each selection pairs a focused
+                explanation with a visual model, keeping the path from
+                understanding to action short.
+              </p>
+              <p>
+                The interactive interpretation adds deliberate transitions,
+                responsive navigation and a complete demo-request flow. Motion
+                gives feedback and rhythm to the underlying design.
+              </p>
+              <Link className="text-link" href="/cloudbilling#products">
+                Try the product explorer <span>↗</span>
+              </Link>
+            </div>
+          </section>
+          <figure className="cwc-design">
+            <Image
+              unoptimized
+              src="/images/cloudbilling/engine.png"
+              width={1280}
+              height={484}
+              alt="Original CloudBilling product panel design with offer tabs, an orange demo action and a connected billing diagram"
+              loading="lazy"
+            />
+            <figcaption>
+              <span>DESIGN FOUNDATION / PRODUCT EXPLORER</span>
+              <span>Clear hierarchy. Connected illustration.</span>
+            </figcaption>
+          </figure>
+        </div>
+        <section className="cwc-interactive">
+          <div className="wrap">
+            <div className="cwc-interactive-head">
+              <div>
+                <span className="cw-kicker">03 / TRY THE STORY</span>
+                <h2>
+                  From raw usage
+                  <br />
+                  to <i className="serif">a clear outcome.</i>
+                </h2>
+              </div>
+              <p>
+                Select a stage to follow the journey.
+                <br />
+                The explanation and the system move together.
+              </p>
+            </div>
+            <BillingFlow compact />
+          </div>
+        </section>
+        <div className="wrap">
+          <section className="cwc-mobile" data-cw-reveal>
+            <div>
+              <span className="cw-kicker">04 / RESPONSIVE BY DESIGN</span>
+              <h2>
+                Same story.
+                <br />
+                <i className="serif">A different rhythm.</i>
+              </h2>
+              <p>
+                On a smaller screen, the narrative becomes a deliberate
+                sequence. The explanation leads, the primary action stays within
+                reach, and the diagram gets its own space.
+              </p>
+              <p>
+                The live prototype carries that approach through the navigation,
+                product explorer and billing walkthrough, with keyboard controls
+                and reduced-motion support.
+              </p>
+              <div className="cwc-chips">
+                <span>Responsive layouts</span>
+                <span>Keyboard navigation</span>
+                <span>Reduced motion</span>
+              </div>
+              <Link className="text-link" href="/cloudbilling">
+                Explore at your screen size ↗
+              </Link>
+            </div>
+            <div className="cwc-phone-stage">
+              <span className="cwc-stage-note">
+                SMALL SCREEN. FULL PICTURE.
+              </span>
+              <div className="cwc-phone">
+                <div className="cwc-phone-top">
+                  9:41 <span>● ▰</span>
+                </div>
+                <Image
+                  unoptimized
+                  src="/images/cloudbilling/mobile.png"
+                  width={343}
+                  height={647}
+                  alt="Mobile CloudBilling design with stacked product content, a full-width demo button and a billing-flow diagram"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </section>
+          <section className="cwc-system" data-cw-reveal>
+            <span className="cw-kicker">05 / THE VISUAL LANGUAGE</span>
+            <div className="cwc-system-head">
+              <h2>
+                Quiet confidence.
+                <br />
+                <i className="serif">A distinctive signal.</i>
+              </h2>
+              <p>
+                Deep blue creates a stable foundation. Warm orange makes actions
+                visible. Green becomes a signal inside the flow. Soft neutral
+                surfaces give the information room to breathe.
+              </p>
+            </div>
+            <div className="cwc-palette">
+              <div style={{ background: '#01284f' }}>
+                <span>01 / FOUNDATION</span>
+                <strong>Deep blue</strong>
+                <small>#01284F</small>
+              </div>
+              <div style={{ background: '#ff5b29' }}>
+                <span>02 / ACTION</span>
+                <strong>CTA orange</strong>
+                <small>#FF5B29</small>
+              </div>
+              <div style={{ background: '#91f77a', color: '#01284f' }}>
+                <span>03 / SIGNAL</span>
+                <strong>Electric green</strong>
+                <small>#91F77A</small>
+              </div>
+              <div style={{ background: '#fbfaf9', color: '#01284f' }}>
+                <span>04 / SPACE</span>
+                <strong>Soft white</strong>
+                <small>#FBFAF9</small>
+              </div>
+            </div>
+            <div className="cwc-type">
+              <span>Aa</span>
+              <div>
+                <span className="cw-kicker">TYPOGRAPHIC DIRECTION</span>
+                <h3>Clarity at every level.</h3>
+                <p>
+                  The source UI kit uses General Sans, paired with a restrained
+                  hierarchy. The interactive interpretation brings expressive
+                  scale to the headlines while keeping product detail calm and
+                  readable.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="cwc-outcome" data-cw-reveal>
+            <span className="cw-kicker">06 / THE RESULT</span>
+            <h2>
+              A technical story.
+              <br />
+              <i className="serif">An intuitive experience.</i>
+            </h2>
+            <p>
+              A cohesive website direction that connects the product narrative,
+              technical illustrations and responsive UI. This portfolio version
+              brings the design to life through working interactions and motion.
+            </p>
+            <p className="cwc-note">
+              The prototype demonstrates the website experience with
+              illustrative states. It is not connected to the CloudBilling
+              platform, and demo requests are not submitted.
+            </p>
+            <Link href="/cloudbilling" className="cwc-launch">
+              Experience CloudBilling <span>↗</span>
+            </Link>
+          </section>
+          <Link className="next-case" href="/cases/oasive">
+            <div>
+              <span className="eyebrow">NEXT / OASIVE</span>
+              <h2>Making specialist finance feel clear.</h2>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
+      </main>
+      <CaseFooter />
+    </>
+  );
+}
