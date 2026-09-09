@@ -885,3 +885,70 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Editorial system chapters share the product's dark foundations. */
+.rf-film-section { padding-block: 100px; }
+.rf-film-section video, .rf-system-film { display:block; width:100%; aspect-ratio:16/9; object-fit:contain; background:#0c0819; border-radius:20px; }
+.rf-system-board { margin:48px 0 0; }
+.rf-system-board img { display:block; width:100%; height:auto; border:1px solid #393045; border-radius:20px; }
+.rf-system-board figcaption { color:#beb2d1; font-size:14px; margin-top:18px; }
+.rf-flow-section { padding:100px 0; background:#eeeaf5; }
+.rf-flow-caption { display:flex; justify-content:space-between; gap:24px; border-top:1px solid #c9c0d9; padding-top:24px; margin:52px 0 28px; font-size:12px; font-weight:650; letter-spacing:.08em; }
+.rf-flow-path { display:grid; grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr; align-items:center; gap:10px; }
+.rf-flow-node { background:#fcfaff; border:1px solid #d9cee9; border-radius:16px; padding:26px 22px; }
+.rf-flow-node small { font-size:12px; letter-spacing:.09em; color:#7045db; }
+.rf-flow-node h3 { font-size:22px; line-height:1.2; letter-spacing:-.03em; margin:12px 0; font-weight:550; }
+.rf-flow-node p,.rf-daily-flow p { font-size:16px; line-height:1.5; color:#65596f; margin:0; }
+.rf-flow-arrow { font-size:28px; color:#7045db; text-align:center; }
+.rf-flow-choice > span { display:block; text-align:center; font-size:14px; margin:9px 0; color:#65596f; }
+.rf-flow-success { background:#211435; border-color:#211435; color:#f3ecff; }
+.rf-flow-success small { color:#d2ff5a; }
+.rf-flow-success p { color:#c9bdd9; }
+.rf-flow-recovery { display:flex; gap:20px; align-items:center; padding:24px 28px; border:1px dashed #b79cae; border-radius:16px; margin:24px 0 0; }
+.rf-flow-recovery > span { font-size:36px; color:#805d78; }
+.rf-flow-recovery strong { font-size:16px; }
+.rf-flow-recovery p { font-size:16px; margin:7px 0 0; color:#65596f; }
+.rf-daily-flow { list-style:none; display:grid; grid-template-columns:repeat(4,1fr); gap:28px; margin:0 0 36px; padding:0; }
+.rf-daily-flow li { border-top:2px solid #9570ce; padding-top:20px; }
+.rf-daily-flow li > span { color:#7045db; font-size:14px; }
+.rf-daily-flow h3 { font-size:23px; letter-spacing:-.035em; margin:18px 0 10px; font-weight:550; }
+.rf-architecture-section { padding:100px 0; background:#0c0819; color:#f3ecff; }
+.rf-architecture-section .rf-section-top p { color:#beb2d1; }
+.rf-architecture-section .rf-kicker { color:#d2ff5a; }
+.rf-architecture-root { display:flex; align-items:center; gap:16px; border:1px solid #4d3a68; background:#211830; border-radius:14px; padding:30px; }
+.rf-architecture-root strong { font-size:22px; font-weight:500; }
+.rf-architecture-root > span:last-child { margin-left:auto; color:#beb2d1; font-size:16px; }
+.rf-architecture-branches { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.rf-architecture-branches article { position:relative; margin-top:40px; border:1px solid #393045; padding:28px 24px; border-radius:16px; background:#181223; }
+.rf-architecture-branches article::before { content:''; position:absolute; height:40px; top:-41px; left:50%; width:1px; background:#8867b4; }
+.rf-architecture-branches article > span { color:#a781ff; font-size:14px; }
+.rf-architecture-branches h3 { font-size:32px; font-weight:500; letter-spacing:-.04em; margin:20px 0 10px; }
+.rf-architecture-branches p { font-size:14px; color:#d2ff5a; min-height:38px; line-height:1.4; }
+.rf-architecture-branches ul { margin:24px 0 0; padding:0; list-style:none; }
+.rf-architecture-branches li { padding:13px 0; border-top:1px solid #393045; font-size:14px; color:#beb2d1; line-height:1.5; }
+.rf-shared-layer { border:1px solid #393045; padding:28px; border-radius:14px; margin-top:24px; }
+.rf-shared-layer > span { color:#a781ff; font-size:12px; letter-spacing:.1em; }
+.rf-shared-layer p { font-size:22px; line-height:1.7; margin:14px 0 0; }
+.rf-shared-layer b { font-weight:400; color:#a781ff; margin:0 10px; }
+.rf-architecture-note { color:#beb2d1; font-size:14px; margin:20px 0 30px; }
+.rf-system-film { margin-top:50px; border:1px solid #393045; }
+@media(max-width:1000px) {
+ .rf-flow-path { grid-template-columns:1fr 20px 1fr; gap:16px; }
+ .rf-flow-path > .rf-flow-arrow:nth-child(4) { display:none; }
+ .rf-architecture-branches { grid-template-columns:repeat(2,1fr); }
+ .rf-daily-flow { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:600px) {
+ .rf-film-section,.rf-flow-section,.rf-architecture-section { padding-block:64px; }
+ .rf-flow-caption { flex-direction:column; gap:8px; }
+ .rf-flow-path { display:flex; flex-direction:column; align-items:stretch; }
+ .rf-flow-path > .rf-flow-arrow:nth-child(4) { display:block; }
+ .rf-flow-arrow { transform:rotate(90deg); }
+ .rf-flow-node { padding:24px; }
+ .rf-architecture-branches,.rf-daily-flow { grid-template-columns:1fr; }
+ .rf-architecture-root { flex-wrap:wrap; padding:24px; }
+ .rf-architecture-root > span:last-child { width:100%; margin-left:24px; }
+ .rf-shared-layer p { font-size:18px; }
+ .rf-system-board { margin-top:32px; }
+ .rf-flow-recovery { padding:20px; }
+}

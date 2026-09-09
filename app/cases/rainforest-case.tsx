@@ -202,6 +202,13 @@ export function RainforestCase() {
             <RainforestDemo />
           </div>
         </section>
+        <section className="rf-shell rf-film-section" aria-labelledby="rf-film-title">
+          <div className="rf-section-top">
+            <div><span className="rf-kicker">IN MOTION / THE PRODUCT STORY</span><h2 id="rf-film-title">A home with<br /><em>a visible pulse.</em></h2></div>
+            <p>From a first connection to everyday control. A short motion presentation of the product screens.</p>
+          </div>
+          <video controls playsInline preload="metadata" poster="/images/rainforest/editorial/01-cover.jpg" aria-label="Rainforest product film: monitoring, connection and charging" src="/videos/rainforest/rainforest-product-film.mp4" />
+        </section>
         <section className="rf-shell rf-chapter">
           <div>
             <span className="rf-kicker">03 / THE FIRST CONNECTION</span>
@@ -355,7 +362,7 @@ export function RainforestCase() {
           <div className="rf-shell">
             <div className="rf-section-top">
               <div>
-                <span className="rf-kicker">06 / THE VISUAL LANGUAGE</span>
+                <span className="rf-kicker">06 / DESIGN SYSTEM</span>
                 <h2>
                   Quiet around the data.
                   <br />
@@ -401,10 +408,43 @@ export function RainforestCase() {
                 </p>
               </div>
             </div>
+            <figure className="rf-system-board"><a href="/images/rainforest/editorial/03-design-system.jpg" target="_blank" rel="noreferrer"><img src="/images/rainforest/editorial/03-design-system.jpg" width="1920" height="1400" loading="lazy" alt="Rainforest design system: Anybody and Satoshi typography, dark foundation and layered surfaces, violet actions, status colors, buttons, selectors and feedback states" /></a><figcaption>A shared foundation for typography, controls and state. Open the board to explore the details.</figcaption></figure>
+          </div>
+        </section>
+        <section className="rf-flow-section" id="rf-user-flow">
+          <div className="rf-shell">
+            <div className="rf-section-top"><div><span className="rf-kicker">07 / USER FLOW</span><h2>A clear path.<br /><em>Even backwards.</em></h2></div><p>The first connection sets the tone. Two ways in, an explicit confirmation, and a recovery path that keeps the entered details close.</p></div>
+            <div className="rf-flow-caption"><span>01 / CONNECT THE HOME</span><span>SETUP → FEEDBACK → LIVE DATA</span></div>
+            <div className="rf-flow-path">
+              <div className="rf-flow-node"><small>START</small><h3>No monitor yet</h3><p>Explain what is missing. Connect an EAGLE.</p></div><span className="rf-flow-arrow" aria-hidden="true">→</span>
+              <div className="rf-flow-choice"><div className="rf-flow-node"><small>OPTION A</small><h3>Scan the barcode</h3></div><span>or</span><div className="rf-flow-node"><small>OPTION B</small><h3>Enter details</h3></div></div><span className="rf-flow-arrow" aria-hidden="true">→</span>
+              <div className="rf-flow-node"><small>CONNECT</small><h3>Validate & connect</h3><p>Show progress. Keep entered values.</p></div><span className="rf-flow-arrow" aria-hidden="true">→</span>
+              <div className="rf-flow-node rf-flow-success"><small>READY</small><h3>A readable home</h3><p>Confirm success. Reveal live demand.</p></div>
+            </div>
+            <div className="rf-flow-recovery"><span aria-hidden="true">↶</span><div><strong>Connection failed? Keep the path open.</strong><p>Explain the issue → correct the details → retry. No dead end, no starting over.</p></div></div>
+            <div className="rf-flow-caption"><span>02 / EVERYDAY CONTROL</span><span>UNDERSTAND → ACT → CONFIRM</span></div>
+            <ol className="rf-daily-flow">{[['Read the signal','Live demand, target and cost.'],['Choose a device','Thermostat, smart plug or charger.'],['Take control','Change a mode, switch off or pause.'],['See what changed','Explicit status. Back to the overview.']].map(([title,body],i)=><li key={title}><span>0{i+1}</span><h3>{title}</h3><p>{body}</p></li>)}</ol>
+            <a className="rf-link" href="/images/rainforest/editorial/04-user-flow.jpg" target="_blank" rel="noreferrer">Open the complete flow <span>↗</span></a>
+          </div>
+        </section>
+        <section className="rf-architecture-section" id="rf-architecture">
+          <div className="rf-shell">
+            <div className="rf-section-top"><div><span className="rf-kicker">08 / APP ARCHITECTURE</span><h2>Many functions.<br /><em>One home.</em></h2></div><p>A shared home and location context connects monitoring, device control and preferences. Desktop extends the view for comparison.</p></div>
+            <div className="rf-architecture-root"><span className="rf-live-dot" /><strong>Home / location context</strong><span>The common thread.</span></div>
+            <div className="rf-architecture-branches">{[
+              ['01','Energy','Understand the moment.',['Live demand + targets','Demand-response events','Use by day, week, month, year','Consumption ↔ cost']],
+              ['02','Devices','Act on the right appliance.',['Device list + onboarding','Thermostat modes','Smart-plug controls','EV charging + schedules']],
+              ['03','Settings','Make the home your own.',['Locations + EAGLE monitor','Appearance','Notifications','Profile + support']],
+              ['04','Desktop','Find the bigger pattern.',['Usage + cost overview','Period selection','Comparison periods','Aligned chart summaries']],
+            ].map(([n,title,subtitle,items])=><article key={String(title)}><span>{n}</span><h3>{title}</h3><p>{subtitle}</p><ul>{(items as string[]).map(item=><li key={item}>{item}</li>)}</ul></article>)}</div>
+            <div className="rf-shared-layer"><span>SHARED EXPERIENCE LAYER</span><p>Navigation <b>·</b> Design tokens <b>·</b> Charts <b>·</b> Device states <b>·</b> Feedback & recovery</p></div>
+            <p className="rf-architecture-note">Product information architecture reconstructed for this case.</p>
+            <a className="rf-link" href="/images/rainforest/editorial/05-app-architecture.jpg" target="_blank" rel="noreferrer">Open the architecture board <span>↗</span></a>
+            <video className="rf-system-film" controls playsInline preload="metadata" poster="/images/rainforest/editorial/03-design-system.jpg" aria-label="Rainforest systems film: design system, user flow and app architecture" src="/videos/rainforest/rainforest-system-film.mp4" />
           </div>
         </section>
         <section className="rf-shell rf-delivery">
-          <span className="rf-kicker">07 / WHAT THE WORK MAKES POSSIBLE</span>
+          <span className="rf-kicker">09 / WHAT THE WORK MAKES POSSIBLE</span>
           <h2>
             From an invisible system
             <br />
