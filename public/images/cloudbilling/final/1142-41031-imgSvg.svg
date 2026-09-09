@@ -1,0 +1,21 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="640" height="600" viewBox="0 0 640 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="SVG">
+<path id="Vector" opacity="0.9" d="M85 180C85 210 320 200 320 230" stroke="#85C5FF" stroke-opacity="0.65" stroke-width="2" stroke-dasharray="4 5"/>
+<path id="Vector_2" opacity="0.9" d="M320 180V230" stroke="#BB9EFF" stroke-opacity="0.72" stroke-width="2" stroke-dasharray="4 5"/>
+<path id="Vector_3" opacity="0.9" d="M555 180C555 210 320 200 320 230" stroke="#FF87C9" stroke-opacity="0.68" stroke-width="2" stroke-dasharray="4 5"/>
+<path id="Vector_4" d="M320 230V260" stroke="white" stroke-opacity="0.9" stroke-width="2" stroke-dasharray="4 5"/>
+<path id="Vector_5" opacity="0.9" d="M250 360C250 410 150 390 150 440" stroke="#6DFFAA" stroke-opacity="0.65" stroke-width="2" stroke-dasharray="4 5"/>
+<path id="Vector_6" opacity="0.9" d="M320 360V440" stroke="#6DFFAA" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="4 5"/>
+<path id="Vector_7" opacity="0.9" d="M390 360C390 410 495 390 495 440" stroke="#65C9FF" stroke-opacity="0.7" stroke-width="2" stroke-dasharray="4 5"/>
+<path id="Vector_8" d="M81 180C81 182.208 82.7923 184 85 184C87.2077 184 89 182.208 89 180C89 177.792 87.2077 176 85 176C82.7923 176 81 177.792 81 180V180" fill="#85C5FF"/>
+<path id="Vector_9" d="M316 180C316 182.208 317.792 184 320 184C322.208 184 324 182.208 324 180C324 177.792 322.208 176 320 176C317.792 176 316 177.792 316 180V180" fill="#BB9EFF"/>
+<path id="Vector_10" d="M551 180C551 182.208 552.792 184 555 184C557.208 184 559 182.208 559 180C559 177.792 557.208 176 555 176C552.792 176 551 177.792 551 180V180" fill="#FF87C9"/>
+<path id="Vector_11" d="M316 260C316 262.208 317.792 264 320 264C322.208 264 324 262.208 324 260C324 257.792 322.208 256 320 256C317.792 256 316 257.792 316 260V260" fill="white"/>
+<path id="Vector_12" d="M246 360C246 362.208 247.792 364 250 364C252.208 364 254 362.208 254 360C254 357.792 252.208 356 250 356C247.792 356 246 357.792 246 360V360" fill="#6DFFAA"/>
+<path id="Vector_13" d="M316 360C316 362.208 317.792 364 320 364C322.208 364 324 362.208 324 360C324 357.792 322.208 356 320 356C317.792 356 316 357.792 316 360V360" fill="#6DFFAA"/>
+<path id="Vector_14" d="M386 360C386 362.208 387.792 364 390 364C392.208 364 394 362.208 394 360C394 357.792 392.208 356 390 356C387.792 356 386 357.792 386 360V360" fill="#65C9FF"/>
+<path id="Vector_15" d="M146 440C146 442.208 147.792 444 150 444C152.208 444 154 442.208 154 440C154 437.792 152.208 436 150 436C147.792 436 146 437.792 146 440V440" fill="#6DFFAA"/>
+<path id="Vector_16" d="M316 440C316 442.208 317.792 444 320 444C322.208 444 324 442.208 324 440C324 437.792 322.208 436 320 436C317.792 436 316 437.792 316 440V440" fill="#6DFFAA"/>
+<path id="Vector_17" d="M491 440C491 442.208 492.792 444 495 444C497.208 444 499 442.208 499 440C499 437.792 497.208 436 495 436C492.792 436 491 437.792 491 440V440" fill="#65C9FF"/>
+</g>
+</svg>

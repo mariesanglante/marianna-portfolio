@@ -555,3 +555,49 @@
 .cwc-intro .case-details dt {
   margin-bottom: 10px;
 }
+.cwc-browser-body {
+  font-family:
+    CloudBilling Sans,
+    Arial,
+    sans-serif;
+  background: radial-gradient(at 80% 25%, #234e382b, transparent 50%), #06131f;
+  gap: 35px;
+  padding: 60px 4%;
+}
+.cw-case .cwc-browser-body h2 {
+  font-size: clamp(28px, 4vw, 57px);
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+.cwc-browser-body h2 strong {
+  color: #8ffd76;
+  font-weight: 600;
+}
+.cw-case .cwc-browser-body .cw-kicker {
+  color: #ff7850;
+  letter-spacing: 0.08em;
+}
+.cwc-browser-body .cbf-diagram {
+  margin: 0;
+}
+.cw-case .cwc-browser-body .cbf-glass p {
+  font-size: 1.875cqw;
+}
+.cw-case .cwc-browser-body .cbf-data p {
+  font-size: 1.72cqw;
+}
+@media (max-width: 700px) {
+  .cwc-browser-body {
+    padding: 35px 20px;
+    gap: 35px;
+  }
+  .cw-case .cwc-browser-body h2 {
+    font-size: 35px;
+  }
+  .cwc-browser-body .cbf-diagram {
+    max-width: 440px;
+    width: 100%;
+    margin: auto;
+  }
+}

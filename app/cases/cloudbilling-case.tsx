@@ -1,3 +1,5 @@
+import { CloudbillingHeroDiagram } from '../cloudbilling/final-home';
+import '../cloudbilling/final-home.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { CaseHeader, CaseFooter } from './components';
@@ -70,24 +72,21 @@ export function CloudbillingCase() {
             </div>
             <div className="cwc-browser-body">
               <div>
-                <span className="cw-kicker">COMPLEXITY IN. CLARITY OUT.</span>
+                <span className="cw-kicker">CLOUD & SAAS BILLING PLATFORM</span>
                 <h2>
-                  Billing.
+                  We master billing
                   <br />
-                  Beautifully
+                  complexity for
                   <br />
-                  <i>connected.</i>
+                  <strong>Cloud Providers.</strong>
                 </h2>
-                <p>Every source. Every customer. Every invoice.</p>
+                <p>
+                  Every resource mapped to the right customer. Every invoice
+                  accurate.
+                </p>
                 <span className="cwc-small-cta">Explore the experience ↗</span>
               </div>
-              <Image
-                unoptimized
-                src="/images/cloudbilling/flow-hero.png"
-                alt="The CloudBilling ecosystem, connecting cloud providers and services to clear invoices"
-                width="676"
-                height="794"
-              />
+              <CloudbillingHeroDiagram />
             </div>
           </Link>
           <div className="cwc-cover-bottom">
@@ -173,7 +172,7 @@ export function CloudbillingCase() {
                 responsive navigation and a complete demo-request flow. Motion
                 gives feedback and rhythm to the underlying design.
               </p>
-              <Link className="text-link" href="/cloudbilling#products">
+              <Link className="text-link" href="/cloudbilling#platform">
                 Try the product explorer <span>↗</span>
               </Link>
             </div>
@@ -302,10 +301,10 @@ export function CloudbillingCase() {
                 <span className="cw-kicker">TYPOGRAPHIC DIRECTION</span>
                 <h3>Clarity at every level.</h3>
                 <p>
-                  The source UI kit uses General Sans, paired with a restrained
-                  hierarchy. The interactive interpretation brings expressive
-                  scale to the headlines while keeping product detail calm and
-                  readable.
+                  General Sans carries the original website’s visual hierarchy,
+                  from confident headlines to clear product detail. Consistent
+                  spacing and restrained motion make a complex billing story
+                  easy to follow.
                 </p>
               </div>
             </div>
