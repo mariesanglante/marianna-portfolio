@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import {CaseHeader,CaseFooter} from '../cases/components';
+import './skills.css';
 export const metadata:Metadata={title:'CV — Marianna Gonchar',description:'Senior product designer. Experience, skills and tools across AI, fintech, research, design systems and interactive websites.'};
 const experience=[
  {company:'Awesomic',role:'Senior UI/UX Designer',date:'Sep 2021 — Present',location:'Kyiv · International clients',url:'https://www.awesomic.com/',intro:'Product and website design across fintech, crypto, logistics, cybersecurity, healthcare, entertainment and beauty.',points:['Designed complex applications including Welltrax and Coinflix, alongside creative websites and marketing experiences.','Delivered research, market analysis, user scenarios, wireframes, flow diagrams, prototypes and live usability testing.','Worked across web, iOS and Android in Agile teams, contributing to design community and culture.'],case:'/cases/coinflix'},
@@ -11,12 +12,160 @@ const experience=[
  {company:'Lumos',role:'UX Design Consultant · Office of the Ombudsman for Children’s Rights',date:'Nov 2016 — Feb 2020',location:'Kyiv · Full-time',url:'https://www.wearelumos.org/',intro:'Design and communication work through the nonprofit Lumos, supporting the Office of the Ombudsman for Children’s Rights.',points:['Delivered design and content implementation, analytics, reporting and copywriting.','Optimised social channels and supported PR events and public outreach for the deinstitutionalisation strategy.']}
 ];
 const skills=[
- {title:'Product & strategy',text:'Product thinking, business acumen, market analysis, information architecture, user flows, scenarios, personas and cross-functional collaboration.'},
- {title:'Research & validation',text:'User interviews, Jobs to Be Done, user empathy, research synthesis, usability testing, feedback analysis and experiment-informed design.'},
- {title:'Interface & systems',text:'Web, iOS and Android UX/UI; visual design, design systems, component libraries, data-heavy interfaces, wireframing and responsive design.'},
- {title:'AI & vibe coding',text:'AI-assisted ideation, prototyping and website implementation. Prompting, iterative refinement, design-to-code workflows and reviewing generated interfaces against design intent.'},
- {title:'Interaction & animation',text:'Interactive prototypes, microinteractions, interface transitions, web animation, responsive motion and refinement of animation behaviour across screen sizes.'},
- {title:'Communication & delivery',text:'UX writing, stakeholder communication, developer collaboration, design critique, mentoring, teaching and building design culture.'}
+  {
+    "title": "Product discovery & strategy",
+    "items": [
+      "End-to-end product design",
+      "Problem framing",
+      "Product thinking",
+      "Business and user needs",
+      "Market analysis",
+      "Competitor analysis"
+    ]
+  },
+  {
+    "title": "User research",
+    "items": [
+      "User interviews",
+      "Jobs to Be Done",
+      "Personas",
+      "Use cases",
+      "Research synthesis",
+      "User feedback analysis"
+    ]
+  },
+  {
+    "title": "Usability & validation",
+    "items": [
+      "Moderated usability testing",
+      "Live prototype testing",
+      "Research planning",
+      "Task-based evaluation",
+      "Comparing design alternatives",
+      "Iterating from findings"
+    ]
+  },
+  {
+    "title": "Information architecture",
+    "items": [
+      "Content hierarchy",
+      "Navigation design",
+      "User journeys",
+      "User flows",
+      "Task flows",
+      "Complex workflow mapping"
+    ]
+  },
+  {
+    "title": "Interaction design",
+    "items": [
+      "Interaction flows",
+      "State-based interface design",
+      "Forms and input patterns",
+      "Empty and loading states",
+      "Error and recovery flows",
+      "Edge-case design"
+    ]
+  },
+  {
+    "title": "Visual & responsive design",
+    "items": [
+      "Visual hierarchy",
+      "Typography",
+      "Colour systems",
+      "Layout and composition",
+      "Responsive web design",
+      "Desktop and mobile adaptation"
+    ]
+  },
+  {
+    "title": "Mobile product design",
+    "items": [
+      "iOS and Android interfaces",
+      "Onboarding journeys",
+      "Mobile navigation",
+      "Account and profile flows",
+      "Shared-product experiences",
+      "Mobile interaction patterns"
+    ]
+  },
+  {
+    "title": "Design systems",
+    "items": [
+      "Component libraries",
+      "Reusable UI patterns",
+      "Design tokens",
+      "Component states and variants",
+      "System consistency",
+      "Design-system maintenance"
+    ]
+  },
+  {
+    "title": "AI product experiences",
+    "items": [
+      "AI agent interactions",
+      "Document analysis workflows",
+      "Processing and progress states",
+      "Human review of AI output",
+      "Editable and reversible actions",
+      "Clarity and trust in AI interfaces"
+    ]
+  },
+  {
+    "title": "Fintech & complex interfaces",
+    "items": [
+      "Personal-finance products",
+      "Shared spending and budgeting",
+      "Financial data presentation",
+      "Data tables and dashboards",
+      "Document management",
+      "Upload, save and versioning flows"
+    ]
+  },
+  {
+    "title": "Prototyping & motion",
+    "items": [
+      "Low-fidelity wireframes",
+      "High-fidelity prototypes",
+      "Interactive product demos",
+      "Microinteractions",
+      "Interface transitions",
+      "Web and responsive animation"
+    ]
+  },
+  {
+    "title": "AI-assisted design & implementation",
+    "items": [
+      "AI-assisted ideation",
+      "Prompting and iteration",
+      "Design-to-code workflows",
+      "Working website prototypes",
+      "Reviewing generated interfaces",
+      "Refining implementation against design intent"
+    ]
+  },
+  {
+    "title": "Brand & communication design",
+    "items": [
+      "Graphic design",
+      "Icons and vector assets",
+      "Marketing websites",
+      "Presentation design",
+      "Social-media graphics",
+      "Digital and print materials"
+    ]
+  },
+  {
+    "title": "Collaboration & mentoring",
+    "items": [
+      "Developer handoff",
+      "Technical-feasibility discussions",
+      "Cross-functional collaboration",
+      "Stakeholder communication",
+      "Design critique",
+      "Teaching and individual mentoring"
+    ]
+  }
 ];
 const tools=[
  ['Design & prototyping',['Figma','Photoshop','Illustrator','Principle','InVision']],
@@ -24,4 +173,4 @@ const tools=[
  ['Research & analytics',['Miro','Maze','Mixpanel','Google Analytics']],
  ['Collaboration & handoff',['Notion','Trello','Keynote','Zeplin']]
 ];
-export default function CV(){return <><CaseHeader active="cv"/><main id="main" className="cv-page wrap"><section className="cv-intro"><div className="eyebrow">CURRICULUM VITAE · KYIV, UKRAINE</div><h1>Marianna Gonchar<span>Senior <i className="serif">Product Designer.</i></span></h1><div className="cv-intro-bottom"><p>I turn complex products into clear, thoughtful experiences. 10+ years in the digital industry, across startups, agencies and corporate environments—with a focus on AI, fintech and end-to-end product design.</p><a className="pill-link" href="/Marianna-Gonchar-CV.pdf" download>Download PDF ↗</a></div><div className="cv-contact"><a href="mailto:marfantastik@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/marianna-gonchar-15933aa8/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/mariannagonchar" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://dribbble.com/sanglante" target="_blank" rel="noreferrer">Dribbble ↗</a></div></section><nav className="cv-jump" aria-label="CV sections"><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#tools">Tools</a><a href="#education">Education</a></nav><section id="experience" className="cv-section"><div className="cv-section-label"><span className="eyebrow">01 / EXPERIENCE</span><h2>Depth across<br/><i className="serif">different worlds.</i></h2></div><div>{experience.map(e=><article className="cv-job" key={e.company}><div className="cv-job-top"><a href={e.url} target="_blank" rel="noreferrer">{e.company} ↗</a><span>{e.date}</span></div><h3>{e.role}</h3><p className="cv-location">{e.location}</p><p>{e.intro}</p><ul>{e.points.map(p=><li key={p}>{p}</li>)}</ul>{e.case&&<a className="text-link" href={e.case}>Explore the work ↗</a>}</article>)}</div></section><section id="expertise" className="cv-section"><div className="cv-section-label"><span className="eyebrow">02 / EXPERTISE</span><h2>From understanding<br/>to <i className="serif">making.</i></h2></div><div className="cv-skills">{skills.map(s=><article key={s.title}><h3>{s.title}</h3><p>{s.text}</p></article>)}</div></section><section id="tools" className="cv-section"><div className="cv-section-label"><span className="eyebrow">03 / TOOLKIT</span><h2>The tools<br/>behind the <i className="serif">work.</i></h2></div><div className="cv-tool-groups">{tools.map(([title,items])=><div key={title as string}><h3>{title}</h3><ul>{(items as string[]).map(t=><li key={t}>{t}</li>)}</ul></div>)}</div></section><section id="education" className="cv-section"><div className="cv-section-label"><span className="eyebrow">04 / EDUCATION</span><h2>Always <i className="serif">learning.</i></h2></div><div className="cv-education"><article><h3>Master’s Degree in Project Management</h3><p>National Academy for Public Administration under the President of Ukraine</p></article><article><h3>Graphic Design · UI/UX Design</h3><p>Projector</p></article><article><h3>UI/UX Design</h3><p>Uprock</p></article></div></section><section className="cv-section cv-personal"><div className="cv-section-label"><span className="eyebrow">05 / BEYOND THE TOOLKIT</span><h2>Curiosity is<br/>a <i className="serif">constant.</i></h2></div><div><h3>How I work</h3><p>With curiosity, empathy, integrity and a sense of humour. I value resilience, initiative, inventiveness and follow-through; bring self-discipline and composure to complex work; and enjoy intercultural collaboration, coaching and mentoring.</p><h3>What keeps me growing</h3><p>Product strategy, experience design, entrepreneurship, social innovation, futurism and technology. Beyond design: theatre, public speaking, yoga, fitness, nutrition, philosophy, meditation and parenting.</p></div></section></main><CaseFooter/></>}
+export default function CV(){return <><CaseHeader active="cv"/><main id="main" className="cv-page wrap"><section className="cv-intro"><div className="eyebrow">CURRICULUM VITAE · KYIV, UKRAINE</div><h1>Marianna Gonchar<span>Senior <i className="serif">Product Designer.</i></span></h1><div className="cv-intro-bottom"><p>I turn complex products into clear, thoughtful experiences. 10+ years in the digital industry, across startups, agencies and corporate environments—with a focus on AI, fintech and end-to-end product design.</p><a className="pill-link" href="/Marianna-Gonchar-CV.pdf" download>Download PDF ↗</a></div><div className="cv-contact"><a href="mailto:marfantastik@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/marianna-gonchar-15933aa8/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/mariannagonchar" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://dribbble.com/sanglante" target="_blank" rel="noreferrer">Dribbble ↗</a></div></section><nav className="cv-jump" aria-label="CV sections"><a href="#experience">Experience</a><a href="#expertise">Skills</a><a href="#tools">Tools</a><a href="#education">Education</a></nav><section id="experience" className="cv-section"><div className="cv-section-label"><span className="eyebrow">01 / EXPERIENCE</span><h2>Depth across<br/><i className="serif">different worlds.</i></h2></div><div>{experience.map(e=><article className="cv-job" key={e.company}><div className="cv-job-top"><a href={e.url} target="_blank" rel="noreferrer">{e.company} ↗</a><span>{e.date}</span></div><h3>{e.role}</h3><p className="cv-location">{e.location}</p><p>{e.intro}</p><ul>{e.points.map(p=><li key={p}>{p}</li>)}</ul>{e.case&&<a className="text-link" href={e.case}>Explore the work ↗</a>}</article>)}</div></section><section id="expertise" className="cv-section"><div className="cv-section-label"><span className="eyebrow">02 / SKILLS & EXPERTISE</span><h2>From understanding<br/>to <i className="serif">making.</i></h2></div><div className="cv-skills">{skills.map(s=><article key={s.title}><h3>{s.title}</h3><ul className="cv-skill-items">{s.items.map(item=><li key={item}>{item}</li>)}</ul></article>)}</div></section><section id="tools" className="cv-section"><div className="cv-section-label"><span className="eyebrow">03 / TOOLKIT</span><h2>The tools<br/>behind the <i className="serif">work.</i></h2></div><div className="cv-tool-groups">{tools.map(([title,items])=><div key={title as string}><h3>{title}</h3><ul>{(items as string[]).map(t=><li key={t}>{t}</li>)}</ul></div>)}</div></section><section id="education" className="cv-section"><div className="cv-section-label"><span className="eyebrow">04 / EDUCATION</span><h2>Always <i className="serif">learning.</i></h2></div><div className="cv-education"><article><h3>Master’s Degree in Project Management</h3><p>National Academy for Public Administration under the President of Ukraine</p></article><article><h3>Graphic Design · UI/UX Design</h3><p>Projector</p></article><article><h3>UI/UX Design</h3><p>Uprock</p></article></div></section><section className="cv-section cv-personal"><div className="cv-section-label"><span className="eyebrow">05 / BEYOND THE TOOLKIT</span><h2>Curiosity is<br/>a <i className="serif">constant.</i></h2></div><div><h3>How I work</h3><p>With curiosity, empathy, integrity and a sense of humour. I value resilience, initiative, inventiveness and follow-through; bring self-discipline and composure to complex work; and enjoy intercultural collaboration, coaching and mentoring.</p><h3>What keeps me growing</h3><p>Product strategy, experience design, entrepreneurship, social innovation, futurism and technology. Beyond design: theatre, public speaking, yoga, fitness, nutrition, philosophy, meditation and parenting.</p></div></section></main><CaseFooter/></>}
