@@ -370,7 +370,7 @@ export function CoinflixCase() {
           </strong>
         </Link>
       </main>
-      <CaseFooter />
+      <CaseFooter disclaimer />
     </>
   );
 }

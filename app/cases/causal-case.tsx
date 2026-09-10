@@ -37,5 +37,5 @@ export function CausalCase() {
     {chapters.map(c=><section className="causal-chapter" key={c.label}><div><span className="eyebrow">{c.label}</span><h2>{c.title}</h2></div><div>{c.paragraphs.map(p=><p key={p}>{p}</p>)}</div></section>)}
     <section className="causal-result"><span className="eyebrow">THE DESIGN OUTCOME</span><h2>A connected experience.<br/>A testable <i className="serif">design direction.</i></h2><p>The design brings geographic context, local consequences, and prediction timing into a continuous flow. The animated prototype makes those transitions tangible, from the initial overview through an airport investigation to model comparison.</p><p>This case presents the interface and interaction work. The detection advantage and disruption figures shown in the demo are scenario values, not validated performance claims.</p><div className="causal-links"><a className="pill-link" href="/causal-brain" target="_blank" rel="noreferrer">Open interactive prototype ↗</a></div></section>
     <a className="next-case" href="/cases/cloudbilling"><div><span className="eyebrow">NEXT / CLOUDBILLING</span><h2>Complex billing, clearly explained.</h2></div><span aria-hidden="true">↗</span></a></div>
-  </main><CaseFooter/></>;
+  </main><CaseFooter disclaimer /></>;
 }

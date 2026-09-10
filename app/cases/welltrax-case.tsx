@@ -391,7 +391,7 @@ export function WelltraxCase() {
           </Link>
         </section>
       </main>
-      <CaseFooter />
+      <CaseFooter disclaimer />
     </>
   );
 }

@@ -41,4 +41,4 @@ export function AscyCase(){return <><CaseHeader/><main id="main" className="as-c
   </div>
   <section className="as-finale"><div className="wrap"><span className="as-kicker">TAKE IT FOR A SPIN</span><h2>Less between<br/>you and <i>your thought.</i></h2><a className="as-button" href="#voice-walkthrough">Back to the demo <span>↑</span></a></div></section>
   <div className="wrap"><a className="next-case" href="/cases/causal-labs"><div><span className="eyebrow">NEXT / CAUSAL LABS</span><h2>Weather signals.<br/>Operational context.</h2></div><span aria-hidden="true">↗</span></a></div>
-</main><CaseFooter/></>}
+</main><CaseFooter disclaimer /></>}

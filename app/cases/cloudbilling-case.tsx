@@ -339,7 +339,7 @@ export function CloudbillingCase() {
           </Link>
         </div>
       </main>
-      <CaseFooter />
+      <CaseFooter disclaimer />
     </>
   );
 }

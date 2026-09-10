@@ -509,7 +509,7 @@ export function SemaverseCase() {
           </Link>
         </div>
       </main>
-      <CaseFooter />
+      <CaseFooter disclaimer />
     </>
   );
 }

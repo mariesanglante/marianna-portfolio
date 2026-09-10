@@ -396,7 +396,7 @@ export function PearlCase() {
           </div>
         </section>
       </main>
-      <CaseFooter />
+      <CaseFooter disclaimer />
     </>
   );
 }

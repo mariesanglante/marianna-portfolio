@@ -548,7 +548,7 @@ export function RainforestCase() {
           </Link>
         </div>
       </main>
-      <CaseFooter />
+      <CaseFooter disclaimer />
     </>
   );
 }
