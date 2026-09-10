@@ -168,9 +168,77 @@ const skills=[
   }
 ];
 const tools=[
- ['Design & prototyping',['Figma','Photoshop','Illustrator','Principle','InVision']],
- ['AI & implementation',['ChatGPT','Codex','Midjourney','v0','Webflow','GitHub']],
- ['Research & analytics',['Miro','Maze','Mixpanel','Google Analytics']],
- ['Collaboration & handoff',['Notion','Trello','Keynote','Zeplin']]
+  [
+    "UI & product design",
+    [
+      "Figma",
+      "Sketch",
+      "Adobe XD"
+    ]
+  ],
+  [
+    "Interaction & prototyping",
+    [
+      "ProtoPie",
+      "Principle",
+      "InVision"
+    ]
+  ],
+  [
+    "Visual design, motion & presentations",
+    [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe After Effects",
+      "Midjourney",
+      "Keynote"
+    ]
+  ],
+  [
+    "Research & collaborative workshops",
+    [
+      "FigJam",
+      "Miro",
+      "Maze"
+    ]
+  ],
+  [
+    "Product analytics & behaviour",
+    [
+      "Mixpanel",
+      "Amplitude",
+      "Hotjar",
+      "Google Analytics"
+    ]
+  ],
+  [
+    "AI-assisted design & coding",
+    [
+      "ChatGPT",
+      "Codex",
+      "Claude",
+      "Cursor",
+      "v0",
+      "Lovable"
+    ]
+  ],
+  [
+    "Website building & publishing",
+    [
+      "Webflow",
+      "Framer",
+      "Vercel"
+    ]
+  ],
+  [
+    "Delivery & developer collaboration",
+    [
+      "Jira",
+      "Notion",
+      "Trello",
+      "GitHub",
+      "Zeplin"
+    ]
+  ]
 ];
 export default function CV(){return <><CaseHeader active="cv"/><main id="main" className="cv-page wrap"><section className="cv-intro"><div className="eyebrow">CURRICULUM VITAE · KYIV, UKRAINE</div><h1>Marianna Gonchar<span>Senior <i className="serif">Product Designer.</i></span></h1><div className="cv-intro-bottom"><p>I turn complex products into clear, thoughtful experiences. 10+ years in the digital industry, across startups, agencies and corporate environments—with a focus on AI, fintech and end-to-end product design.</p><a className="pill-link" href="/Marianna-Gonchar-CV.pdf" download>Download PDF ↗</a></div><div className="cv-contact"><a href="mailto:marfantastik@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/marianna-gonchar-15933aa8/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/mariannagonchar" target="_blank" rel="noreferrer">Behance ↗</a><a href="https://dribbble.com/sanglante" target="_blank" rel="noreferrer">Dribbble ↗</a></div></section><nav className="cv-jump" aria-label="CV sections"><a href="#experience">Experience</a><a href="#expertise">Skills</a><a href="#tools">Tools</a><a href="#education">Education</a></nav><section id="experience" className="cv-section"><div className="cv-section-label"><span className="eyebrow">01 / EXPERIENCE</span><h2>Depth across<br/><i className="serif">different worlds.</i></h2></div><div>{experience.map(e=><article className="cv-job" key={e.company}><div className="cv-job-top"><a href={e.url} target="_blank" rel="noreferrer">{e.company} ↗</a><span>{e.date}</span></div><h3>{e.role}</h3><p className="cv-location">{e.location}</p><p>{e.intro}</p><ul>{e.points.map(p=><li key={p}>{p}</li>)}</ul>{e.case&&<a className="text-link" href={e.case}>Explore the work ↗</a>}</article>)}</div></section><section id="expertise" className="cv-section"><div className="cv-section-label"><span className="eyebrow">02 / SKILLS & EXPERTISE</span><h2>From understanding<br/>to <i className="serif">making.</i></h2></div><div className="cv-skills">{skills.map(s=><article key={s.title}><h3>{s.title}</h3><ul className="cv-skill-items">{s.items.map(item=><li key={item}>{item}</li>)}</ul></article>)}</div></section><section id="tools" className="cv-section"><div className="cv-section-label"><span className="eyebrow">03 / TOOLKIT</span><h2>The tools<br/>behind the <i className="serif">work.</i></h2></div><div className="cv-tool-groups">{tools.map(([title,items])=><div key={title as string}><h3>{title}</h3><ul>{(items as string[]).map(t=><li key={t}>{t}</li>)}</ul></div>)}</div></section><section id="education" className="cv-section"><div className="cv-section-label"><span className="eyebrow">04 / EDUCATION</span><h2>Always <i className="serif">learning.</i></h2></div><div className="cv-education"><article><h3>Master’s Degree in Project Management</h3><p>National Academy for Public Administration under the President of Ukraine</p></article><article><h3>Graphic Design · UI/UX Design</h3><p>Projector</p></article><article><h3>UI/UX Design</h3><p>Uprock</p></article></div></section><section className="cv-section cv-personal"><div className="cv-section-label"><span className="eyebrow">05 / BEYOND THE TOOLKIT</span><h2>Curiosity is<br/>a <i className="serif">constant.</i></h2></div><div><h3>How I work</h3><p>With curiosity, empathy, integrity and a sense of humour. I value resilience, initiative, inventiveness and follow-through; bring self-discipline and composure to complex work; and enjoy intercultural collaboration, coaching and mentoring.</p><h3>What keeps me growing</h3><p>Product strategy, experience design, entrepreneurship, social innovation, futurism and technology. Beyond design: theatre, public speaking, yoga, fitness, nutrition, philosophy, meditation and parenting.</p></div></section></main><CaseFooter/></>}
