@@ -24,7 +24,7 @@ export default function Home() {
       <main id="main">
         <section className="hero wrap" aria-labelledby="intro">
           <div className="eyebrow"><span className="status-dot"/>Independent thinking. Shared ambition.</div>
-          <div className="portfolio-intro-with-photo"><h1 id="intro">Marianna Gonchar is a<br className="desktop-break"/> senior product designer<br className="desktop-break"/> making <span className="serif">complex</span> feel simple.</h1><Image className="portfolio-portrait" src="/images/marianna-gonchar.jpeg" alt="Marianna Gonchar" width="1099" height="1415" fetchPriority="high"/></div>
+          <div className="portfolio-intro-with-photo"><h1 id="intro">Marianna Gonchar is a<br className="desktop-break"/> senior product designer<br className="desktop-break"/> making <span className="serif">complex</span> feel simple.</h1><Image className="portfolio-portrait" src="/images/marianna-gonchar-portrait.png" alt="Marianna Gonchar" width="1254" height="1254" fetchPriority="high"/></div>
           <div className="hero-bottom"><p>AI platforms. Everyday finances. Thoughtful digital experiences.<br/>From the first question to the details that make it work.</p><Link className="text-link" href="#cases">Explore selected work <span aria-hidden="true">↓</span></Link></div>
         </section>
         <section id="cases" className="work wrap home-gallery" aria-labelledby="cases-title">
