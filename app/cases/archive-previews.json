@@ -1,25 +1,121 @@
 {
-  "rainforest": "/images/rainforest/home.png",
-  "simcare": "/images/simcare/simulations-1.png",
-  "ascy": "/images/ascy/editorial/01-cover.jpg",
-  "causal-labs": "/images/causal/temperature.png",
-  "cloudbilling": "/images/cloudbilling/section.png",
-  "semaverse": "/images/semaverse-vault.webp",
-  "lumio-couples": "/images/lumio-phones.png",
-  "lumio-activation": "/notion/f4bd9883-5114-4f61-b1a5-bdcdcfff8441-cover.webp",
-  "oasive": "/images/oasive/live-og.webp",
-  "trucking": "/notion/cacc762d-6da8-4961-9cdf-16438caa672e.webp",
-  "pearl": "/images/pearl/cover.png",
-  "coinflix": "/images/coinflix/home.png",
-  "credit-decisioning": "/notion/a5fd8182-be6c-4105-ba2a-85319eab38c5.webp",
-  "lumio-design-system": "/notion/7e550a81-be25-403a-bf12-060c86a071ac-cover.webp",
-  "lumio-visual-redesign": "/images/lumio-app-preview.png",
-  "luxury-furniture": "/notion/0c3edbe0-ecc9-4742-820f-cacc5b5287df.webp",
-  "digitally": "/notion/e81f83bc-a2de-40b7-95d2-a8d08eb43870.webp",
-  "opus": "/notion/366b97fd-f775-478a-8f5b-512f30aefeea.png",
-  "cyberknife-miami": "/notion/16cd39d1-e61c-45c1-9ebd-06d73eb80ca8.webp",
-  "delta10": "/notion/de05bca7-2457-43a2-adb3-397bb828dbca.webp",
-  "el-ticko": "/notion/b9c4211d-1017-4b46-af52-19be5c4702d8-cover.webp",
-  "luxury-real-estate": "/notion/b0783824-7944-40f8-bb49-68d2b12d6f64.webp",
-  "projector": "/notion/47cb4de2-8081-4e07-bcdc-846849e1acec.webp"
+  "rainforest": {
+    "src": "/images/rainforest/home.png",
+    "alt": "Rainforest home energy dashboard",
+    "layout": "phones",
+    "second": "/images/rainforest/charging.png",
+    "secondAlt": "Charging controls"
+  },
+  "simcare": {
+    "src": "/images/covers/simcare-interface.png",
+    "alt": "SimCare simulations website with navigation, hero typography and primary action",
+    "layout": "screen"
+  },
+  "ascy": {
+    "src": "/images/ascy/editorial/01-cover.jpg",
+    "alt": "Ascy original interface design",
+    "layout": "composition"
+  },
+  "causal-labs": {
+    "src": "/images/covers/causal-labs-interface.png",
+    "alt": "Causal Brain weather dashboard with airport impacts, forecast milestones and timeline",
+    "layout": "screen"
+  },
+  "cloudbilling": {
+    "src": "/images/cloudbilling/section.png",
+    "alt": "Cloudbilling original interface design",
+    "layout": "screen"
+  },
+  "semaverse": {
+    "src": "/images/semaverse-vault.webp",
+    "alt": "Semaverse original interface design",
+    "layout": "screen"
+  },
+  "lumio-couples": {
+    "src": "/images/lumio-phones.png",
+    "alt": "Lumio Couples original interface design",
+    "layout": "composition"
+  },
+  "lumio-activation": {
+    "src": "/notion/c25f4304-6e89-4e3e-be0f-1dc0696e3223.webp",
+    "alt": "Lumio welcome and onboarding screens",
+    "layout": "composition"
+  },
+  "oasive": {
+    "src": "/images/oasive/live-og.webp",
+    "alt": "Oasive original interface design",
+    "layout": "screen"
+  },
+  "trucking": {
+    "src": "/notion/cacc762d-6da8-4961-9cdf-16438caa672e.webp",
+    "alt": "Trucking original interface design",
+    "layout": "composition"
+  },
+  "pearl": {
+    "src": "/notion/05d8ddd4-6026-4349-8762-701d637410ad.webp",
+    "alt": "Pearl desktop community feed, chat and mobile profile designs",
+    "layout": "composition"
+  },
+  "coinflix": {
+    "src": "/images/coinflix/home.png",
+    "alt": "Coinflix content discovery screen",
+    "layout": "phones",
+    "second": "/images/coinflix/details.png",
+    "secondAlt": "Series details and episode selection"
+  },
+  "credit-decisioning": {
+    "src": "/notion/a5fd8182-be6c-4105-ba2a-85319eab38c5.webp",
+    "alt": "Credit Decisioning original interface design",
+    "layout": "composition"
+  },
+  "lumio-design-system": {
+    "src": "/notion/6783ed64-466f-4e82-bcad-3e263e5724a5.png",
+    "alt": "Lumio reusable button, input and selection components",
+    "layout": "composition"
+  },
+  "lumio-visual-redesign": {
+    "src": "/notion/2ddf4ff7-6206-4cc7-970b-158754df5509.webp",
+    "alt": "Lumio redesigned account balances and spending analysis screens",
+    "layout": "composition"
+  },
+  "luxury-furniture": {
+    "src": "/notion/0c3edbe0-ecc9-4742-820f-cacc5b5287df.webp",
+    "alt": "Luxury Furniture original interface design",
+    "layout": "composition"
+  },
+  "digitally": {
+    "src": "/notion/e81f83bc-a2de-40b7-95d2-a8d08eb43870.webp",
+    "alt": "Digitally original interface design",
+    "layout": "composition"
+  },
+  "opus": {
+    "src": "/notion/b5cea766-5e25-409e-9e41-094239c0b2a9.gif",
+    "alt": "Opus property management website design",
+    "layout": "composition"
+  },
+  "cyberknife-miami": {
+    "src": "/notion/16cd39d1-e61c-45c1-9ebd-06d73eb80ca8.webp",
+    "alt": "Cyberknife Miami original interface design",
+    "layout": "composition"
+  },
+  "delta10": {
+    "src": "/notion/de05bca7-2457-43a2-adb3-397bb828dbca.webp",
+    "alt": "Delta10 original interface design",
+    "layout": "composition"
+  },
+  "el-ticko": {
+    "src": "/notion/b9c4211d-1017-4b46-af52-19be5c4702d8-cover.webp",
+    "alt": "El Ticko original interface design",
+    "layout": "composition"
+  },
+  "luxury-real-estate": {
+    "src": "/notion/b0783824-7944-40f8-bb49-68d2b12d6f64.webp",
+    "alt": "Luxury Real Estate original interface design",
+    "layout": "composition"
+  },
+  "projector": {
+    "src": "/notion/47cb4de2-8081-4e07-bcdc-846849e1acec.webp",
+    "alt": "Projector original interface design",
+    "layout": "composition"
+  }
 }
