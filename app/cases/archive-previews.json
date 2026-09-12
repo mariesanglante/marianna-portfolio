@@ -84,9 +84,9 @@
     "layout": "composition"
   },
   "digitally": {
-    "src": "/notion/e81f83bc-a2de-40b7-95d2-a8d08eb43870.webp",
-    "alt": "Digitally original interface design",
-    "layout": "composition"
+    "src": "/images/digitally/case-hero.webp",
+    "alt": "Digitally case-study page with original contour artwork and project showcase",
+    "layout": "screen"
   },
   "opus": {
     "src": "/notion/b5cea766-5e25-409e-9e41-094239c0b2a9.gif",
@@ -117,5 +117,12 @@
     "src": "/notion/47cb4de2-8081-4e07-bcdc-846849e1acec.webp",
     "alt": "Projector original interface design",
     "layout": "composition"
+  },
+  "mango-bank": {
+    "src": "/images/mango-case/wallet.png",
+    "alt": "ManGo wallet balance and asset controls",
+    "layout": "phones",
+    "second": "/images/mango-case/card.png",
+    "secondAlt": "ManGo card preview and card controls"
   }
 }

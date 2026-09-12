@@ -1,5 +1,20 @@
 [
   {
+    "slug": "mango-bank",
+    "name": "ManGo Bank",
+    "title": "A little crypto. A lot of freedom.",
+    "category": "Product",
+    "role": "Mobile UX/UI · Visual direction · Interactive prototyping",
+    "summary": "A warmer mobile wallet concept connecting onboarding, transfers, exchanges, activity and everyday card controls.",
+    "period": "Concept redesign · 2026",
+    "accent": "yellow",
+    "status": "Interactive concept",
+    "sections": [],
+    "image": "/images/mango-case/mango-02.jpg",
+    "caption": "ManGo wallet on a warm yellow background.",
+    "nda": false
+  },
+  {
     "slug": "rainforest",
     "name": "Rainforest",
     "title": "Making energy feel tangible.",
@@ -661,37 +676,14 @@
     "title": "Room for the work. Space for the people.",
     "category": "Web",
     "role": "UX & UI Designer",
-    "summary": "Extending an agency website with case-study and team pages that feel like part of the same brand.",
-    "source": "https://mariesanglante.notion.site/Digital-Agency-website-improvement-f992b25a82884f48b8e13d753b84c8dc",
-    "sections": [
-      {
-        "title": "The challenge",
-        "body": [
-          "Digitally needed additional pages and improvements to its existing website. The new sections had to communicate its services and team expertise while preserving the established visual identity."
-        ]
-      },
-      {
-        "title": "Understand the existing language",
-        "body": [
-          "I reviewed the current website, client specifications, and brand guidelines. I identified the content and key sections each new page needed before developing the layouts."
-        ]
-      },
-      {
-        "title": "Design the extensions",
-        "body": [
-          "Mockups and prototypes explored how to present case studies and individual team biographies. I refined the layouts with the client, keeping the new pages coherent with the existing site."
-        ]
-      },
-      {
-        "title": "Delivery",
-        "body": [
-          "The delivered work included a case-study page, team-member bio pages, and improvements to existing design elements. The shared case does not include measured engagement results."
-        ]
-      }
-    ],
+    "summary": "Extending an agency website through project stories, team profiles and a connected contact experience.",
+    "sections": [],
     "period": "2021",
     "accent": "purple",
-    "credit": true
+    "credit": true,
+    "image": "/images/digitally/case-hero.webp",
+    "caption": "Digitally website extensions: project stories, team profiles and contact.",
+    "status": "Interactive case study"
   },
   {
     "slug": "opus",
