@@ -2,7 +2,7 @@
 
 /* Match the framing to the work: full compositions, readable desktop screens, paired mobile flows. */
 .archive-cover-art{position:absolute;inset:22px 22px 56px;display:flex;align-items:center;justify-content:center;gap:22px;min-width:0}
-.archive-cover-art>img{display:block;max-width:100%;width:100%;height:100%;min-width:0;object-fit:contain;object-position:center;transition:transform .3s}
+.archive-cover-art>img{display:block;max-width:100%;width:100%;height:100%;min-width:0;object-fit:contain;object-position:center;filter:saturate(.48) hue-rotate(22deg) contrast(.92) brightness(1.03);transition:transform .3s}
 .archive-preview-screen .archive-cover-art>img{filter:drop-shadow(0 9px 13px #14141418);border-radius:6px}
 .archive-preview-composition .archive-cover-art{inset:16px 16px 52px}
 .archive-preview-phones .archive-cover-art{gap:26px;inset:24px 24px 58px}
