@@ -47,3 +47,19 @@
 .cover-tagline{position:relative;z-index:2;font-size:11px;letter-spacing:.025em;color:#54604f}
 @media(max-width:1000px){.home-gallery .collection-cover{aspect-ratio:1.15;padding:20px}.cover-art{padding:23px 0}.cover-heading>span:first-child{font-size:20px}}
 @media(max-width:700px){.home-gallery .collection-cover{aspect-ratio:1.15}.cover-art-phones img{border-radius:11px}.cover-tagline{font-size:10px}}
+
+
+/* Public cover art: abstract case-related product screens, with no client screenshots. */
+.cover-art-abstract{position:relative;overflow:hidden;isolation:isolate;gap:18px}
+.cover-art-abstract::before{content:"";position:absolute;inset:8% 5%;border-radius:24px;background:radial-gradient(circle at 78% 22%,#ffffffaa,transparent 26%),linear-gradient(135deg,var(--abstract-a,#dce9e0),var(--abstract-b,#f4efe5));opacity:.92}
+.cover-art-abstract::after{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 28%,#ffffff50 50%,transparent 72%);mix-blend-mode:screen;pointer-events:none}
+.abstract-screen{position:relative;z-index:1;display:block;width:min(78%,520px);height:72%;border:1px solid #ffffffbb;border-radius:13px;background:linear-gradient(145deg,#ffffffd9,#ffffff62);box-shadow:0 22px 42px #1c2b2520, inset 0 1px #ffffffdd;transform:rotate(-2deg);overflow:hidden}
+.abstract-screen-top{position:absolute;left:7%;right:7%;top:8%;height:5%;border-radius:10px;background:#1e302d1c}
+.abstract-screen-sidebar{position:absolute;left:7%;top:19%;bottom:9%;width:16%;border-radius:8px;background:linear-gradient(#35594855 0 12%,transparent 12% 20%,#3559482b 20% 25%,transparent 25% 33%,#35594826 33% 38%,transparent 38% 100%)}
+.abstract-screen-chart{position:absolute;left:29%;right:8%;top:22%;height:28%;border-radius:10px;background:linear-gradient(165deg,transparent 58%,#2d635055 59% 62%,transparent 63%),linear-gradient(180deg,#ffffff85,#d1e1d650);box-shadow:inset 0 0 0 1px #ffffffaa}
+.abstract-screen-card{position:absolute;left:29%;right:8%;bottom:10%;height:19%;border-radius:10px;background:linear-gradient(90deg,#ffffffa8 0 33%,#4b786233 33% 34%,#ffffff9c 34% 66%,#4b786233 66% 67%,#ffffff9c 67%);box-shadow:0 8px 16px #26382a12}
+.abstract-screen-secondary{width:28%;height:58%;margin-left:-10%;margin-top:14%;transform:rotate(5deg);opacity:.9}
+.abstract-screen-secondary .abstract-screen-top{top:10%}
+.abstract-screen-secondary .abstract-screen-card{left:12%;right:12%;bottom:15%;height:38%;background:linear-gradient(160deg,#b6d4c077,#ffffff88)}
+.abstract-lumio-couples{--abstract-a:#dbe7f6;--abstract-b:#f5efe5}.abstract-semaverse{--abstract-a:#dce6d1;--abstract-b:#f2eee2}.abstract-oasive{--abstract-a:#d4e6e3;--abstract-b:#f3eee2}.abstract-simcare{--abstract-a:#eadbe8;--abstract-b:#f4eee5}.abstract-coinflix{--abstract-a:#e3d9ed;--abstract-b:#f5e9de}.abstract-causal-labs{--abstract-a:#d8e7df;--abstract-b:#e9eee2}.abstract-ascy{--abstract-a:#dfe3f0;--abstract-b:#f5eee6}.abstract-rainforest{--abstract-a:#e4ddec;--abstract-b:#f1eadf}
+@media(max-width:700px){.abstract-screen{width:78%;height:70%}.abstract-screen-secondary{width:30%;height:55%}}
