@@ -6,10 +6,10 @@ import './portrait.css';
 import './cases/simcare-case.css';
 import './home-gallery.css';
 const Arrow = () => <span aria-hidden="true">↗</span>;
-function CaseCover({ slug, name, tagline, kind, src, second }: { slug: string; name: string; tagline: string; kind: string; src: string; second?: string }) {
+function CaseCover({ slug, name, tagline, kind, src, second }: { slug: string; name: string; tagline: string; kind: string; src?: string; second?: string }) {
   return <Link className={`project-visual collection-cover cover-${slug}`} href={`/cases/${slug}`} aria-label={`View ${name} case study`}>
     <div className="cover-heading"><span>{name}</span><span className="cover-open" aria-hidden="true">↗</span></div>
-    <div className={`cover-art cover-art-${kind}`}><Image unoptimized width={kind === "phones" ? 375 : 1200} height={kind === "phones" ? 812 : kind === "mobile" ? 1573 : 850} sizes="(max-width: 700px) 90vw, 45vw" src={src} alt={`${name} product design preview`} loading="lazy"/>{second && <Image unoptimized width={375} height={812} sizes="(max-width: 700px) 35vw, 18vw" src={second} alt={`${name} second product screen`} loading="lazy"/>}</div>
+    <div className={`cover-art cover-art-${kind}`}>{src && <Image unoptimized width={kind === "phones" ? 375 : 1200} height={kind === "phones" ? 812 : kind === "mobile" ? 1573 : 850} sizes="(max-width: 700px) 90vw, 45vw" src={src} alt={`${name} product design preview`} loading="lazy"/>}{second && <Image unoptimized width={375} height={812} sizes="(max-width: 700px) 35vw, 18vw" src={second} alt={`${name} second product screen`} loading="lazy"/>}</div>
     <span className="cover-tagline">{tagline}</span>
   </Link>;
 }
@@ -33,7 +33,7 @@ export default function Home() {
 
             <div className="project-copy"><div className="project-meta"><span>01 / FINTECH PRODUCT</span><span>FINTECH · MOBILE</span></div><h3>Shared money.<br/>Individual lives.</h3><p>Designing a shared-finance experience from discovery through delivery, with a focus on how people manage money together.</p><div className="role">Sole Designer · Research to release</div><Link className="pill-link" href="/cases/lumio-couples">NDA · Unlock case <Arrow /></Link></div>
           </article>
-          <article className="project project-sema"><CaseCover slug="semaverse" name="AI investment platform" tagline="Intelligence, connected" kind="desktop" src="/images/semaverse-vault.webp"/>
+          <article className="project project-sema"><CaseCover slug="semaverse" name="AI investment platform" tagline="Intelligence, connected" kind="desktop"/>
             <div className="project-copy"><div className="project-meta"><span>02 / AI INVESTMENT PLATFORM</span><span>AI · B2B PLATFORM</span></div><h3>Intelligence,<br/>made legible.</h3><p>Making AI work understandable through connected research, visible progress, and document changes people can review and recover.</p><div className="role">Solo Product Designer · 2023–2026</div><Link className="pill-link" href="/cases/semaverse">NDA · Unlock case <Arrow /></Link></div>
 
           </article>
