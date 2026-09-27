@@ -12,3 +12,20 @@
 .archive-card:hover .archive-cover-art>img{transform:translateY(-3px)}
 @media(max-width:700px){.archive-cover-art{inset:16px 16px 54px}.archive-preview-phones .archive-cover-art{gap:20px;inset:20px 20px 55px}}
 @media(prefers-reduced-motion:reduce){.archive-cover-art>img{transition:none}.archive-card:hover .archive-cover-art>img{transform:none}}
+
+
+/* Public archive cover art: abstract product-screen compositions, no source screenshots. */
+.archive-abstract-preview{position:absolute;inset:0 0 0;display:flex;align-items:center;justify-content:center;gap:10%;overflow:hidden;background:radial-gradient(circle at 78% 18%,#ffffffaa,transparent 30%),linear-gradient(135deg,var(--abstract-a,#dce9e0),var(--abstract-b,#f4efe5))}
+.archive-abstract-preview::after{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 30%,#ffffff55 50%,transparent 70%);mix-blend-mode:screen}
+.archive-abstract-panel{position:relative;z-index:1;display:block;width:58%;height:68%;border:1px solid #ffffffc7;border-radius:12px;background:linear-gradient(145deg,#ffffffd9,#ffffff5c);box-shadow:0 18px 34px #1c2b2520,inset 0 1px #ffffffdd;transform:rotate(-2deg);overflow:hidden}
+.archive-abstract-panel>span{position:absolute;display:block;border-radius:7px;background:#34594b2f}
+.archive-abstract-panel-main>span:nth-child(1){left:7%;right:7%;top:9%;height:5%;background:#1e302d1c}
+.archive-abstract-panel-main>span:nth-child(2){left:7%;top:20%;width:17%;bottom:10%;background:linear-gradient(#35594855 0 12%,transparent 12% 20%,#3559482b 20% 27%,transparent 27% 35%,#35594822 35% 42%,transparent 42% 100%)}
+.archive-abstract-panel-main>span:nth-child(3){left:30%;right:8%;top:22%;height:28%;background:linear-gradient(165deg,transparent 58%,#2d635055 59% 63%,transparent 64%),linear-gradient(180deg,#ffffff80,#d1e1d650)}
+.archive-abstract-panel-main>span:nth-child(4){left:30%;right:8%;bottom:10%;height:18%;background:linear-gradient(90deg,#ffffffa8 0 33%,#4b786233 33% 34%,#ffffff9c 34% 66%,#4b786233 66% 67%,#ffffff9c 67%)}
+.archive-abstract-panel-side{width:22%;height:52%;margin:14% 0 0 -12%;transform:rotate(5deg);opacity:.88}
+.archive-abstract-panel-side>span:nth-child(1){left:12%;right:12%;top:12%;height:6%;background:#1e302d1c}
+.archive-abstract-panel-side>span:nth-child(2){left:12%;right:12%;top:28%;height:28%;background:linear-gradient(160deg,#b6d4c077,#ffffff88)}
+.archive-abstract-panel-side>span:nth-child(3){left:12%;right:12%;bottom:12%;height:14%;background:#4b786233}
+.abstract-lumio-couples{--abstract-a:#dbe7f6;--abstract-b:#f5efe5}.abstract-semaverse{--abstract-a:#dce6d1;--abstract-b:#f2eee2}.abstract-oasive{--abstract-a:#d4e6e3;--abstract-b:#f3eee2}.abstract-simcare{--abstract-a:#eadbe8;--abstract-b:#f4eee5}.abstract-coinflix{--abstract-a:#e3d9ed;--abstract-b:#f5e9de}.abstract-causal-labs{--abstract-a:#d8e7df;--abstract-b:#e9eee2}.abstract-ascy{--abstract-a:#dfe3f0;--abstract-b:#f5eee6}.abstract-rainforest{--abstract-a:#e4ddec;--abstract-b:#f1eadf}
+@media(max-width:700px){.archive-abstract-panel{width:60%;height:66%}.archive-abstract-panel-side{width:23%;height:50%}}
