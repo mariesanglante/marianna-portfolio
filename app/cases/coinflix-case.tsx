@@ -27,9 +27,9 @@ export function CoinflixCase() {
             <div>
               <p className="cf-kicker">COINFLIX</p>
               <h1>
-                A new stage
-                <br />
-                for <em>small stories.</em>
+              Make short-form
+              <br />
+              <em>stories feel whole.</em>
               </h1>
             </div>
             <a className="cf-play" href="#coinflix-prototype">
@@ -40,8 +40,9 @@ export function CoinflixCase() {
           </div>
           <div className="cf-hero-bottom">
             <p>
-              A mobile entertainment platform where short-form stories, creator
-              communities, and a proposed token economy meet.
+              I designed the viewer and creator experience for a mobile
+              entertainment concept combining short-form shows, social features,
+              and blockchain-based participation.
             </p>
             <span>
               DISCOVER. WATCH. CREATE.
@@ -62,13 +63,28 @@ export function CoinflixCase() {
           <figcaption>Coinflix / Original mobile product design</figcaption>
         </figure>
         <nav className="cf-chapters cf-shell" aria-label="Case study chapters">
-          <a href="#cf-challenge">01 — The challenge</a>
-          <a href="#cf-experience">02 — The experience</a>
-          <a href="#cf-system">03 — The expression</a>
-          <a href="#cf-outcome">04 — The outcome</a>
+          <a href="#cf-glance">At a glance</a>
+          <a href="#cf-challenge">The challenge</a>
+          <a href="#cf-decisions">Key decisions</a>
+          <a href="#cf-outcome">Result & reflection</a>
         </nav>
+        <section id="cf-glance" className="cf-section cf-shell">
+          <p className="cf-kicker">AT A GLANCE</p>
+          <div className="cf-editorial">
+            <h2>One clear entry<br/><em>to a complex idea.</em></h2>
+            <div><p className="cf-lead">The strongest design choice was to lead with entertainment and keep blockchain participation secondary.</p><p>The archive documents the product concept and design deliverables, but no launch, activation, or growth data. I can show the decisions and the proposed experience; I can’t claim a measured activation lift.</p></div>
+          </div>
+          <dl className="cf-meta">
+            <div><dt>Product</dt><dd>Coinflix · mobile entertainment concept</dd></div>
+            <div><dt>Problem</dt><dd>Unite short shows, creator publishing, community, and token participation</dd></div>
+            <div><dt>My role</dt><dd>Product designer · research, flows, wireframes, mobile UI</dd></div>
+            <div><dt>Team</dt><dd>Startup client through Awesomic; partner roles not recorded</dd></div>
+            <div><dt>Timeline</dt><dd>2021 design project</dd></div>
+            <div><dt>Outcome</dt><dd>End-to-end mobile app design; activation change not measured or documented</dd></div>
+          </dl>
+        </section>
         <section id="cf-challenge" className="cf-section cf-shell">
-          <p className="cf-kicker">01 / THE CHALLENGE</p>
+          <p className="cf-kicker">THE CHALLENGE</p>
           <div className="cf-editorial">
             <h2>
               Entertainment first.
@@ -77,113 +93,85 @@ export function CoinflixCase() {
             </h2>
             <div>
               <p className="cf-lead">
-                Coinflix brought three products into one: a short-form video
-                app, a creator community, and a blockchain-powered platform.
+              Two groups had to understand one unfamiliar product: viewers
+              looking for engaging short-form entertainment and creators looking
+              for audience, community, and new monetization options.
               </p>
               <p>
-                The design challenge was to make them feel like one experience.
-                Viewers needed an easy way into the content. Creators needed a
-                clear path from capturing a moment to publishing a series.
-                Participation features needed a place without overwhelming
-                either journey.
+                The stakes were clarity and trust. If token mechanics appeared
+                before the content value, they could add friction to a product
+                people should be able to browse and enjoy. The brief also
+                stretched across viewing, publishing, social interaction, and
+                wallet concepts; no engineering or launch constraints are
+                documented in the project archive.
               </p>
             </div>
           </div>
           <dl className="cf-meta">
             <div>
               <dt>My role</dt>
-              <dd>Senior Product Designer</dd>
+              <dd>Product designer</dd>
             </div>
             <div>
               <dt>Scope</dt>
-              <dd>Research → flows → mobile UI</dd>
+              <dd>Research synthesis → flows → wireframes → mobile UI</dd>
             </div>
             <div>
               <dt>Context</dt>
-              <dd>Startup · through Awesomic</dd>
+              <dd>Startup project · through Awesomic</dd>
             </div>
             <div>
               <dt>Timeline</dt>
               <dd>
                 2021 design
-                <br />
-                2026 prototype reconstruction
+                <br />2026 portfolio demo reconstruction
               </dd>
             </div>
           </dl>
-          <div className="cf-question">
-            <span>THE DESIGN QUESTION</span>
-            <p>
-              How do you make a new kind of platform feel{' '}
-              <em>instantly familiar?</em>
-            </p>
-          </div>
-          <div className="cf-three">
-            <article>
-              <span>01 / UNDERSTAND</span>
-              <h3>Two sides of the same story.</h3>
-              <p>
-                The original process included user surveys, competitor analysis,
-                personas, and journey mapping around viewers and creators.
-              </p>
-            </article>
-            <article>
-              <span>02 / STRUCTURE</span>
-              <h3>Make the next step obvious.</h3>
-              <p>
-                Paper sketches and low- to mid-fidelity wireframes shaped the
-                routes into discovery, engagement, and publishing.
-              </p>
-            </article>
-            <article>
-              <span>03 / REFINE</span>
-              <h3>Keep the story in focus.</h3>
-              <p>
-                High-fidelity designs brought content, social actions, and
-                creator tools into a shared visual language, refined through
-                feedback.
-              </p>
-            </article>
-          </div>
+          <div className="cf-question"><span>THE DESIGN QUESTION</span><p>How might the product make <em>watching valuable before asking for commitment?</em></p></div>
         </section>
         <section id="cf-experience" className="cf-experience">
           <div className="cf-shell">
-            <p className="cf-kicker">02 / THE EXPERIENCE</p>
+            <p className="cf-kicker">MY OWNERSHIP</p>
             <div className="cf-section-head">
               <h2>
-                Watch it.
+                I shaped the
                 <br />
-                Make it.
+                viewer and
                 <br />
-                <em>Be part of it.</em>
+                <em>creator flows.</em>
               </h2>
               <p>
-                Three connected journeys.
-                <br />
-                Explore the working demo below. Every journey stays on this
-                page.
+                I personally translated the brief and survey themes into
+                navigation, viewing, publishing, and participation screens.
+                The startup brief and product direction were shared; the archive
+                does not identify other contributors by name or role.
               </p>
             </div>
             <CoinflixDemo />
           </div>
         </section>
-        <section className="cf-section cf-shell">
+        <section id="cf-decisions" className="cf-section cf-shell">
+          <p className="cf-kicker">KEY DECISIONS · EVIDENCE & TRADEOFFS</p>
           <div className="cf-editorial">
             <h2>
-              Short form.
+              Make the show
               <br />
-              <em>Longer connections.</em>
+              <em>the front door.</em>
             </h2>
             <div>
               <p className="cf-lead">
-                A video is an entry point. A series gives people a reason to
-                stay.
+                Survey notes report preference for short-form, immersive
+                content. I prioritized a content feed and kept show/episode
+                context one step away.
               </p>
               <p>
-                Show descriptions, episode lists, and creator profiles give
-                individual moments a wider context. The design moves between
-                immersive viewing and lightweight navigation, keeping the next
-                story within reach.
+                Tradeoff: an immersive player supports focused viewing, while
+                show descriptions, episode lists, and creator profiles help
+                people decide what to watch next. Those surfaces connect a quick
+                clip to a series without making the feed itself feel like a
+                catalog. The archive provides qualitative survey themes, not
+                sample size or task-test results.
               </p>
             </div>
           </div>
@@ -197,12 +185,12 @@ export function CoinflixCase() {
               alt="Series description, immersive video player, and episode selection in Coinflix"
             />
             <figcaption>
-              <span>VIEWER EXPERIENCE</span>Discover a show → watch → choose the
+              <span>DECISION 1 · VIEWER</span>Discover a show → watch → choose the
               next episode
             </figcaption>
           </figure>
           <div className="cf-publish">
-            <p className="cf-kicker">THE CREATOR SIDE</p>
+            <p className="cf-kicker">DECISION 2 · CREATOR</p>
             <h3>
               One publishing entry.
               <br />
@@ -222,9 +210,11 @@ export function CoinflixCase() {
               <span>Publish</span>
             </div>
             <p>
-              Separating content details from its place in a series makes the
-              publishing journey easier to understand—and leaves room for
-              creators to grow beyond a single clip.
+              The brief included both standalone short videos and episodic
+              shows. I separated adding content details from choosing its
+              destination (single video, new series, or existing series), so
+              one publishing entry could support all three. This is a design
+              rationale; no usability result is recorded.
             </p>
           </div>
           <figure className="cf-art">
@@ -237,13 +227,13 @@ export function CoinflixCase() {
               alt="Coinflix camera, bidding concept, and wallet screens"
             />
             <figcaption>
-              <span>CREATOR & PARTICIPATION TOOLS</span>Capture, ownership
+              <span>DECISION 3 · PARTICIPATION</span>Capture, ownership
               concepts, and wallet access
             </figcaption>
           </figure>
         </section>
         <section id="cf-system" className="cf-system cf-shell">
-          <p className="cf-kicker">03 / THE EXPRESSION</p>
+          <p className="cf-kicker">DECISION 4 · VISUAL HIERARCHY</p>
           <div className="cf-editorial">
             <h2>
               Quiet interface.
@@ -252,13 +242,15 @@ export function CoinflixCase() {
             </h2>
             <div>
               <p className="cf-lead">
-                A dark canvas lets the content lead. Electric color gives the
-                product its own voice.
+                A dark canvas lets video lead; color distinguishes primary
+                actions from the viewing surface.
               </p>
               <p>
-                Vivid abstract forms establish an expressive first impression.
-                Inside the app, restrained surfaces and consistent controls give
-                videos and creator content the space to stand out.
+                The product brief combined entertainment with unfamiliar
+                blockchain mechanics. I used vivid artwork for brand expression
+                and restrained app surfaces for legibility. Gradients mark key
+                actions. This balances a distinctive identity against the need
+                to keep content and controls easy to scan.
               </p>
             </div>
           </div>
@@ -306,20 +298,22 @@ export function CoinflixCase() {
         </section>
         <section id="cf-outcome" className="cf-outcome">
           <div className="cf-shell">
-            <p className="cf-kicker">04 / THE OUTCOME</p>
+            <p className="cf-kicker">RESULT</p>
             <h2>
-              A product you can
+              A connected
               <br />
-              <em>walk through.</em>
+              <em>design, not a growth claim.</em>
             </h2>
             <div className="cf-outcome-copy">
               <p>
-                The original project delivered a complete mobile app design
-                spanning discovery, viewing, community, publishing, and
-                participation features.
+                The project delivered a mobile app design spanning discovery,
+                viewing, social interaction, creator publishing, and proposed
+                participation features. The archive records no shipped release,
+                activation rate, conversion lift, or user feedback quote; there
+                is no defensible activation growth number to report.
               </p>
               <p>
-                For this portfolio, I rebuilt the main journeys as an
+                For this portfolio, I rebuilt selected journeys as an
                 interactive web demo, with editable content, connected states,
                 and an animated walkthrough. This is a 2026 concept
                 reconstruction; publishing, accounts, and credits are simulated.
@@ -329,14 +323,15 @@ export function CoinflixCase() {
               Explore the interactive demo <span>↗</span>
             </a>
             <div className="cf-reflection">
-              <h3>What I would validate next</h3>
+              <h3>Reflection · what I’d validate next</h3>
               <p>
-                Can viewers find and continue a series without guidance? Do
-                creators understand when to publish a single video versus an
-                episode? Are wallet and ownership concepts clear before users
-                commit? The next step is task-based testing of those decisions;
-                verified launch or growth metrics are not available for this
-                case.
+                I would first test whether viewers can find and continue a
+                series, whether creators can distinguish a standalone post from
+                an episode, and whether wallet and ownership concepts make sense
+                before commitment. I would then instrument the funnel from first
+                open to first completed show and creator publish. That evidence
+                could tell us whether content-first entry reduces early
+                friction—and whether participation tools earn their place.
               </p>
             </div>
           </div>
