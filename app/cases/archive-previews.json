@@ -119,5 +119,10 @@
     "layout": "phones",
     "second": "/images/mango-case/card.png",
     "secondAlt": "Additional interface preview"
+  },
+  "semaverse": {
+    "src": "/images/semaverse-vault.webp",
+    "alt": "Semaverse AI investment platform research workspace",
+    "layout": "screen"
   }
 }
