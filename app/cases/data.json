@@ -161,52 +161,54 @@
   {
     "slug": "lumio-couples",
     "name": "Lumio · Couples spending",
-    "title": "Shared money. Individual lives.",
+    "title": "Shared money, without shared-everything pressure.",
     "category": "Product",
     "role": "Sole Designer · Research to release",
-    "summary": "Helping Lumio move from automatic savings to shared finances, grounded in the way couples actually manage money.",
+    "summary": "I made shared spending the first useful experience: partners could understand joint costs while choosing which transactions stayed private. In a separate 30-day onboarding experiment, reported partner invitations rose from 19% to 44% and bank connections from 55% to 71%.",
     "source": "https://mariesanglante.notion.site/Product-Case-I-Lumio-Couples-Spending-JTBD-approach-05c2d903471a44279db10de6967bd975",
     "sections": [
       {
-        "title": "A new direction for Lumio",
+        "title": "At a glance",
         "body": [
-          "Lumio was evolving from saving on autopilot into a product for couples’ finances. The design challenge was to identify a useful first shared experience without assuming every couple wanted to combine everything.",
-          "I led design from research and product definition through the interface, design system, testing, and delivery. The work also included brand identity and support for launch."
+          "Product: Lumio, a personal-finance product for couples. Problem: help partners understand shared costs across separate accounts without requiring them to expose every purchase.",
+          "My role: sole designer on couples spending, from research and product definition through interface design, testing, and delivery. Team: I worked with product and engineering; activation decisions were shaped with the CEO and COO. Timeline: from 2022; the source does not specify an end date.",
+          "Related activation evidence: a separate reported 30-day onboarding experiment moved partner invitations from 19% to 44% and bank connections from 55% to 71%. These are experiment outcomes, not measured impact attributable to the couples-spending release."
         ]
       },
       {
-        "title": "Start with the job, not the feature",
+        "title": "The challenge",
         "body": [
-          "I reviewed more than 25 articles about couples’ finances in the UK. A cross-functional workshop produced seven macro jobs to be done, giving the team a common language for the opportunity.",
-          "We scheduled 35 interviews and completed 32. The research pointed to a practical need: understanding money across different bank accounts and keeping track of shared expenses."
+          "Couples managing money across separate bank accounts needed a way to see shared expenses and recurring commitments together. The product was moving beyond automatic savings, so the team had to choose a useful first experience without assuming couples wanted fully joint finances.",
+          "The constraints were a small team, backend and frontend effort, and sensitive financial information. The experience needed to make shared costs legible while giving each person control over what they disclosed."
         ]
       },
       {
-        "title": "Choose a valuable first release",
+        "title": "My ownership",
         "body": [
-          "Shared spending became the priority. It addressed a concrete need while keeping the scope workable for a small team. Competitor research helped examine the smaller tasks inside that experience.",
-          "I brought the team together through workshops and storyboards. We used Wow–How–Now prioritization to weigh value against backend and frontend effort, separating what we could deliver now from later opportunities."
+          "I owned the couples-spending design from discovery through delivery: I reviewed research, facilitated product-definition workshops, mapped the experience, designed the shared-spending views and transaction controls, prototyped interactions, and prepared handoff and test cases.",
+          "I made the design recommendations and delivered more than 200 screens and 14 microprototypes. Product and engineering partners helped prioritize feasibility and worked through test cases before launch. The separate onboarding experiment was cross-functional work with the CEO and COO; I do not claim its results as an outcome of the spending release."
         ]
       },
       {
-        "title": "Together, with control",
+        "title": "Key decisions",
         "body": [
-          "The solution brought spending breakdowns, recurring costs, and each partner’s contribution into a shared view. A pie chart and collaborator cards made the breakdown readable.",
-          "People could share or hide individual transactions. Upcoming payments and account or payment labels added context, helping couples understand shared commitments while keeping control over what they disclosed."
+          "Start with shared spending. We completed 32 of 35 planned interviews; the research highlighted a practical need to understand money across different accounts and track shared expenses. I recommended shared spending as the first release because it answered that need and fit the small team’s delivery capacity. Seven macro jobs to be done and a value-versus-effort workshop helped align the wider opportunity with a shippable scope.",
+          "Show the shared picture, preserve personal control. Couples needed to understand contributions and recurring costs, but not every transaction was necessarily joint. I designed a shared breakdown with partner contributions, upcoming payments, and transaction-level controls to share or hide purchases. This made the shared view useful without treating account visibility as all-or-nothing.",
+          "Make financial context scannable. A breakdown, collaborator cards, and labels for accounts and payments show how spending relates to each partner and shared commitments. The design surfaced recurring costs and upcoming payments alongside the overview so users could interpret totals in context."
         ]
       },
       {
-        "title": "Make the decisions buildable",
+        "title": "Result",
         "body": [
-          "An existing token-based, atomic design system let me move quickly into high-fidelity prototypes without rebuilding the foundations.",
-          "The delivery included more than 14 microprototypes and over 200 screens, alongside design-system updates. Before launch, the whole team worked through test cases using test accounts."
+          "The couples-spending experience was delivered, supported by more than 200 screens, 14+ microprototypes, and design-system updates. The source does not provide feature-level activation, adoption, or retention measurements, so I cannot quantify the release’s direct impact.",
+          "Separately, the onboarding case reports a 30-day experiment: partner invitations increased from 19% to 44% (+25 percentage points), and bank connections from 55% to 71% (+16 points). The source omits sample sizes, complete control data, and statistical significance; treat these as reported results, not proven long-term lift or causal impact from this case."
         ]
       },
       {
-        "title": "Outcome and context",
+        "title": "Reflection",
         "body": [
-          "The case documents a delivered couples-spending experience and the design work that supported Lumio’s wider product evolution.",
-          "The original presentation also reports company-level growth and usage figures. Those figures are not isolated measurements of this feature, so they are not presented here as its causal impact."
+          "With more time, I would connect the shared-spending release to a defined activation funnel and track whether partners reach a first shared moment, return to review costs, and keep sharing preferences enabled.",
+          "For the reported onboarding experiment, I would want sample sizes, the full control-versus-variant results, and a significance read before drawing a firm conclusion. That evidence would help distinguish a promising short-term change from a durable improvement."
         ]
       }
     ],
@@ -233,51 +235,54 @@
   {
     "slug": "lumio-activation",
     "name": "Lumio · Activation",
-    "title": "Less friction. More first steps.",
+    "title": "Get couples to their first shared moment.",
     "category": "Product",
     "role": "Senior Product Designer",
-    "summary": "Using funnel analysis, research, and a focused experiment to help couples reach their first shared value.",
+    "summary": "I used funnel analysis to identify two points of friction, then helped shape a smaller onboarding experiment. In the reported 30-day test, partner invitations rose from 19% to 44% and bank connections from 55% to 71%.",
     "source": "https://mariesanglante.notion.site/Product-Case-II-Lumio-Activation-of-clients-f4bd988351144f61b1a5bdcdcfff8441",
     "sections": [
       {
-        "title": "Define the moment that matters",
+        "title": "At a glance",
         "body": [
-          "The team needed more people to become activated couples, not simply complete registration. I worked with the CEO and COO to define what a successful experience looked like.",
-          "From that outcome, I mapped the journey backwards to the first actions a person needed to take. This helped connect onboarding decisions to the product’s shared value."
+          "Product: Lumio, a personal-finance app for couples. Problem: too few people moved from registration to becoming an activated couple and experiencing shared value.",
+          "My role: Senior Product Designer, defining the activation moment, mapping the journey, designing and prototyping onboarding options, and preparing test cases. Team: I worked with the CEO, COO, product and engineering. Timeline: a reported 30-day experiment; the source does not specify the full project dates.",
+          "Outcome: partner invitations increased from 19% to 44% (+25 percentage points); bank connections increased from 55% to 71% (+16 points). The source does not provide sample sizes, complete control data, or statistical significance."
         ]
       },
       {
-        "title": "Find the two barriers",
+        "title": "The challenge",
         "body": [
-          "Mixpanel analysis showed a substantial drop-off around creating a Shared Space. This suggested that asking users to configure the space was getting in the way of reaching its value.",
-          "Bank connection introduced a different problem: hesitation. People wanted security reassurance, a clearer reason to connect, and the ability to explore before committing."
+          "The product needed more couples to reach a first shared moment, not simply more completed registrations. Funnel analysis in Mixpanel showed a drop-off around creating a Shared Space. Bank connection created a separate hesitation: users wanted reassurance about security, a clear reason to connect, and a way to explore before committing.",
+          "The design had to reduce unnecessary setup without obscuring why a bank connection mattered. Product and engineering capacity also shaped what could be tested first."
         ]
       },
       {
-        "title": "Reduce work and explain value",
+        "title": "My ownership",
         "body": [
-          "We considered automating Shared Space creation to remove an unnecessary setup step. For bank connection, the design explored how reassurance and an explanation of value could support the decision.",
-          "I kept the proposed delivery small enough to test. Product and engineering workshops helped turn the hypotheses into a feasible first change."
+          "I worked with the CEO and COO to define activation, mapped the journey backward from that outcome, and translated the funnel evidence into design hypotheses. I developed four onboarding flow options, shortlisted two, built prototypes, incorporated internal test feedback, and prepared TestFlight test cases.",
+          "Product and engineering partners helped assess feasibility and sequence the work. The reported result belongs to the cross-functional experiment; the source does not isolate my design contribution from other changes."
         ]
       },
       {
-        "title": "Explore broadly, then narrow",
+        "title": "Key decisions",
         "body": [
-          "I developed four flow options and shortlisted two. Competitor review helped examine relevant interaction patterns without losing focus on our specific drop-off points.",
-          "Backend work could begin while the UI was being developed. Internal prototype tests informed a second iteration, followed by TestFlight test cases before the experiment."
+          "Automate Shared Space creation. The Mixpanel funnel showed a substantial drop-off at this setup step. I proposed removing the configuration task so couples could reach the shared experience sooner. This traded early user control over setup for a shorter path to value; the design direction explored creating the space automatically.",
+          "Explain and reassure before bank connection. Research and funnel context pointed to security questions and unclear value as barriers. I explored clearer reassurance and a stronger explanation of why connecting an account helps, while letting people explore before committing.",
+          "Narrow four flow options to two. Competitor review and internal prototype testing helped compare alternatives. I kept the shortlist focused so backend work could start alongside UI development, then used another iteration and TestFlight test cases to prepare the experiment."
         ]
       },
       {
-        "title": "The reported result",
+        "title": "Result",
         "body": [
-          "The original case reports a 30-day A/B test in which Variant A moved partner invitations from 19% to 44%, a 25 percentage-point increase. Bank connections moved from 55% to 71%, a 16 percentage-point increase.",
-          "The source does not include sample sizes, complete control data, or statistical significance. These figures describe the reported experiment results, rather than a claim of proven long-term impact."
+          "The reported 30-day A/B test showed partner invitations moving from 19% to 44% (+25 percentage points) and bank connections from 55% to 71% (+16 points). These are reported experiment results; without sample sizes, complete control data, or statistical significance, they should be treated as directional evidence rather than proven durable lift.",
+          "The test focused on two meaningful steps toward shared value, rather than registration alone. The available source does not include longer-term activation, retention, or downstream couple engagement."
         ]
       },
       {
-        "title": "The product lesson",
+        "title": "Reflection",
         "body": [
-          "A setup journey asks users to do work before they have experienced the benefit. This project examined both sides of that exchange: reducing unnecessary tasks and making the value of the remaining steps easier to understand."
+          "With more time, I would validate the automatic Shared Space hypothesis with users who want to configure their finances themselves, and make the choice easy to revisit after onboarding.",
+          "I would also secure the full experiment readout before interpreting the lift: sample sizes, control and variant counts, confidence, and follow-up behavior. That would show whether the improved first steps translated into sustained use by both partners."
         ]
       }
     ],
