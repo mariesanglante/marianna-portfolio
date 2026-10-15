@@ -49,13 +49,13 @@
   font-size: 11px;
   letter-spacing: 0.07em;
   color: #7a807c;
-  margin-bottom: 54px;
+  margin-bottom: 36px;
 }
 .sc-intro-line a {
   color: #333b35;
 }
 .sc-intro h1 {
-  font-size: clamp(70px, 9.6vw, 146px);
+  font-size: clamp(70px, 9vw, 136px);
   position: relative;
   letter-spacing: -0.075em;
   max-width: 1350px;
@@ -81,7 +81,7 @@
   justify-content: space-between;
   gap: 35px;
   align-items: flex-end;
-  margin-top: 45px;
+  margin-top: 34px;
   padding-left: 13%;
 }
 .sc-intro-bottom p {
@@ -94,7 +94,7 @@
   display: flex;
   align-items: end;
   gap: 24px;
-  margin: 42px 0 0 13%;
+  margin: 27px 0 0 13%;
   padding-top: 18px;
   border-top: 1px solid var(--sc-line);
   max-width: 720px;
