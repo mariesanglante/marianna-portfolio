@@ -47,14 +47,14 @@ export function RainforestCase() {
           </h1>
           <div className="rf-intro-bottom">
             <p>
-              A home is full of invisible activity.
-              <br />
-              This is how it becomes something you can understand—and control.
+              I put live demand, estimated cost, and the home’s target together,
+              then gave people a path to the devices behind the reading.
             </p>
             <a className="rf-link" href="#rf-experience">
               Try the experience <span>↘</span>
             </a>
           </div>
+          <p className="rf-intro-result">50 screens &amp; states · 8 connected journeys · 2 product surfaces</p>
         </section>
         <section
           className="rf-hero-art"
@@ -96,17 +96,21 @@ export function RainforestCase() {
           </div>
         </section>
         <div className="rf-shell">
+          <div className="rf-case-summary">
+            <span className="rf-kicker">AT A GLANCE</span>
+            <p>Rainforest is a connected-home product for monitoring energy use and controlling devices. A kilowatt reading showed what a home was using, but did not explain whether it mattered or what someone could do next.</p>
+          </div>
           <dl className="rf-facts">
             <div>
-              <dt>Design scope</dt>
+              <dt>My role</dt>
               <dd>
-                Product UX/UI
+                Product designer · UX/UI
                 <br />
                 Interaction & visual system
               </dd>
             </div>
             <div>
-              <dt>Surfaces</dt>
+              <dt>Product</dt>
               <dd>
                 Mobile app
                 <br />
@@ -114,23 +118,23 @@ export function RainforestCase() {
               </dd>
             </div>
             <div>
-              <dt>Prototype</dt>
+              <dt>Outcome</dt>
               <dd>
                 50 screens & states
                 <br />8 connected journeys
               </dd>
             </div>
             <div>
-              <dt>Focus</dt>
+              <dt>Team & timeline</dt>
               <dd>
-                Awareness → understanding
-                <br />→ everyday control
+                Not documented in
+                <br />the available materials
               </dd>
             </div>
           </dl>
           <section className="rf-chapter" id="rf-challenge">
             <div>
-              <span className="rf-kicker">01 / THE DESIGN PROBLEM</span>
+              <span className="rf-kicker">01 / THE CHALLENGE</span>
               <h2>
                 The number is only
                 <br />
@@ -143,40 +147,48 @@ export function RainforestCase() {
                 you whether to care—or what to do next.
               </p>
               <p>
-                The design connects live demand, historical use, cost, and
-                individual devices. The challenge is to make those different
-                scales feel like one coherent experience: from a glance at the
-                house to a decision about a single appliance.
+                People managing energy at home need to move between live
+                demand, historical use, cost, and individual devices. Showing
+                every scale at once would make the dashboard harder to read.
               </p>
               <p>
-                Setup belongs to that experience too. Until a monitor is
-                connected, the dashboard needs to offer a useful next step.
+                The experience also had to work before a monitor was connected,
+                when no live data was available. Mobile and desktop needed to
+                share the same home and location context.
               </p>
             </div>
           </section>
+          <section className="rf-ownership">
+            <span className="rf-kicker">02 / MY OWNERSHIP</span>
+            <h2>From the reading to the action.</h2>
+            <p>I designed the mobile and desktop UX/UI, information hierarchy, setup and recovery flows, device controls, charts, interaction states, and visual system shown here. I connected the main paths in a portfolio prototype so the transitions can be reviewed. This case shows my design contribution; the available materials do not establish ownership of product requirements, engineering, or launch outcomes.</p>
+          </section>
           <section className="rf-principles">
             <div>
-              <span>01 / NOTICE</span>
-              <h3>One clear signal.</h3>
+              <span>KEY DECISION 01 / LIVE DEMAND</span>
+              <h3>Give the reading meaning.</h3>
               <p>
-                Lead with current demand. Keep the cost and target close enough
-                to give it meaning.
+                A kilowatt value alone offers no threshold or action. I paired
+                current demand with estimated hourly cost and the active target,
+                then linked high usage to the devices behind it.
               </p>
             </div>
             <div>
-              <span>02 / UNDERSTAND</span>
-              <h3>Context, on demand.</h3>
+              <span>KEY DECISION 02 / TIME SCALE</span>
+              <h3>Separate now from history.</h3>
               <p>
-                Separate live readings from historical totals. Let people move
-                between energy and cost.
+                Live demand and accumulated use answer different questions. I
+                kept the live view distinct and let people switch among day,
+                week, month, and year totals.
               </p>
             </div>
             <div>
-              <span>03 / ACT</span>
-              <h3>A visible next step.</h3>
+              <span>KEY DECISION 03 / ACTION</span>
+              <h3>Connect the signal to control.</h3>
               <p>
-                Connect the monitor, inspect a device, change a mode, or pause
-                charging.
+                A useful reading should lead somewhere. The dashboard offers a
+                route to connect the monitor, inspect a device, change a mode,
+                or pause charging.
               </p>
             </div>
           </section>
@@ -185,7 +197,7 @@ export function RainforestCase() {
           <div className="rf-shell">
             <div className="rf-section-top">
               <div>
-                <span className="rf-kicker">02 / FEEL THE DIFFERENCE</span>
+                <span className="rf-kicker">EXPLORE / THE CONNECTED PROTOTYPE</span>
                 <h2>
                   Less explaining.
                   <br />
@@ -211,7 +223,7 @@ export function RainforestCase() {
         </section>
         <section className="rf-shell rf-chapter">
           <div>
-            <span className="rf-kicker">03 / THE FIRST CONNECTION</span>
+            <span className="rf-kicker">KEY DECISION 04 / FIRST CONNECTION</span>
             <h2>
               An empty state
               <br />
@@ -223,14 +235,15 @@ export function RainforestCase() {
               Before the data, there is a device to connect.
             </p>
             <p>
-              The EAGLE journey gives two routes into the same outcome: scan the
-              code or enter the details. Clear instructions, a filled form,
-              connection feedback, and a return to the dashboard turn setup into
-              a complete path.
+              With no monitor connected, the dashboard cannot show live energy.
+              I used the empty state to start EAGLE setup and offered both barcode
+              scanning and manual entry, so a missing or unreadable code would not
+              stop the journey.
             </p>
             <p>
-              Recovery is part of the flow. An unsuccessful connection keeps the
-              person close to the information they need to correct.
+              Connection feedback confirms success and returns people to the
+              dashboard. On failure, the flow keeps their entered details available
+              for correction and retry.
             </p>
           </div>
         </section>
@@ -269,7 +282,7 @@ export function RainforestCase() {
         </section>
         <section className="rf-shell rf-chapter">
           <div>
-            <span className="rf-kicker">04 / EVERYDAY CONTROL</span>
+            <span className="rf-kicker">KEY DECISION 05 / DEVICE CONTROL</span>
             <h2>
               The right control.
               <br />
@@ -278,8 +291,8 @@ export function RainforestCase() {
           </div>
           <div>
             <p className="rf-lead">
-              A thermostat, a smart plug, and a car don’t need the same
-              interface.
+              A shared control pattern would be consistent, but a thermostat,
+              smart plug, and car charger require different actions.
             </p>
             <p>
               The shared device list leads to controls shaped around the job:
@@ -288,9 +301,8 @@ export function RainforestCase() {
               the car.
             </p>
             <p>
-              The smart-plug setup also asks what is plugged in. That small
-              detail gives a generic piece of hardware a recognizable place in
-              the home.
+              Smart-plug setup also asks which appliance is connected so the
+              device is recognizable later.
             </p>
           </div>
         </section>
@@ -325,7 +337,7 @@ export function RainforestCase() {
         <section className="rf-shell rf-dashboard-section">
           <div className="rf-chapter">
             <div>
-              <span className="rf-kicker">05 / A WIDER VIEW</span>
+              <span className="rf-kicker">KEY DECISION 06 / DESKTOP COMPARISON</span>
               <h2>
                 Zoom out.
                 <br />
@@ -334,8 +346,8 @@ export function RainforestCase() {
             </div>
             <div>
               <p className="rf-lead">
-                The phone answers “what’s happening?” The desktop makes room for
-                “how does it compare?”
+                Mobile gives a quick reading. Comparing periods and relating
+                consumption to cost needs more room.
               </p>
               <p>
                 Usage and cost share the same time axis. Comparison periods add
@@ -444,17 +456,16 @@ export function RainforestCase() {
           </div>
         </section>
         <section className="rf-shell rf-delivery">
-          <span className="rf-kicker">09 / WHAT THE WORK MAKES POSSIBLE</span>
+          <span className="rf-kicker">RESULT / WHAT IS DOCUMENTED</span>
           <h2>
             From an invisible system
             <br />
             to a <em>readable home.</em>
           </h2>
           <p>
-            The design brings monitoring, setup, device control, and comparison
-            into one product language. The connected prototype makes the
-            transitions and recovery states reviewable—not just the individual
-            screens.
+            The design connects monitoring, setup, device control, and comparison
+            in one product language. The prototype makes complete paths and
+            recovery states reviewable, beyond individual screens.
           </p>
           <div className="rf-outcome-grid">
             <div>
@@ -473,9 +484,14 @@ export function RainforestCase() {
           <p className="rf-evidence-note">
             This case documents the design and an AI-assisted portfolio
             reconstruction. Device data is illustrative; the prototype does not
-            connect to hardware. No energy-saving or business-impact results are
-            claimed.
+            connect to hardware. Usability findings, launch metrics, energy savings,
+            and business impact were not available for this case.
           </p>
+          <div className="rf-reflection">
+            <span className="rf-kicker">REFLECTION / NEXT EVIDENCE</span>
+            <h3>Test comprehension before claiming impact.</h3>
+            <p>With more time, I would test whether people distinguish live demand from accumulated usage, whether cost and target cues help them choose an action, and where first-time monitor setup breaks down. Those findings would guide the next iteration and provide evidence beyond the completeness of the design.</p>
+          </div>
           <a className="rf-link" href="#rf-experience">
             Explore the interactions again <span>↑</span>
           </a>
