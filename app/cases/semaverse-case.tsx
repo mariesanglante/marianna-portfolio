@@ -40,34 +40,43 @@ export function SemaverseCase() {
           </h1>
           <div className="sc-intro-bottom">
             <p>
-              I redesigned the way people work with documents and AI—so they can
-              follow the reasoning, understand the changes, and stay in control.
+              I connected source research, document writing, and AI review in one
+              workspace. Users could see what the AI used, review its suggestions,
+              and restore earlier work.
             </p>
             <a href="#sc-prototype" className="sc-cta">
               Experience the product <ArrowDown size={19} />
             </a>
+          </div>
+          <div className="sc-impact" aria-label="Reported outcome">
+            <strong>35%</strong>
+            <p>less time to create an investment document, indicated by feedback from <b>42 investment users</b></p>
           </div>
         </section>
         <div className="sc-wrap sc-hero-stage">
           <SemaverseShowcase />
         </div>
         <div className="sc-wrap">
+          <div className="sc-at-glance">
+            <span className="sc-chapter-label">AT A GLANCE</span>
+            <p>Semaverse is an AI investment workspace. People needed to create documents from research and financial data while understanding where information came from, what the system was doing, and what changed.</p>
+          </div>
           <dl className="sc-facts">
             <div>
               <dt>MY ROLE</dt>
               <dd>Solo Product Designer</dd>
             </div>
             <div>
-              <dt>OWNERSHIP</dt>
-              <dd>Research → Design → Rollout</dd>
+              <dt>TEAM</dt>
+              <dd>CEO, CTO, 2 frontend developers, 1 backend developer</dd>
             </div>
             <div>
-              <dt>THE PRODUCT</dt>
-              <dd>AI investment workspace</dd>
+              <dt>TIMELINE</dt>
+              <dd>2023 – January 2026</dd>
             </div>
             <div>
-              <dt>THE FOCUS</dt>
-              <dd>Documents, data & agents</dd>
+              <dt>OUTCOME</dt>
+              <dd>35% less document creation time, per user feedback</dd>
             </div>
           </dl>
         </div>
@@ -76,14 +85,17 @@ export function SemaverseCase() {
             <a href="#sc-challenge">
               01 <span>The challenge</span>
             </a>
+            <a href="#sc-ownership">
+              02 <span>My ownership</span>
+            </a>
             <a href="#sc-decisions">
-              02 <span>Design decisions</span>
+              03 <span>Design decisions</span>
             </a>
             <a href="#sc-system">
-              03 <span>The system</span>
+              04 <span>The system</span>
             </a>
             <a href="#sc-outcome">
-              04 <span>The outcome</span>
+              05 <span>Result & reflection</span>
             </a>
             <a href="#sc-prototype">
               Try it <ArrowUpRight size={14} />
@@ -101,20 +113,18 @@ export function SemaverseCase() {
             </h2>
             <div>
               <p className="sc-lead">
-                Investment work depends on knowing where information came
-                from—and what happened to it along the way.
+                Investment users need to know where information came from—and
+                what happened to it along the way.
               </p>
               <p>
-                Documents, structured financial data, and AI-generated analysis
-                live inside the same workflow. A polished answer is only part of
-                the experience. People also need to understand the source
-                material, the system’s progress, and the state of their own
-                work.
+                Source documents, structured financial data, and AI-generated
+                analysis all feed the same investment document. A polished draft
+                is not enough if its claims cannot be traced or an AI action
+                changes work without a clear signal.
               </p>
               <p>
-                My role was to bring those moving parts into a predictable
-                product experience, from document handling to interactions with
-                AI agents.
+                The interface had to keep sources close, show progress during
+                longer actions, and make edits reviewable and reversible.
               </p>
             </div>
           </div>
@@ -148,6 +158,11 @@ export function SemaverseCase() {
             </div>
           </div>
         </section>
+        <section className="sc-wrap sc-ownership" id="sc-ownership">
+          <span className="sc-chapter-label">02 / MY OWNERSHIP</span>
+          <h2>I designed the path<br /><i>from source to decision.</i></h2>
+          <p>As the solo product designer, I shaped the workspace structure, document workflow, AI interaction states, and patterns for review and revision. I worked from research and usability testing through interface design and rollout, including implementation details with engineering. The frontend and backend developers built the product; my responsibility was the experience and its interaction rules.</p>
+        </section>
         <section className="sc-principle">
           <div className="sc-wrap">
             <span className="sc-chapter-label">THE DESIGN PRINCIPLE</span>
@@ -179,7 +194,7 @@ export function SemaverseCase() {
           </div>
         </section>
         <section className="sc-wrap sc-chapter" id="sc-decisions">
-          <div className="sc-chapter-label">02 / THREE DESIGN DECISIONS</div>
+          <div className="sc-chapter-label">03 / KEY DESIGN DECISIONS</div>
           <div className="sc-decision">
             <div className="sc-decision-copy">
               <span className="sc-big-number">01</span>
@@ -189,14 +204,15 @@ export function SemaverseCase() {
                 <i>within reach.</i>
               </h2>
               <p>
-                Moving from research into a document should not mean losing the
-                research. I connected document management, structured
-                information, and AI interactions through a consistent workspace.
+                Moving from research into a document risked losing the evidence
+                behind a claim. I kept selected sources beside the writing area
+                and connected document management, structured data, and AI
+                assistance in one workspace.
               </p>
               <p>
-                Collections establish context. The central canvas holds the
-                work. The assistant stays beside it. Each area has a distinct
-                purpose while supporting the same task.
+                Collections hold context, the central canvas holds the document,
+                and Archer stays beside the work. Each area answers a different
+                question without sending users into a separate workflow.
               </p>
               <div className="sc-design-rule">
                 <span>DESIGN RULE</span>
@@ -256,14 +272,15 @@ export function SemaverseCase() {
                 <i>a readable state.</i>
               </h2>
               <p>
-                I defined distinct viewing, editing, processing, and saved
-                states. A user action and a completed system action need
-                different feedback.
+                A quiet interface reduces noise, but silence during generation
+                makes it hard to tell whether work is in progress or complete.
+                I defined distinct selected, processing, review, and saved
+                states.
               </p>
               <p>
-                The same principle runs through the reconstructed demo: selected
-                sources are explicit, generation shows progress, and a stopped
-                action leaves existing work intact.
+                Selected sources remain explicit, generation shows progress,
+                and stopping an action leaves existing work intact. Text and
+                icon cues reinforce the status colors.
               </p>
               <div className="sc-design-rule">
                 <span>DESIGN RULE</span>
@@ -281,14 +298,15 @@ export function SemaverseCase() {
                 <i>reversible.</i>
               </h2>
               <p>
-                Document saving and versioning were part of the core experience.
-                People needed a reliable record of the work, especially when AI
-                contributed to it.
+                Investment users need a reliable record of what changed,
+                especially when AI contributes to a document. Automatic edits
+                would be faster but could obscure responsibility for the final
+                text.
               </p>
               <p>
-                In the portfolio prototype, Archer proposes edits before
-                applying them. Manual changes stay protected, and revision
-                history provides a clear route back.
+                Archer proposes an edit for review before applying it. The
+                current draft remains unchanged until acceptance, and revision
+                history provides a route back.
               </p>
               <div className="sc-design-rule">
                 <span>DESIGN RULE</span>
@@ -344,7 +362,7 @@ export function SemaverseCase() {
         </section>
         <section className="sc-wrap sc-chapter" id="sc-system">
           <div className="sc-chapter-label">
-            03 / DESIGNING THE WHOLE SYSTEM
+            04 / DESIGNING THE WHOLE SYSTEM
           </div>
           <div className="sc-editorial">
             <h2>
@@ -354,19 +372,17 @@ export function SemaverseCase() {
             </h2>
             <div>
               <p className="sc-lead">
-                The work went beyond a set of finished layouts.
+                The decisions had to work across uploads, forms, financial data,
+                documents, and agent activity.
               </p>
               <p>
-                I worked across research, usability testing, interface design,
-                and implementation with engineering. Reusable interaction rules
-                connected uploads, forms, financial data, document management,
-                and agent activity.
+                I defined reusable hierarchy and state rules so people could
+                recognise the same signals across those tasks. I worked with
+                engineering on stopped actions, revisions, and other edge cases.
               </p>
               <p>
-                Technical constraints and edge cases shaped the work throughout
-                delivery. The goal was a consistent basis for implementation,
-                with clear behavior when a task changes, stops, or needs another
-                look.
+                The result was a consistent basis for implementation, including
+                clear behavior when a task changes, stops, or needs another look.
               </p>
             </div>
           </div>
@@ -431,36 +447,36 @@ export function SemaverseCase() {
         </section>
         <section className="sc-outcome" id="sc-outcome">
           <div className="sc-wrap">
-            <div className="sc-chapter-label">04 / THE OUTCOME</div>
+            <div className="sc-chapter-label">05 / RESULT</div>
             <div className="sc-editorial">
               <h2>
-                Less ambiguity.
+                35% less time.
                 <br />
-                <i>More confidence.</i>
+                <i>More control.</i>
               </h2>
               <div>
                 <p className="sc-lead">
-                  The redesign made core workflows more understandable and
-                  strengthened the traceability of document work.
+                  Feedback from 42 investment users indicated a 35% reduction
+                  in time to create an investment document.
                 </p>
                 <p>
-                  Clearer states reduced confusion around AI actions. Connected
-                  patterns made document handling more predictable. Close
-                  collaboration with engineering carried the design through
-                  implementation and edge cases.
+                  The redesigned workflow kept research, document structure,
+                  AI progress, and proposed changes visible together. It gave
+                  users a way to inspect and reverse AI-assisted edits.
                 </p>
                 <p className="sc-evidence-note">
-                  These are qualitative outcomes from my documented project
-                  experience. This case does not claim measured conversion,
-                  revenue, or time-saving results.
+                  The 35% figure is based on user feedback. The available case
+                  materials do not specify the timing method or comparison
+                  baseline, so it is presented as a feedback-based finding.
                 </p>
               </div>
             </div>
             <div className="sc-takeaway">
-              <span>WHAT I TAKE FORWARD</span>
+              <span>REFLECTION / NEXT EVIDENCE</span>
               <p>
-                In an AI product, the interface needs to explain the <i>work</i>{' '}
-                as carefully as it presents the <i>answer.</i>
+                I would repeat the document task in a timed study, then test
+                whether users can identify a claim’s sources, explain an AI
+                action’s status, and restore a previous version without help.
               </p>
             </div>
           </div>
