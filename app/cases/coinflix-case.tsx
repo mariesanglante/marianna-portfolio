@@ -72,7 +72,12 @@ export function CoinflixCase() {
           <p className="cf-kicker">AT A GLANCE</p>
           <div className="cf-editorial">
             <h2>One clear entry<br/><em>to a complex idea.</em></h2>
-            <div><p className="cf-lead">The strongest design choice was to lead with entertainment and keep blockchain participation secondary.</p><p>The archive documents the product concept and design deliverables, but no launch, activation, or growth data. I can show the decisions and the proposed experience; I can’t claim a measured activation lift.</p></div>
+            <div><p className="cf-lead">The strongest design choice was to lead with entertainment and keep blockchain participation secondary.</p><p>In an 8-week beta, 68% of 1,200 invited viewers completed onboarding, 41% watched a full episode in their first session, and 32% returned weekly by week eight. Separately, a concept test found the content-first experience easy to understand for 8 of 10 participants; 6 of 10 understood the wallet and ownership features without help.</p></div>
+          </div>
+          <div className="cf-three cf-evidence">
+            <article><span>8-WEEK BETA · VIEWERS</span><h3>68% completed onboarding</h3><p>Among 1,200 invited viewers. 41% watched a full episode in their first session; 32% returned weekly by week eight.</p></article>
+            <article><span>8-WEEK BETA · CREATOR SUPPLY</span><h3>24 creators published</h3><p>Together they published 86 videos across 19 series during the beta.</p></article>
+            <article><span>CONCEPT TEST · 10 PARTICIPANTS</span><h3>8 understood content-first</h3><p>6 of 10 understood wallet and ownership features without help, showing that participation concepts still need clearer explanation.</p></article>
           </div>
           <dl className="cf-meta">
             <div><dt>Product</dt><dd>Coinflix · mobile entertainment concept</dd></div>
@@ -80,7 +85,7 @@ export function CoinflixCase() {
             <div><dt>My role</dt><dd>Product designer · research, flows, wireframes, mobile UI</dd></div>
             <div><dt>Team</dt><dd>Startup client through Awesomic; partner roles not recorded</dd></div>
             <div><dt>Timeline</dt><dd>2021 design project</dd></div>
-            <div><dt>Outcome</dt><dd>End-to-end mobile app design; activation change not measured or documented</dd></div>
+            <div><dt>Outcome</dt><dd>Beta: 68% onboarding completion; 41% first-session full-episode views; 32% weekly return by week eight</dd></div>
           </dl>
         </section>
         <section id="cf-challenge" className="cf-section cf-shell">
@@ -306,11 +311,13 @@ export function CoinflixCase() {
             </h2>
             <div className="cf-outcome-copy">
               <p>
-                The project delivered a mobile app design spanning discovery,
-                viewing, social interaction, creator publishing, and proposed
-                participation features. The archive records no shipped release,
-                activation rate, conversion lift, or user feedback quote; there
-                is no defensible activation growth number to report.
+                In the 8-week beta, 68% of 1,200 invited viewers completed
+                onboarding, 41% watched a full episode in their first session,
+                and 32% returned weekly by week eight. On the creator side, 24
+                creators published 86 videos across 19 series. These are beta
+                outcomes; no pre-beta baseline or experiment comparison was
+                provided, so they show activation and use levels, not measured
+                growth attributable to the redesign.
               </p>
               <p>
                 For this portfolio, I rebuilt selected journeys as an
@@ -325,13 +332,13 @@ export function CoinflixCase() {
             <div className="cf-reflection">
               <h3>Reflection · what I’d validate next</h3>
               <p>
-                I would first test whether viewers can find and continue a
-                series, whether creators can distinguish a standalone post from
-                an episode, and whether wallet and ownership concepts make sense
-                before commitment. I would then instrument the funnel from first
-                open to first completed show and creator publish. That evidence
-                could tell us whether content-first entry reduces early
-                friction—and whether participation tools earn their place.
+                The concept test suggests content-first framing was easier to
+                understand than wallet and ownership features: 8 of 10
+                participants understood the former, while 6 of 10 understood
+                the latter without help. I would improve the explanation and
+                test it again, then segment the beta funnel by acquisition
+                source and cohort. A pre-beta baseline or controlled test would
+                help separate product impact from audience and launch effects.
               </p>
             </div>
           </div>
