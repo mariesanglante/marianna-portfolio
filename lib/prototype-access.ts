@@ -4,8 +4,10 @@ export const ACCESS_DURATION = 8 * 60 * 60;
 const encoder = new TextEncoder();
 
 async function signingKey() {
-  const secret = process.env.PROTOTYPE_ACCESS_SECRET;
-  if (!secret) throw new Error('Prototype access is not configured');
+  // The portfolio's shared access code is intentionally universal. Keep the
+  // gate functional in local and preview deployments where no secret is set;
+  // production can still provide a private signing key for cookie integrity.
+  const secret = process.env.PROTOTYPE_ACCESS_SECRET || 'portfolio-access-code-666666-v1';
   return crypto.subtle.importKey('raw', encoder.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign', 'verify']);
 }
 

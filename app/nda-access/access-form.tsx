@@ -10,7 +10,7 @@ export default function AccessForm() {
       const response = await fetch('/api/prototype-access', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ code }) });
       const result = await response.json();
       if (!response.ok) { setError(result.error || 'Unable to unlock. Please try again.'); return; }
-      const requested = new URLSearchParams(window.location.search).get('returnTo') || '/cases';
+      const requested = '/cases';
       const destination = new URL(requested, window.location.origin);
       window.location.assign(destination.origin === window.location.origin && !destination.pathname.startsWith('/api/') && destination.pathname !== '/nda-access' ? destination.href : '/cases');
     } catch { setError('Unable to connect. Please try again.'); }
