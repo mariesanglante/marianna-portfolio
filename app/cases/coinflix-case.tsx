@@ -129,7 +129,6 @@ export function CoinflixCase() {
               <dt>Timeline</dt>
               <dd>
                 2021 design
-                <br />2026 portfolio demo reconstruction
               </dd>
             </div>
           </dl>
