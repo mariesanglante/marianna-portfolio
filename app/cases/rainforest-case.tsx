@@ -127,8 +127,8 @@ export function RainforestCase() {
             <div>
               <dt>Team & timeline</dt>
               <dd>
-                Not documented in
-                <br />the available materials
+                CEO, CTO, 2 frontend engineers,
+                <br />1 backend engineer &amp; QA · 4 months
               </dd>
             </div>
           </dl>
