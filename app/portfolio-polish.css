@@ -10,4 +10,29 @@ body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],
 .nda-form button:focus-visible,.nda-page a:focus-visible{outline:3px solid #c832c6;outline-offset:5px}
 body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"])) :is(button,[role="button"],input[type="submit"],.pill-link){border-radius:0;box-shadow:4px 4px 0 #171817}
 body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"])) :is(button,[role="button"],input[type="submit"]):hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 #e89bd7}
+
+/* The All Cases archive shares the 8-bit navigation and action treatment. */
+body:has(main.archive) .site-header nav a,body:has(main.archive) .archive-nav a,body:has(main.archive) .archive-card-action,body:has(main.archive) .archive-card-access,body:has(main.archive) .case-footer a{font-family:"Pixeloid Sans",monospace!important}
+body:has(main.archive){background-color:#fffdfd;background-image:radial-gradient(ellipse at 7% 12%,#f4c9eb55,transparent 38%),radial-gradient(ellipse at 94% 16%,#b7def455,transparent 38%),radial-gradient(ellipse at 82% 80%,#d7c8f344,transparent 40%),repeating-linear-gradient(0deg,#664d6b05 0 1px,transparent 1px 4px)}
+body:has(main.archive) .site-header nav .nav-contact{border:2px solid #171817;padding:9px 12px;box-shadow:3px 3px 0 #171817}
+body:has(main.archive) .archive-nav a{border:1px solid #171817;padding:9px 12px;box-shadow:3px 3px 0 #d7b9e5}
+body:has(main.archive) .archive-card{border:2px solid #171817;border-radius:0;box-shadow:5px 5px 0 #d7b9e5}
+body:has(main.archive) .archive-card:hover{border-color:#171817;box-shadow:7px 7px 0 #e89bd7}
+body:has(main.archive) .archive-card-access{border:1px solid #171817;border-radius:0;box-shadow:2px 2px 0 #171817}
+body:has(main.archive) .archive-card-action{border-top:2px solid #171817}
+body:has(main.archive) .archive-card-action>span:last-child{display:grid;place-items:center;width:16px;height:16px;font-size:0;background:currentColor;clip-path:polygon(0 35%,55% 35%,55% 5%,100% 50%,55% 95%,55% 65%,0 65%);shape-rendering:crispEdges}
+body:has(main.archive) .site-header nav .nav-contact:hover,body:has(main.archive) .archive-nav a:hover{background:#f8e3f5}
+body:has(main.archive) .case-footer{border-top:1px dashed #b9acc3;padding-top:22px}
+
+/* Individual case pages keep their existing content typography; only shared chrome and CTAs use the pixel system. */
+body:has(.case-footer):not(:has(main.archive)) .site-header nav a,body:has(.case-footer):not(:has(main.archive)) .site-header .wordmark,body:has(.case-footer):not(:has(main.archive)) .case-footer a{font-family:"Pixeloid Sans",monospace!important}
+body:has(.case-footer):not(:has(main.archive)) .site-header .nav-contact{border:2px solid currentColor;padding:8px 11px;border-radius:0;box-shadow:3px 3px 0 currentColor}
+body:has(.case-footer):not(:has(main.archive)) main[class*="-case"] .pill-link,body:has(.case-footer):not(:has(main.archive)) main.simcase .pill-link,body:has(.case-footer):not(:has(main.archive)) .case-study :is(.pill-link,.case-aside-archive){font-family:"Pixeloid Sans",monospace!important;border:2px solid currentColor;border-radius:0;padding:10px 13px;box-shadow:4px 4px 0 currentColor}
+body:has(.case-footer):not(:has(main.archive)) .case-study .case-source a{font-family:"Pixeloid Sans",monospace!important}
+body:has(.case-footer):not(:has(main.archive)) main[class*="-case"] .next-case,body:has(.case-footer):not(:has(main.archive)) main.simcase .next-case,body:has(.case-footer):not(:has(main.archive)) .case-study .next-case{border-block:2px solid currentColor}
+body:has(.case-footer):not(:has(main.archive)) .case-footer{border-top:1px dashed #bbb}
+body:has(.case-footer):not(:has(main.archive)) .site-header nav .nav-contact:hover,body:has(.case-footer):not(:has(main.archive)) main[class*="-case"] .pill-link:hover,body:has(.case-footer):not(:has(main.archive)) main.simcase .pill-link:hover,body:has(.case-footer):not(:has(main.archive)) .case-study :is(.pill-link,.case-aside-archive):hover{background:#f4e8f7}
+.case-pixel-star,.case-pixel-arrow{display:inline-block;width:16px;height:16px;vertical-align:-3px;shape-rendering:crispEdges;fill:currentColor}
+body:has(.case-footer):not(:has(main.archive)) .case-study .case-back,body:has(.case-footer):not(:has(main.archive)) main[class*="-case"] .case-back{font-family:"Pixeloid Sans",monospace!important}
+body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;place-items:center;width:18px;height:18px;font-size:0;background:currentColor;clip-path:polygon(0 35%,55% 35%,55% 5%,100% 50%,55% 95%,55% 65%,0 65%);shape-rendering:crispEdges}
 @media(prefers-reduced-motion:reduce){.nda-form button{transition:none}}
