@@ -62,4 +62,5 @@
 .abstract-screen-secondary .abstract-screen-top{top:10%}
 .abstract-screen-secondary .abstract-screen-card{left:12%;right:12%;bottom:15%;height:38%;background:linear-gradient(160deg,#b6d4c077,#ffffff88)}
 .abstract-lumio-couples{--abstract-a:#dbe7f6;--abstract-b:#f5efe5}.abstract-semaverse{--abstract-a:#dce6d1;--abstract-b:#f2eee2}.abstract-oasive{--abstract-a:#d4e6e3;--abstract-b:#f3eee2}.abstract-simcare{--abstract-a:#eadbe8;--abstract-b:#f4eee5}.abstract-coinflix{--abstract-a:#e3d9ed;--abstract-b:#f5e9de}.abstract-causal-labs{--abstract-a:#d8e7df;--abstract-b:#e9eee2}.abstract-ascy{--abstract-a:#dfe3f0;--abstract-b:#f5eee6}.abstract-rainforest{--abstract-a:#e4ddec;--abstract-b:#f1eadf}
+.abstract-mango-bank{--abstract-a:#e9edcf;--abstract-b:#f8ead8}.abstract-lumio-activation{--abstract-a:#dce9f3;--abstract-b:#f5e8df}
 @media(max-width:700px){.abstract-screen{width:78%;height:70%}.abstract-screen-secondary{width:30%;height:55%}}
