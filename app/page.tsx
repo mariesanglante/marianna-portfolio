@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Link className="skip-link" href="#main">Skip to content</Link>
+      <div className="portfolio-home">
       <header className="site-header wrap">
         <Link className="wordmark" href="#main" aria-label="Marianna Gonchar, home">Marianna Gonchar<span className="wordmark-dot">.</span></Link>
         <nav aria-label="Main navigation"><Link href="#cases">Cases</Link><Link href="#about">About</Link><Link href="/cv">CV <Arrow /></Link><Link className="nav-contact" href="mailto:marfantastik@gmail.com">Let’s talk <Arrow /></Link></nav>
@@ -37,6 +38,7 @@ export default function Home() {
         <section id="about" className="about wrap" aria-labelledby="about-title"><div className="section-heading"><h2 id="about-title">A little about me</h2><span>Kyiv, Ukraine · Working internationally</span></div><div className="about-grid"><h3>Curious about people.<br/>Serious about <span className="serif">craft.</span></h3><div><p>I’m a Ukrainian product designer with 10+ years in the digital industry, working across startups, agencies, and complex products.</p><p>I connect research, product thinking, and hands-on design. Alongside my practice, I teach UX and mobile interface design at Projector Institute.</p><Link className="text-link" href="/cv">More about my experience <Arrow /></Link><Link className="text-link design-room-link" href="/design-room">Visit my design room <Arrow /></Link></div></div></section>
       </main>
       <footer className="footer"><div className="wrap"><div className="footer-top"><p>A new product. A complex challenge. Your next teammate.</p><Link href="mailto:marfantastik@gmail.com">Let’s make it <span className="serif">matter.</span><Arrow /></Link></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Marianna Gonchar</span><div><Link href="https://www.linkedin.com/in/marianna-gonchar-15933aa8/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></Link><Link href="mailto:marfantastik@gmail.com">Email <Arrow /></Link><Link href="#main">Back to top ↑</Link></div></div></div></footer>
+      </div>
     </>
   );
 }

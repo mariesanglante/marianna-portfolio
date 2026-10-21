@@ -1,4 +1,6 @@
 /* Homepage gallery: deliberately scoped away from the case studies. */
+.portfolio-home{position:relative;isolation:isolate;background:#fff}
+.portfolio-home::before{content:"";position:absolute;z-index:-1;pointer-events:none;inset:0 calc((100vw - 100%)/-2);background-color:#fff;background-image:radial-gradient(ellipse at 8% 9%,#f4c9e844 0,transparent 34%),radial-gradient(ellipse at 95% 13%,#bde8f044 0,transparent 33%),radial-gradient(ellipse at 80% 49%,#e7c9f433 0,transparent 36%),radial-gradient(ellipse at 13% 70%,#d5efdb42 0,transparent 37%),radial-gradient(ellipse at 82% 91%,#fff0bf48 0,transparent 39%),radial-gradient(circle at 14% 19%,#fff9 0 2px,transparent 3px),radial-gradient(circle at 88% 29%,#e7cafa80 0 2px,transparent 3px),radial-gradient(circle at 76% 73%,#cde9f280 0 2px,transparent 3px),radial-gradient(circle at 22% 86%,#f6d9bd80 0 2px,transparent 3px);background-size:auto,auto,auto,auto,auto,180px 180px,240px 240px,210px 210px,270px 270px;filter:saturate(.82)}
 .home-gallery .section-heading{align-items:flex-end;padding-top:32px;margin-bottom:52px}
 .home-gallery .work-kicker{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6b7066;margin-bottom:24px}
 .home-gallery .section-heading h2{font-size:clamp(36px,4.1vw,60px);line-height:1.08;letter-spacing:-.045em}
