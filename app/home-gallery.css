@@ -53,7 +53,7 @@
 /* Neon pixel-shadow hover for the oversized footer contact link. */
 .portfolio-home .footer-top>a{transition:color .18s,text-shadow .18s,transform .18s}
 .portfolio-home .footer-top>a:hover{color:#111!important;text-shadow:3px 0 #ff3bc8,-3px 0 #00eaff,0 4px #ffe45c;transform:translate(-2px,-2px)}
-.portfolio-home .hero-bottom .text-link:hover{color:#777!important}
+.portfolio-home .text-link:hover{color:#777!important}
 
 /* One art direction across every cover: same frame, light, labels and scale. */
 .home-gallery .collection-cover{display:flex;flex-direction:column;padding:24px 28px;background:var(--cover-bg);color:#263024;aspect-ratio:1.3}
