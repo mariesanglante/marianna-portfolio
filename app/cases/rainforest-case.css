@@ -996,3 +996,38 @@
  .rf-system-board { margin-top:32px; }
  .rf-flow-recovery { padding:20px; }
 }
+
+/* Evidence-led case summary and prominent project metrics. */
+.rf-intro h1 { max-width: 1100px; }
+.rf-intro-bottom p { max-width: 800px; }
+.rf-top-metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:42px; }
+.rf-top-metrics article { min-height:170px; display:flex; flex-direction:column; justify-content:space-between; padding:22px 24px; background:#f1eef6; border:1px solid #e5dff0; border-radius:14px; }
+.rf-top-metrics strong { font-size:clamp(58px,7vw,94px); line-height:.88; letter-spacing:-.075em; font-weight:500; color:#7045db; }
+.rf-top-metrics strong i { font-size:.38em; font-style:normal; letter-spacing:-.02em; }
+.rf-top-metrics article span { max-width:190px; font-size:14px; line-height:1.4; color:#4c4655; }
+.rf-metrics-note { margin:15px 0 0; color:#6d6873; font-size:12px; line-height:1.5; }
+.rf-intro-result { display:none; }
+.rf-principles strong,.rf-chapter strong { font-weight:650; color:#17151c; }
+.rf-impact-panel { display:grid; gap:12px; margin-top:38px; padding:28px 30px; background:#f0edf5; border-left:3px solid #7045db; }
+.rf-impact-panel > span { font-size:11px; font-weight:700; letter-spacing:.11em; color:#7045db; }
+.rf-impact-panel > strong { font-size:clamp(19px,2.4vw,28px); line-height:1.3; letter-spacing:-.03em; font-weight:500; }
+.rf-impact-panel p { margin:0; color:#625d69; font-size:15px; line-height:1.6; }
+.rf-measurement-plan { margin-top:50px; }
+.rf-measurement-plan > div { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:20px; }
+.rf-measurement-plan article { padding:22px; border:1px solid #ddd8e4; border-radius:10px; }
+.rf-measurement-plan article b { font-size:17px; }
+.rf-measurement-plan article p { margin:10px 0 0; color:#625d69; font-size:14px; line-height:1.6; }
+.rf-measurement-plan .rf-evidence-note { color:#6d6873; font-size:12px; line-height:1.6; }
+@media(max-width:800px) {
+ .rf-top-metrics { grid-template-columns:repeat(2,1fr); gap:10px; margin-top:30px; }
+ .rf-top-metrics article { min-height:145px; padding:18px; }
+ .rf-top-metrics strong { font-size:64px; }
+ .rf-top-metrics article span { font-size:13px; }
+ .rf-measurement-plan > div { gap:10px; }
+}
+@media(max-width:480px) {
+ .rf-top-metrics article { min-height:130px; }
+ .rf-top-metrics strong { font-size:58px; }
+ .rf-measurement-plan > div { grid-template-columns:1fr; }
+ .rf-impact-panel { padding:22px; }
+}
