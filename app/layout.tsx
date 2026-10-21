@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './portfolio-polish.css';
 export const metadata: Metadata = {
   title: 'Marianna Gonchar — Senior Product Designer',
   description: 'Senior product designer working across AI, fintech and complex digital products, from product strategy and research to thoughtful digital experiences.',

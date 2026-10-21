@@ -1,0 +1,13 @@
+/* Pixel styling for the portfolio shell. Case studies and prototypes keep their own type and controls. */
+.portfolio-home .hero-bottom .text-link,.portfolio-home .about-grid .text-link{border-bottom:0!important;padding-bottom:0!important}
+
+body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"])) .nda-page{background-color:#fffdfd;background-image:radial-gradient(ellipse at 8% 12%,#f4c9eb66,transparent 38%),radial-gradient(ellipse at 92% 18%,#b7def466,transparent 38%),radial-gradient(ellipse at 82% 88%,#d7c8f355,transparent 40%),repeating-linear-gradient(0deg,#664d6b08 0 1px,transparent 1px 4px)}
+.nda-card{padding:clamp(24px,4vw,42px);border:2px solid #171817;background:#fffdf7;box-shadow:8px 8px 0 #171817}
+.nda-form input{border:2px solid #171817;border-radius:0;background:#fff;padding:16px;font:inherit;letter-spacing:.16em;box-shadow:4px 4px 0 #d8c9e2}
+.nda-form input:focus-visible{outline:3px solid #c832c6;outline-offset:4px}
+.nda-form button{border:2px solid #171817;border-radius:0;background:#171817;color:#fff;padding:17px 22px;box-shadow:5px 5px 0 #a7d8e8;text-transform:uppercase;transition:transform .15s,box-shadow .15s,background .15s}
+.nda-form button:hover:not(:disabled){background:#302445;transform:translate(-2px,-2px);box-shadow:7px 7px 0 #e89bd7}
+.nda-form button:focus-visible,.nda-page a:focus-visible{outline:3px solid #c832c6;outline-offset:5px}
+body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"])) :is(button,[role="button"],input[type="submit"],.pill-link){border-radius:0;box-shadow:4px 4px 0 #171817}
+body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"])) :is(button,[role="button"],input[type="submit"]):hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 #e89bd7}
+@media(prefers-reduced-motion:reduce){.nda-form button{transition:none}}

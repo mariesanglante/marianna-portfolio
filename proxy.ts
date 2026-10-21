@@ -2,8 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { ACCESS_COOKIE, hasPrototypeAccess } from './lib/prototype-access';
 
 export async function proxy(request: NextRequest) {
-  // ManGo is a public concept case; the other project access rules remain intact.
-  if (request.nextUrl.pathname.replace(/\/$/, '') === '/cases/mango-bank') {
+  // These four portfolio cases are public; every other case and prototype stays gated.
+  const publicCases = new Set(['/cases/mango-bank', '/cases/rainforest', '/cases/coinflix', '/cases/lumio-activation']);
+  if (publicCases.has(request.nextUrl.pathname.replace(/\/$/, ''))) {
     return NextResponse.next();
   }
   const allowed = await hasPrototypeAccess(request.cookies.get(ACCESS_COOKIE)?.value);
