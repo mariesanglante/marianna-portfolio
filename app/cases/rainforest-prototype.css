@@ -1271,3 +1271,37 @@
     transition: none !important;
   }
 }
+
+/* Live energy state colors: overspend red, generation green, normal use purple. */
+.rp-demand.rp-flow-overspend { --rp-flow-color: #ff7180; }
+.rp-demand.rp-flow-generation { --rp-flow-color: #70d99a; }
+.rp-demand.rp-flow-normal { --rp-flow-color: #b79aff; }
+.rp-demand.rp-flow-overspend .rp-demand-top > strong,
+.rp-demand.rp-flow-overspend .rp-demand-top b,
+.rp-demand.rp-flow-overspend > p { color: var(--rp-flow-color); }
+.rp-demand.rp-flow-generation .rp-demand-top > strong,
+.rp-demand.rp-flow-generation .rp-demand-top b,
+.rp-demand.rp-flow-generation > p { color: var(--rp-flow-color); }
+.rp-demand.rp-flow-normal .rp-demand-top > strong,
+.rp-demand.rp-flow-normal .rp-demand-top b,
+.rp-demand.rp-flow-normal > p { color: var(--rp-flow-color); }
+.rp-demand.rp-flow-overspend .rp-energy-orb { color:#ff7180; background:radial-gradient(circle,#ff71802b,transparent 65%); }
+.rp-demand.rp-flow-generation .rp-energy-orb { color:#70d99a; background:radial-gradient(circle,#70d99a2b,transparent 65%); }
+.rp-demand.rp-flow-normal .rp-energy-orb { color:#b79aff; background:radial-gradient(circle,#b79aff20,transparent 65%); }
+.rp-demand.rp-flow-overspend .rp-energy-orb span { border-color:#ff7180; }
+.rp-demand.rp-flow-generation .rp-energy-orb span { border-color:#70d99a; }
+.rp-demand.rp-flow-normal .rp-energy-orb span { border-color:#b79aff; }
+.rp-generation-control { display:flex; align-items:center; justify-content:center; gap:8px; min-height:38px; margin:14px auto 0; padding:7px 12px; border:1px solid var(--rp-line); border-radius:24px; color:var(--rp-muted); background:transparent; font-size:12px !important; }
+.rp-generation-control:hover,.rp-generation-control[aria-pressed='true'] { border-color:#70d99a; color:#70d99a; background:#70d99a12; }
+.rp-trend[data-energy-state='overspend'] .rp-current-bar { fill:#ed5968; }
+.rp-trend[data-energy-state='generation'] .rp-current-bar { fill:#60cb89; }
+.rp-trend[data-energy-state='normal'] .rp-current-bar { fill:#a781ff; }
+.rp-light .rp-demand.rp-flow-overspend { --rp-flow-color:#b72d3c; }
+.rp-light .rp-demand.rp-flow-generation { --rp-flow-color:#187847; }
+.rp-light .rp-demand.rp-flow-normal { --rp-flow-color:#6939c0; }
+.rp-light .rp-demand.rp-flow-overspend .rp-energy-orb { color:#b72d3c; background:radial-gradient(circle,#b72d3c20,transparent 65%); }
+.rp-light .rp-demand.rp-flow-generation .rp-energy-orb { color:#187847; background:radial-gradient(circle,#18784720,transparent 65%); }
+.rp-light .rp-demand.rp-flow-normal .rp-energy-orb { color:#6939c0; background:radial-gradient(circle,#6939c020,transparent 65%); }
+.rp-light .rp-demand.rp-flow-overspend .rp-energy-orb span { border-color:#b72d3c; }
+.rp-light .rp-demand.rp-flow-generation .rp-energy-orb span { border-color:#187847; }
+.rp-light .rp-demand.rp-flow-normal .rp-energy-orb span { border-color:#6939c0; }

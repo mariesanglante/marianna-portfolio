@@ -17,6 +17,7 @@ import {
   Zap,
   Thermometer,
   Plug,
+  Sun,
 } from 'lucide-react';
 import {
   BatteryCharging,
@@ -129,24 +130,30 @@ function Trend({
   metric = 'energy',
   compare = false,
   cost = false,
+  energyState = 'normal',
   onSelect,
 }: {
   period: Period;
   metric?: 'energy' | 'cost';
   compare?: boolean;
   cost?: boolean;
+  energyState?: 'overspend' | 'generation' | 'normal';
   onSelect?: (i: number) => void;
 }) {
   const uid = useId().replaceAll(':', '');
-  const data = periodUsage[period],
-    max = Math.max(...data) * 1.2;
+  const data = periodUsage[period].map((value) =>
+      period === 'Live' && energyState === 'generation'
+        ? -Math.abs(value) * 0.5
+        : value,
+    ),
+    max = Math.max(...data.map(Math.abs)) * 1.2;
   return (
-    <div className="rp-trend">
+    <div className="rp-trend" data-energy-state={energyState}>
       <svg
         viewBox="0 0 600 210"
         // oxlint-disable-next-line jsx-a11y/prefer-tag-over-role
         role="img"
-        aria-label={`${period} ${metric} chart${compare ? ', compared with the previous period' : ''}. Illustrative data.`}
+        aria-label={`${period} ${energyState === 'generation' ? 'energy generation' : metric} chart${compare ? ', compared with the previous period' : ''}. Illustrative data.`}
       >
         <defs>
           <linearGradient id={uid} x1="0" x2="0" y1="0" y2="1">
@@ -168,7 +175,7 @@ function Trend({
         {data.map((v, i) => {
           const w = 570 / data.length,
             x = 15 + i * w,
-            h = (v / max) * 165;
+            h = (Math.abs(v) / max) * 165;
           return (
             <g key={i}>
               {compare && (
@@ -182,6 +189,7 @@ function Trend({
                 />
               )}
               <rect
+                className="rp-current-bar"
                 x={x}
                 y={175 - h}
                 width={w * (compare ? 0.38 : 0.63)}
@@ -248,6 +256,7 @@ export function RainforestDemo({
   const [devices, setDevices] = useState<Device[]>(initialDevices),
     [selectedId, setSelectedId] = useState('washer');
   const [connected, setConnected] = useState(true),
+    [solarGeneration, setSolarGeneration] = useState(false),
     [period, setPeriod] = useState<Period>('Live'),
     [metric, setMetric] = useState<'energy' | 'cost'>('energy');
   const [schedule, setSchedule] = useState(false),
@@ -334,7 +343,7 @@ export function RainforestDemo({
         d.id === chargerDevice?.id ? { ...d, on: update(d.on) } : d,
       ),
     );
-  const power =
+  const householdDemand =
     0.432 +
     devices.reduce(
       (total, d) =>
@@ -350,6 +359,9 @@ export function RainforestDemo({
           : 0),
       0,
     );
+  const power = householdDemand - (solarGeneration ? 12 : 0);
+  const flowState =
+    power < 0 ? 'generation' : power > 3.5 ? 'overspend' : 'normal';
   const go = (next: Screen) => {
     setError('');
     setNotice('');
@@ -680,12 +692,13 @@ export function RainforestDemo({
               </TabsList>
               <TabsContent value={period}>
                 <div
-                  className={`rp-demand ${period === 'Live' ? 'rp-is-live' : ''}`}
+                  className={`rp-demand ${period === 'Live' ? 'rp-is-live ' : ''}rp-flow-${period === 'Live' ? flowState : 'normal'}`}
+                  data-flow-state={period === 'Live' ? flowState : 'normal'}
                 >
                   <div className="rp-demand-top">
                     <strong>
                       {period === 'Live'
-                        ? power.toFixed(3)
+                        ? Math.abs(power).toFixed(3)
                         : metric === 'cost'
                           ? '$' + (sumUsage(period) * 0.12).toFixed(2)
                           : sumUsage(period).toFixed(1)}
@@ -698,10 +711,16 @@ export function RainforestDemo({
                       </small>
                     </strong>
                     <span>
-                      {period === 'Live' ? 'Current usage' : period + ' total'}
+                      {period === 'Live'
+                        ? flowState === 'generation'
+                          ? 'Net generation'
+                          : 'Current usage'
+                        : period + ' total'}
                       <b>
                         {period === 'Live'
-                          ? `$${(power * 0.12).toFixed(2)} / hour`
+                          ? flowState === 'generation'
+                            ? 'Solar output · sample'
+                            : `$${(power * 0.12).toFixed(2)} / hour`
                           : 'Sample household data'}
                       </b>
                     </span>
@@ -714,14 +733,21 @@ export function RainforestDemo({
                         <span />
                       </div>
                       <p>
-                        {power > 3.5
-                          ? 'Above the 3.5 kW target'
-                          : 'Below the 3.5 kW target'}{' '}
-                        ·{' '}
-                        {power > 3.5
-                          ? 'Try pausing a device'
-                          : 'Within your current target'}
+                        {flowState === 'generation'
+                          ? `${Math.abs(power).toFixed(3)} kW generated · net export`
+                          : flowState === 'overspend'
+                            ? 'Above the 3.5 kW target · Try pausing a device'
+                            : 'Within the 3.5 kW target · Normal consumption'}
                       </p>
+                      <button
+                        type="button"
+                        className="rp-generation-control"
+                        aria-pressed={solarGeneration}
+                        onClick={() => setSolarGeneration((active) => !active)}
+                      >
+                        <Sun size={16} />
+                        {solarGeneration ? 'Stop solar simulation' : 'Simulate solar generation'}
+                      </button>
                     </>
                   ) : (
                     <p>
@@ -735,7 +761,9 @@ export function RainforestDemo({
                   <div className="rp-panel-heading">
                     <h3>
                       {period === 'Live'
-                        ? 'kW demand'
+                        ? flowState === 'generation'
+                          ? 'kW generation'
+                          : 'kW demand'
                         : metric === 'energy'
                           ? 'Energy consumption'
                           : 'Energy cost'}
@@ -762,7 +790,11 @@ export function RainforestDemo({
                       ? 'Last 15 minutes'
                       : period + ' overview'}
                   </p>
-                  <Trend period={period} metric={metric} />
+                  <Trend
+                    period={period}
+                    metric={metric}
+                    energyState={period === 'Live' ? flowState : 'normal'}
+                  />
                 </div>
               </TabsContent>
             </Tabs>
