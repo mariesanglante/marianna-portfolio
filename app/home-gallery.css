@@ -51,8 +51,21 @@
 .portfolio-home .home-gallery .project-visual .cover-tagline{font-family:Arial,Helvetica,sans-serif!important}
 
 /* Neon pixel-shadow hover for the oversized footer contact link. */
-.portfolio-home .footer-top>a{transition:color .18s,text-shadow .18s,transform .18s}
+.portfolio-home .footer-top>a{position:relative;transition:color .18s,text-shadow .18s,transform .18s}
 .portfolio-home .footer-top>a:hover{color:#111!important;text-shadow:3px 0 #ff3bc8,-3px 0 #00eaff,0 4px #ffe45c;transform:translate(-2px,-2px)}
+.portfolio-home .footer-top>a .footer-cta-arrow{margin-left:auto;font-size:.8em;transition:opacity .12s,transform .12s}
+.portfolio-home .footer-top>a .footer-pixel-shot{position:absolute;left:60%;right:3%;top:50%;height:0;margin:0;font-size:inherit;pointer-events:none}
+.portfolio-home .footer-pixel-shot i{position:absolute;left:0;top:var(--pixel-y,0);width:4px;height:4px;background:#ff3bc8;opacity:0;box-shadow:4px 0 #00eaff,0 4px #ffe45c;image-rendering:pixelated}
+.portfolio-home .footer-pixel-shot i:nth-child(2){--pixel-y:-10px;background:#00eaff;animation-delay:70ms}
+.portfolio-home .footer-pixel-shot i:nth-child(3){--pixel-y:8px;background:#ffe45c;animation-delay:140ms}
+.portfolio-home .footer-pixel-shot i:nth-child(4){--pixel-y:-5px;background:#ff3bc8;animation-delay:210ms}
+.portfolio-home .footer-pixel-shot i:nth-child(5){--pixel-y:12px;background:#00eaff;animation-delay:280ms}
+.portfolio-home .footer-pixel-shot i:nth-child(6){--pixel-y:-13px;background:#ffe45c;animation-delay:350ms}
+.portfolio-home .footer-pixel-shot i:nth-child(7){--pixel-y:4px;background:#ff3bc8;animation-delay:420ms}
+.portfolio-home .footer-pixel-shot i:nth-child(8){--pixel-y:-8px;background:#00eaff;animation-delay:490ms}
+.portfolio-home .footer-top>a:hover .footer-cta-arrow{opacity:0;transform:translateX(7px)}
+.portfolio-home .footer-top>a:hover .footer-pixel-shot i{animation:pixel-shoot .8s steps(7,end) infinite}
+@keyframes pixel-shoot{0%{left:0;opacity:0;transform:translateY(0)}12%{opacity:1}78%{opacity:1}100%{left:100%;opacity:0;transform:translateY(-4px)}}
 .portfolio-home .text-link:hover{color:#777!important}
 .portfolio-home .pixel-arrow{display:inline-flex;flex:0 0 16px;align-items:center;justify-content:center;width:16px;height:16px;line-height:0}
 .portfolio-home .pixel-arrow svg{display:block;width:16px;height:16px;overflow:visible;shape-rendering:crispEdges;transform:rotate(-45deg)}
@@ -63,6 +76,7 @@
 .portfolio-home .home-gallery .collection-cover:hover .cover-open{transform:none}
 .portfolio-home .home-gallery .pill-link:hover>span{transform:none}
 .portfolio-home .all-cases .all-cases-button:hover .all-cases-arrow{transform:none}
+@media(prefers-reduced-motion:reduce){.portfolio-home .footer-top>a{transition:none}.portfolio-home .footer-pixel-shot{display:none}.portfolio-home .footer-top>a:hover .footer-cta-arrow{opacity:1;transform:none}}
 
 /* One art direction across every cover: same frame, light, labels and scale. */
 .home-gallery .collection-cover{display:flex;flex-direction:column;padding:24px 28px;background:var(--cover-bg);color:#263024;aspect-ratio:1.3}
