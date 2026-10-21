@@ -7,6 +7,9 @@ import './portrait.css';
 import './cases/simcare-case.css';
 import './home-gallery.css';
 const Arrow = ({ direction = 'up-right' }: { direction?: 'up-right' | 'down' | 'up' }) => <span className={`pixel-arrow pixel-arrow-${direction}`} aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M1 6h8V2l6 6-6 6v-4H1z"/></svg></span>;
+const PixelStar = () => <span className="pixel-star-icon" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M6 0h4v4h2v2h4v4h-4v2h-2v4H6v-4H4v-2H0V6h4V4h2z"/></svg></span>;
+const LinkedInIcon = () => <span className="pixel-contact-icon" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path fill="currentColor" fillRule="evenodd" d="M1 1h14v14H1zM3 3v10h10V3z"/><path d="M4 6h2v6H4zM4 4h2v2H4zM8 6h2v1h1V6h2v6h-2V9h-1v3H8z"/></svg></span>;
+const EmailIcon = () => <span className="pixel-contact-icon pixel-email-icon" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M2 4h12v8H2zM3 5l5 4 5-4M3 11l3-3m7 3-3-3"/></svg></span>;
 function CaseCover({ slug, name, tagline, kind, src, second }: { slug: string; name: string; tagline: string; kind: string; src?: string; second?: string }) {
   const cover = caseCovers[slug as keyof typeof caseCovers] as { src: string; second?: string } | undefined;
   const mainImage = src || cover?.src;
@@ -24,7 +27,7 @@ export default function Home() {
       <div className="portfolio-home">
       <header className="site-header wrap">
         <Link className="wordmark" href="#main" aria-label="Marianna Gonchar, home">Marianna Gonchar<span className="wordmark-dot">.</span></Link>
-        <nav aria-label="Main navigation"><Link href="#cases">Cases</Link><Link href="#about">About</Link><Link href="/cv">CV <Arrow /></Link><Link className="nav-contact" href="mailto:marfantastik@gmail.com">Let’s talk <Arrow /></Link></nav>
+        <nav aria-label="Main navigation"><Link href="#cases">Cases</Link><Link href="#about">About</Link><Link href="/cv">CV <Arrow /></Link><Link className="nav-contact" href="mailto:marfantastik@gmail.com">Let’s talk <PixelStar /></Link></nav>
       </header>
       <main id="main">
         <section className="hero wrap" aria-labelledby="intro">
@@ -41,7 +44,7 @@ export default function Home() {
         </section>
         <section id="about" className="about wrap" aria-labelledby="about-title"><div className="section-heading"><h2 id="about-title">A little about me</h2><span>Kyiv, Ukraine · Working internationally</span></div><div className="about-grid"><h3>Curious about people.<br/>Serious about <span className="serif">craft.</span></h3><div><p>I’m a Ukrainian product designer with 10+ years in the digital industry, working across startups, agencies, and complex products.</p><p>I connect research, product thinking, and hands-on design. Alongside my practice, I teach UX and mobile interface design at Projector Institute.</p><Link className="text-link" href="/cv">More about my experience <Arrow /></Link><Link className="text-link design-room-link" href="/design-room">Visit my design room <Arrow /></Link></div></div></section>
       </main>
-      <footer className="footer"><div className="wrap"><div className="footer-top"><p>A new product. A complex challenge. Your next teammate.</p><Link className="footer-cta" href="mailto:marfantastik@gmail.com"><span className="footer-cta-copy">Let’s make it <span className="serif">matter.</span></span><span className="footer-cta-arrow"><Arrow /></span><span className="footer-pixel-shot" aria-hidden="true">{Array.from({length:8},(_,i)=><i key={i}/>)}</span></Link></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Marianna Gonchar</span><div><Link href="https://www.linkedin.com/in/marianna-gonchar-15933aa8/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></Link><Link href="mailto:marfantastik@gmail.com">Email <Arrow /></Link><Link href="#main">Back to top <Arrow direction="up"/></Link></div></div></div></footer>
+      <footer className="footer"><div className="wrap"><div className="footer-top"><p>A new product. A complex challenge. Your next teammate.</p><Link className="footer-cta" href="mailto:marfantastik@gmail.com"><span className="footer-cta-copy">Let’s make it <span className="serif">matter.</span></span><span className="footer-pixel-shot" aria-hidden="true">{Array.from({length:8},(_,i)=><i key={i}/>)}</span></Link></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Marianna Gonchar</span><div><Link href="https://www.linkedin.com/in/marianna-gonchar-15933aa8/" target="_blank" rel="noreferrer">LinkedIn <LinkedInIcon /></Link><Link href="mailto:marfantastik@gmail.com">Email <EmailIcon /></Link><Link href="#main">Back to top</Link></div></div></div></footer>
       </div>
     </>
   );

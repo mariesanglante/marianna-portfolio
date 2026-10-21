@@ -74,6 +74,10 @@
 .portfolio-home .pixel-arrow-down svg{transform:rotate(90deg)}
 .portfolio-home .pixel-arrow-up svg{transform:rotate(-90deg)}
 .portfolio-home .pixel-arrow path{fill:currentColor;stroke:none}
+.portfolio-home .pixel-star-icon,.portfolio-home .pixel-contact-icon{display:inline-flex;flex:0 0 16px;align-items:center;justify-content:center;width:16px;height:16px;line-height:0}
+.portfolio-home .pixel-star-icon svg,.portfolio-home .pixel-contact-icon svg{display:block;width:16px;height:16px;shape-rendering:crispEdges}
+.portfolio-home .pixel-star-icon path,.portfolio-home .pixel-contact-icon path{fill:currentColor}
+.portfolio-home .pixel-email-icon path{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:square;shape-rendering:crispEdges}
 .portfolio-home .cover-open svg{transform:rotate(-45deg);shape-rendering:crispEdges}
 .portfolio-home .home-gallery .collection-cover:hover .cover-open{transform:none}
 .portfolio-home .home-gallery .pill-link:hover>span{transform:none}
