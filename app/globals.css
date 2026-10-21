@@ -27,3 +27,8 @@
 .ascy-preview{padding:28px;background:#171e2b;color:#fff}.ascy-preview .visual-label,.ascy-preview .visual-footer{color:#c4cce5}.ascy-preview>div{display:flex;gap:25px;justify-content:center;padding:20px 0}.ascy-preview img{width:36%;border-radius:20px;border:1px solid #ffffff20;box-shadow:0 20px 30px #0004}.ascy-preview img:first-child{transform:rotate(-7deg)}.ascy-preview img:last-child{transform:rotate(7deg) translateY(12px)}
 
 .case-ip-disclaimer{padding-top:32px;padding-bottom:32px;border-top:1px solid #deded8;font-size:.9375rem;line-height:1.6;color:#575752}.case-ip-disclaimer p{max-width:850px;margin:0}
+
+@font-face{font-family:"Pixeloid Sans";src:url("/fonts/pixeloid-sans.ttf") format("truetype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Pixeloid Sans";src:url("/fonts/pixeloid-sans-bold.ttf") format("truetype");font-style:normal;font-weight:700;font-display:swap}
+/* Use the supplied pixel typeface consistently for interactive labels site-wide. */
+a,button,summary,select,label,input[type="button"],input[type="submit"],input[type="reset"],[role="button"],a *,button *,summary *,[role="button"] *{font-family:"Pixeloid Sans",monospace!important}
