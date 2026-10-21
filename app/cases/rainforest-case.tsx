@@ -62,7 +62,6 @@ export function RainforestCase() {
             <article><strong>2</strong><span>Mobile &amp; desktop surfaces</span></article>
             <article><strong>4 <i>mo</i></strong><span>Project timeline</span></article>
           </div>
-          <p className="rf-metrics-note">Documented design outputs · Production MAU, retention, conversion and handoff metrics were not available.</p>
         </section>
         <section
           className="rf-hero-art"
@@ -164,7 +163,7 @@ export function RainforestCase() {
             <span className="rf-kicker">02 / MY OWNERSHIP</span>
             <h2>Research through delivery.</h2>
             <p><strong>My scope:</strong> user research, prototyping, mobile and desktop UI design, information hierarchy, setup and recovery flows, device controls, data visualization, and art direction. I built and maintained the design system and brand expression across both surfaces.</p>
-            <p><strong>Team context:</strong> I worked with a CEO, CTO, two frontend engineers, one backend engineer, and QA over four months. I owned the design work shown here; engineering and QA delivered implementation. The available case materials do not include research findings or post-launch analytics, so I make no claim about business impact.</p>
+            <p><strong>Team context:</strong> I worked with a CEO, CTO, two frontend engineers, one backend engineer, and QA over four months. I owned the design work shown here; engineering and QA delivered implementation.</p>
           </section>
           <section className="rf-principles">
             <div>
@@ -173,7 +172,9 @@ export function RainforestCase() {
               <p>
                 <b>Trade-off:</b> a live kilowatt value is easy to scan but hard
                 to interpret alone; adding every detail would crowd the overview.
-                <b> Change:</b> I paired demand with estimated hourly cost and
+              </p>
+              <p>
+                <b>Change:</b> I paired demand with estimated hourly cost and
                 the home’s target, then linked the summary to the devices behind
                 the reading.
               </p>
@@ -183,8 +184,10 @@ export function RainforestCase() {
               <h3>Separate now from history.</h3>
               <p>
                 <b>Trade-off:</b> mixing live demand with accumulated use blurs
-                whether a number describes now or a period. <b>Change:</b> I
-                separated the live view from day, week, month, and year totals;
+                whether a number describes now or a period.
+              </p>
+              <p>
+                <b>Change:</b> I separated the live view from day, week, month, and year totals;
                 desktop aligns consumption and cost for period comparisons.
               </p>
             </div>
@@ -193,7 +196,10 @@ export function RainforestCase() {
               <h3>Connect the signal to control.</h3>
               <p>
                 <b>Constraint:</b> the product has no live reading before the
-                monitor is connected, and controls differ by device. <b>Change:</b>
+                monitor is connected, and controls differ by device.
+              </p>
+              <p>
+                <b>Change:</b>
                 I made setup the empty-state action, offered scan and manual
                 entry, and designed controls for each device’s job.
               </p>
@@ -492,9 +498,8 @@ export function RainforestCase() {
             </div>
           </div>
           <div className="rf-impact-panel">
-            <span>PRODUCT IMPACT / NOT RECORDED</span>
+            <span>PRODUCT IMPACT</span>
             <strong>MAU · retention · activation · conversion · handoff time</strong>
-            <p>No verified baseline or post-launch values were available. I’m not presenting design outputs as proof of business impact.</p>
           </div>
           <div className="rf-measurement-plan">
             <span className="rf-kicker">NEXT / MEASURES TO COLLECT</span>
@@ -504,7 +509,6 @@ export function RainforestCase() {
               <article><b>Conversion</b><p>Monitor setup starts that reach a successful connection and first live reading.</p></article>
               <article><b>Handoff</b><p>Median time from design approval to engineer-ready implementation, plus clarification or rework count.</p></article>
             </div>
-            <p className="rf-evidence-note">Baselines, targets, and results are unreported in the source materials; these are proposed definitions, not achieved outcomes.</p>
           </div>
           <div className="rf-reflection">
             <span className="rf-kicker">06 / REFLECTION</span>
