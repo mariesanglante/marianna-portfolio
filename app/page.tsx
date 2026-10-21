@@ -26,7 +26,7 @@ export default function Home() {
       <Link className="skip-link" href="#main">Skip to content</Link>
       <div className="portfolio-home">
       <header className="site-header wrap">
-        <Link className="wordmark" href="#main" aria-label="Marianna Gonchar, home">Marianna Gonchar<span className="wordmark-dot">.</span></Link>
+        <Link className="wordmark" href="#main" aria-label="MG Design, home">MG DESIGN<span className="wordmark-dot">.</span></Link>
         <nav aria-label="Main navigation"><Link href="#cases">Cases</Link><Link href="#about">About</Link><Link href="/cv">CV <Arrow /></Link><Link className="nav-contact" href="mailto:marfantastik@gmail.com">Let’s talk <PixelStar /></Link></nav>
       </header>
       <main id="main">

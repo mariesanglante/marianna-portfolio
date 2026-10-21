@@ -12,7 +12,7 @@ body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],
 body:not(:has(.portfolio-home,main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"])) :is(button,[role="button"],input[type="submit"]):hover:not(:disabled){transform:translate(-2px,-2px);box-shadow:6px 6px 0 #e89bd7}
 
 /* The All Cases archive shares the 8-bit navigation and action treatment. */
-body:has(main.archive) .site-header nav a,body:has(main.archive) .archive-nav a,body:has(main.archive) .archive-card-action,body:has(main.archive) .archive-card-access,body:has(main.archive) .case-footer a{font-family:"Pixeloid Sans",monospace!important}
+body:has(main.archive) .site-header nav a,body:has(main.archive) .site-header .wordmark,body:has(main.archive) .archive-nav a,body:has(main.archive) .archive-card-action,body:has(main.archive) .archive-card-access,body:has(main.archive) .case-footer a{font-family:"Pixeloid Sans",monospace!important}
 body:has(main.archive){background-color:#fffdfd;background-image:radial-gradient(ellipse at 7% 12%,#f4c9eb55,transparent 38%),radial-gradient(ellipse at 94% 16%,#b7def455,transparent 38%),radial-gradient(ellipse at 82% 80%,#d7c8f344,transparent 40%),repeating-linear-gradient(0deg,#664d6b05 0 1px,transparent 1px 4px)}
 body:has(main.archive) .site-header nav .nav-contact{border:2px solid #171817;padding:9px 12px;box-shadow:3px 3px 0 #171817}
 body:has(main.archive) .archive-nav a{border:1px solid #171817;padding:9px 12px;box-shadow:3px 3px 0 #d7b9e5}
@@ -47,4 +47,16 @@ body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;plac
 :where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):not(:disabled){transition:transform .16s ease,box-shadow .16s ease}
 :where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):hover:not(:disabled){transform:translate(-2px,-2px)!important;box-shadow:4px 4px 0 #171817!important}
 @media(prefers-reduced-motion:reduce){:where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):not(:disabled){transition:none}}
+
+/* The CV skill tree uses blocky panels and badge-like skill tiles while staying readable. */
+#expertise.cv-section{position:relative;isolation:isolate;margin:52px 0;border:2px solid #171817;padding:clamp(24px,4vw,48px);background:linear-gradient(135deg,#fffafd,#f7faff 58%,#fff9f0);box-shadow:8px 8px 0 #d7b9e5}
+#expertise.cv-section .cv-section-label .eyebrow{font-family:"Pixeloid Sans",monospace;letter-spacing:.03em}
+#expertise.cv-section .cv-skills{gap:24px}
+#expertise.cv-section .cv-skills>article{padding:18px;border:2px solid #171817;background:#fff;box-shadow:4px 4px 0 #d7e2eb}
+#expertise.cv-section .cv-skills>article h3{font-family:"Pixeloid Sans",monospace;font-size:.9rem;line-height:1.5;margin-bottom:16px}
+#expertise.cv-section .cv-skill-items{gap:10px}
+#expertise.cv-section .cv-skill-items li{padding:8px 10px;border:1px solid #171817;border-radius:0;background:#f4f2fa;box-shadow:3px 3px 0 #e6c6e8;color:#30302d;font-size:.83rem;line-height:1.45}
+#expertise.cv-section .cv-skills>article:nth-child(3n+2) .cv-skill-items li{background:#eff8f7;box-shadow:3px 3px 0 #c8e8e4}
+#expertise.cv-section .cv-skills>article:nth-child(3n) .cv-skill-items li{background:#fff5e8;box-shadow:3px 3px 0 #f3d7a9}
+@media(max-width:700px){#expertise.cv-section{margin:35px 0;padding:20px;box-shadow:5px 5px 0 #d7b9e5}#expertise.cv-section .cv-skills>article{padding:14px}}
 @media(prefers-reduced-motion:reduce){.nda-form button{transition:none}}
