@@ -20,7 +20,8 @@ body:has(main.archive) .archive-nav a:hover{text-decoration:none!important}
 body:has(main.archive) .archive-card{border:2px solid #171817;border-radius:0;box-shadow:5px 5px 0 #d7b9e5}
 body:has(main.archive) .archive-card:hover{border-color:#171817;box-shadow:7px 7px 0 #e89bd7}
 body:has(main.archive) .archive-card-access{border:1px solid #171817;border-radius:0;box-shadow:2px 2px 0 #171817}
-body:has(main.archive) .archive-card-action{border-top:2px solid #171817}
+body:has(main.archive) .archive-card-action{border:2px solid #171817;padding:14px 16px;background:#d7b9e5;color:#171817;transition:background .16s ease,transform .16s ease,box-shadow .16s ease}
+body:has(main.archive) .archive-card:is(:hover,:focus-visible) .archive-card-action{background:#deded8}
 body:has(main.archive) .archive-card-action>span:last-child{display:grid;place-items:center;width:16px;height:16px;font-size:0;background:currentColor;clip-path:polygon(0 35%,55% 35%,55% 5%,100% 50%,55% 95%,55% 65%,0 65%);shape-rendering:crispEdges}
 body:has(main.archive) .site-header nav .nav-contact:hover,body:has(main.archive) .archive-nav a:hover{background:#f8e3f5}
 body:has(main.archive) .case-footer{border-top:1px dashed #b9acc3;padding-top:22px}
