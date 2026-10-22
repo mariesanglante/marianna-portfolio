@@ -61,3 +61,45 @@ body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;plac
 #expertise.cv-section .cv-skills>article:nth-child(3n) .cv-skill-items li{background:#fff5e8;box-shadow:3px 3px 0 #f3d7a9}
 @media(max-width:700px){#expertise.cv-section{margin:35px 0;padding:20px;box-shadow:5px 5px 0 #d7b9e5}#expertise.cv-section .cv-skills>article{padding:14px}}
 @media(prefers-reduced-motion:reduce){.nda-form button{transition:none}}
+
+
+/* Thin pixel superheaders unify the homepage, archive, and CV. */
+.portfolio-home .hero .eyebrow,.portfolio-home .work-kicker,body:has(main.archive) .archive-intro .eyebrow,body:has(.cv-page) .cv-page .eyebrow{font-family:"Pixeloid Sans",monospace!important;font-weight:400;letter-spacing:.035em}
+
+/* Pixel-game toolkit panels and pink education cards on the CV. */
+#tools.cv-section{position:relative;margin:52px 0;border:2px solid #171817;padding:clamp(24px,4vw,48px);background:linear-gradient(135deg,#fbf9ff,#f2f9ff 58%,#fff9f0);box-shadow:8px 8px 0 #c8e8e4}
+#tools.cv-section .cv-section-label .eyebrow,#education.cv-section .cv-section-label .eyebrow{font-family:"Pixeloid Sans",monospace;letter-spacing:.03em}
+#tools.cv-section .cv-tool-groups{gap:20px}
+#tools.cv-section .cv-tool-groups>div{border:2px solid #171817;background:#fff;padding:18px;box-shadow:4px 4px 0 #c8e8e4}
+#tools.cv-section .cv-tool-groups h3,#education.cv-section .cv-education h3{font-family:"Pixeloid Sans",monospace;font-size:.9rem;line-height:1.5}
+#tools.cv-section .cv-tool-groups ul{gap:10px}
+#tools.cv-section .cv-tool-groups li{padding:8px 10px;border:1px solid #171817;border-radius:0;background:#f4f2fa;box-shadow:3px 3px 0 #e6c6e8;font-size:.8rem}
+#education.cv-section{position:relative;margin:52px 0 80px;border:2px solid #171817;padding:clamp(24px,4vw,48px);background:linear-gradient(135deg,#fff2f8,#ffe3f0 55%,#fff6fa);box-shadow:8px 8px 0 #ec9fc5}
+#education.cv-section .cv-education article{margin:0 0 16px;padding:18px;border:2px solid #171817;background:#fffafd;box-shadow:4px 4px 0 #ec9fc5}
+#education.cv-section .cv-education article:last-child{margin-bottom:0}
+#education.cv-section .cv-education h3{margin:0 0 10px}
+#education.cv-section .cv-education p{margin:0}
+@media(max-width:700px){#tools.cv-section,#education.cv-section{margin:35px 0;padding:20px}#tools.cv-section{box-shadow:5px 5px 0 #c8e8e4}#education.cv-section{box-shadow:5px 5px 0 #ec9fc5}#tools.cv-section .cv-tool-groups>div,#education.cv-section .cv-education article{padding:14px}}
+
+/* Dark pixel-night footer: moon, howling wolf silhouette, and moonlit star shots. */
+.portfolio-home .footer{position:relative;isolation:isolate;overflow:hidden;background:#10121d!important;color:#f3f1f6;padding-block:55px 28px}
+.portfolio-home .footer::before{content:"";position:absolute;z-index:-1;top:28px;right:max(7vw,calc((100vw - 1400px)/2 + 70px));width:128px;height:128px;background:#f8e697;clip-path:polygon(25% 0,75% 0,75% 6%,88% 6%,88% 18%,94% 18%,94% 32%,100% 32%,100% 68%,94% 68%,94% 82%,88% 82%,88% 94%,75% 94%,75% 100%,25% 100%,25% 94%,12% 94%,12% 82%,6% 82%,6% 68%,0 68%,0 32%,6% 32%,6% 18%,12% 18%,12% 6%,25% 6%)}
+.portfolio-home .footer-top{position:relative}
+.portfolio-home .footer-top::before{content:"";position:absolute;z-index:0;top:6px;right:148px;width:128px;height:144px;background:#10121d;clip-path:polygon(6% 58%,18% 58%,18% 48%,30% 48%,30% 38%,38% 38%,38% 25%,44% 25%,44% 12%,50% 12%,50% 18%,56% 18%,56% 25%,63% 25%,63% 32%,78% 32%,78% 38%,94% 38%,94% 44%,100% 44%,100% 50%,88% 50%,88% 57%,78% 57%,78% 66%,70% 66%,70% 78%,80% 78%,80% 88%,94% 88%,94% 95%,82% 95%,82% 100%,64% 100%,64% 94%,56% 94%,56% 86%,48% 86%,48% 78%,40% 78%,40% 90%,32% 90%,32% 96%,22% 96%,22% 100%,8% 100%,8% 94%,2% 94%,2% 84%,0 84%,0 76%,6% 76%)}
+.portfolio-home .footer-top p{position:relative;z-index:1;padding-top:150px;color:#c5c5d0!important}
+.portfolio-home .footer-top>a{color:#f4f1f7!important;font-family:"BlockCraft",monospace!important;font-size:clamp(34px,5.5vw,78px);text-shadow:none!important;transition:color .18s,transform .18s}
+.portfolio-home .footer-top>a .serif{color:#f8e697}
+.portfolio-home .footer-top>a:hover{color:#ff62c8!important;text-shadow:3px 0 #ff62c8,-3px 0 #54e8f2,0 4px #f8e697!important;transform:translate(-2px,-2px)}
+.portfolio-home .footer-pixel-shot i::before{background:var(--star-color,#f8e697)}
+.portfolio-home .footer-pixel-shot i::after{background:#f8e697;box-shadow:-4px 0 #54e8f2,-8px 0 #ff62c8}
+.portfolio-home .footer-pixel-shot i:nth-child(2){--star-color:#54e8f2}
+.portfolio-home .footer-pixel-shot i:nth-child(3){--star-color:#f8e697}
+.portfolio-home .footer-pixel-shot i:nth-child(4){--star-color:#ff62c8}
+.portfolio-home .footer-pixel-shot i:nth-child(5){--star-color:#54e8f2}
+.portfolio-home .footer-pixel-shot i:nth-child(6){--star-color:#f8e697}
+.portfolio-home .footer-pixel-shot i:nth-child(7){--star-color:#ff62c8}
+.portfolio-home .footer-pixel-shot i:nth-child(8){--star-color:#54e8f2}
+.portfolio-home .footer-bottom{border-color:#414352!important;color:#c5c5d0!important}
+.portfolio-home .footer-bottom a:hover{color:#f8e697}
+@media(max-width:700px){.portfolio-home .footer{padding-top:38px}.portfolio-home .footer::before{top:18px;right:20px;width:90px;height:90px}.portfolio-home .footer-top::before{top:2px;right:96px;width:90px;height:102px}.portfolio-home .footer-top p{padding-top:108px}.portfolio-home .footer-top>a{font-size:clamp(28px,7.7vw,48px)}}
+@media(prefers-reduced-motion:reduce){.portfolio-home .footer-top>a{transition:none}.portfolio-home .footer-pixel-shot{display:none}}
