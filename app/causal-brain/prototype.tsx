@@ -421,7 +421,7 @@ export default function Prototype({ tour = false }: { tour?: boolean }) {
                   preserveAspectRatio="none"
                   aria-label={`${layer} conditions for the ${event.toLowerCase()}`}
                   role="img"
-                  style={{ opacity: 0.35 + factor * 0.65 }}
+                  style={{ opacity: 0.35 + factor * 0.65, transform: `scale(${zoom})` }}
                 >
                   {heat ? (
                     <g className="cb-weather-heat">
@@ -446,7 +446,7 @@ export default function Prototype({ tour = false }: { tour?: boolean }) {
                             <path d="M-6 0H6M0-6V6M-4-4L4 4M4-4L-4 4" />
                           </g>
                         ))}
-                        <text x="730" y="475">SNOW BAND · UP TO 1 IN/HR</text>
+                        <text x="700" y="395">SNOW BAND · UP TO 1 IN/HR</text>
                       </g>
                       <g className="cb-weather-wind">
                         <path d="M475 365 C570 300 640 355 710 290 S835 275 902 220" />
@@ -455,7 +455,7 @@ export default function Prototype({ tour = false }: { tour?: boolean }) {
                         {[ [675,319, -37],[706,374,-38],[738,427,-38] ].map(([x,y,rotation], i) => (
                           <path key={`wind-${i}`} className="cb-wind-arrow" d="M-9 0H9M3-6L9 0 3 6" transform={`translate(${x} ${y}) rotate(${rotation})`} />
                         ))}
-                        <text x="760" y="505">NW WIND · 30 MPH</text>
+                        <text x="745" y="425">NW WIND · 30 MPH</text>
                       </g>
                     </>
                   )}
