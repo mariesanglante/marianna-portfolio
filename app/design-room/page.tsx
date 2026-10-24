@@ -71,7 +71,7 @@ function ForestLevelArt(){return <svg className="dr-forest-art" viewBox="0 0 120
   <path d="M138 319h8v-16h8v16h12v-13h8v13h12v-18h8v18h10v6h-66zm822-1h9v-19h8v19h13v-12h8v12h14v-18h8v18h10v7h-70zm168-2h8v-16h8v16h12v-13h8v13h12v8h-56z" fill="#b58ad0"/>
   <path d="M170 316h9v-11h7v11h9v5h-25zm825 0h9v-10h8v10h9v5h-26z" fill="#f19bc5"/>
   <path d="M45 337h7v-17h7v17h10v-11h7v11h10v-16h7v16h10v8H45zm320 1h7v-14h7v14h11v-10h7v10h11v9h-43zm460-1h7v-17h7v17h10v-11h7v11h10v-16h7v16h10v8H825zm267 1h7v-13h7v13h10v-10h7v10h12v9h-43z" fill="#d487b4"/>
-  <!-- Added pixel foliage, bark, woodland lights and foreground stones for a richer forest scene. -->
+  {/* Added pixel foliage, bark, woodland lights and foreground stones for a richer forest scene. */}
   <g shapeRendering="crispEdges">
     <path d="M104 237h8v-34h8v-20h8v-18h8v18h8v20h8v34h10v9h-68v-9zm20-73h8v15h-8zm-16 28h8v10h-8zm35 0h8v10h-8z" fill="#513455"/>
     <path d="M1080 244h9v-42h8v-25h9v-18h8v18h9v25h8v42h12v9h-75v-9zm17-80h8v13h-8zm-12 28h8v10h-8zm31 10h8v12h-8z" fill="#523653"/>
