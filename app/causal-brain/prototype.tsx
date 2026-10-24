@@ -184,7 +184,7 @@ export default function Prototype({ tour = false }: { tour?: boolean }) {
   const [selected, setSelected] = useState<number | null>(null);
   const [compare, setCompare] = useState(false);
   const [model, setModel] = useState('HRRR');
-  const [layer, setLayer] = useState('Temperature');
+  const [layer, setLayer] = useState('Precipitation');
   const [hour, setHour] = useState(-3);
   const [playing, setPlaying] = useState(false);
   const [more, setMore] = useState(false);
@@ -410,15 +410,56 @@ export default function Prototype({ tour = false }: { tour?: boolean }) {
           ) : (
             <>
               <div className={`cb-map-art ${hub ? 'cb-zoomed' : ''}`}>
-                <div
-                  className={`cb-weather-flow ${heat ? 'heat' : ''}`}
-                  style={{ opacity: 0.12 + factor * 0.22 }}
-                />
                 <img
                   src="/images/causal/temperature.png"
                   alt="United States weather map from the Causal Labs design"
                   style={imageStyle}
                 />
+                <svg
+                  className={`cb-weather-overlay ${layer === 'Precipitation' ? 'show-precipitation' : layer === 'Wind speed' ? 'show-wind' : layer === 'Temperature' ? 'show-temperature' : 'show-pressure'}`}
+                  viewBox="0 0 1000 650"
+                  preserveAspectRatio="none"
+                  aria-label={`${layer} conditions for the ${event.toLowerCase()}`}
+                  role="img"
+                  style={{ opacity: 0.35 + factor * 0.65 }}
+                >
+                  {heat ? (
+                    <g className="cb-weather-heat">
+                      <ellipse cx="650" cy="410" rx="190" ry="120" />
+                      <ellipse cx="730" cy="475" rx="135" ry="88" />
+                      <path d="M420 430 C520 340 600 510 705 405 S865 380 930 450" />
+                      <text x="620" y="425">EXCESSIVE HEAT</text>
+                    </g>
+                  ) : (
+                    <>
+                      <g className="cb-weather-isobars">
+                        <path d="M410 115 C525 30 695 40 810 125 S920 290 824 365 C720 447 574 370 505 290 S335 185 410 115Z" />
+                        <path d="M475 150 C560 88 683 90 760 155 S835 267 772 315 C700 370 600 325 548 268 S412 205 475 150Z" />
+                        <path d="M540 185 C600 145 671 148 716 185 S760 246 720 273 C677 302 623 278 589 242 S508 210 540 185Z" />
+                      </g>
+                      <g className="cb-weather-snow">
+                        <path d="M625 70 C590 120 670 160 628 207 S660 294 715 325 S765 405 840 454" />
+                        <path d="M690 52 C650 110 735 145 690 198 S724 280 774 313 S830 380 885 426" />
+                        <path d="M560 105 C530 150 597 183 570 225 S602 302 655 335 S697 401 770 445" />
+                        {[ [624,150],[658,204],[693,260],[730,318],[772,370],[822,420],[682,123],[738,177],[786,235],[832,290],[866,350],[588,245],[638,300],[688,355],[735,410] ].map(([x, y], i) => (
+                          <g key={`snow-${i}`} className="cb-snowflake" transform={`translate(${x} ${y})`}>
+                            <path d="M-6 0H6M0-6V6M-4-4L4 4M4-4L-4 4" />
+                          </g>
+                        ))}
+                        <text x="730" y="475">SNOW BAND · UP TO 1 IN/HR</text>
+                      </g>
+                      <g className="cb-weather-wind">
+                        <path d="M475 365 C570 300 640 355 710 290 S835 275 902 220" />
+                        <path d="M500 420 C585 360 657 412 736 345 S850 326 920 278" />
+                        <path d="M530 470 C612 414 690 465 768 398 S866 378 930 335" />
+                        {[ [675,319, -37],[706,374,-38],[738,427,-38] ].map(([x,y,rotation], i) => (
+                          <path key={`wind-${i}`} className="cb-wind-arrow" d="M-9 0H9M3-6L9 0 3 6" transform={`translate(${x} ${y}) rotate(${rotation})`} />
+                        ))}
+                        <text x="760" y="505">NW WIND · 30 MPH</text>
+                      </g>
+                    </>
+                  )}
+                </svg>
                 <div
                   className="cb-markers"
                   style={{ transform: `scale(${zoom})` }}
