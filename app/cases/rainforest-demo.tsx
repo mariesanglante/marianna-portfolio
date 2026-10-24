@@ -1114,7 +1114,7 @@ export function RainforestDemo({
                   </div>
                   <strong>{devices.reduce((sum, d) => sum + deviceKw(d), 0).toFixed(1)} <small>kW</small></strong>
                 </div>
-                <p className="rp-device-breakdown-caption">Current estimated demand · sample household</p>
+                <p className="rp-device-breakdown-caption">Connected-device total · illustrative sample data</p>
                 <div className="rp-device-breakdown-list">
                   {devices.map((d) => {
                     const usage = deviceKw(d);
