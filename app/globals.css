@@ -34,16 +34,16 @@
 a,button,summary,select,label,input[type="button"],input[type="submit"],input[type="reset"],[role="button"],a *,button *,summary *,[role="button"] *{font-family:"Pixeloid Sans",monospace!important}
 
 /* Keep every case study and interactive case prototype on its original type styles. */
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) a,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) button,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) summary,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) select,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) label,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) input[type="button"],
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) input[type="submit"],
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) input[type="reset"],
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) [role="button"],
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) a *,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) button *,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) summary *,
-body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) [role="button"] *{font-family:inherit!important}
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) a,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) button,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) summary,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) select,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) label,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) input[type="button"],
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) input[type="submit"],
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) input[type="reset"],
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) [role="button"],
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) a *,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) button *,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) summary *,
+body:has(main.archive,main.case-study,main[class*="-case"],main.simcase,main.p-main,.causal-app,.sv-demo,.wt-stage,.simcare-site,[class*="-prototype"],[class*="-demo"]) [role="button"] *{font-family:inherit!important}
