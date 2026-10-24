@@ -160,3 +160,48 @@ body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;plac
 @keyframes footer-howl-call{0%{opacity:0;transform:translate(0,0) scale(.5)}18%{opacity:1}100%{opacity:0;transform:translate(42px,-38px) scale(1.15)}}
 @media(max-width:700px){.portfolio-home .footer-top{min-height:275px;gap:8px;padding-bottom:12px}.portfolio-home .footer-copy{width:65%;margin-bottom:8px}.portfolio-home .footer-copy p{font-size:12px;margin-bottom:14px}.portfolio-home .footer-top .footer-cta{font-size:clamp(24px,6vw,40px)}.portfolio-home .footer-night-scene{right:-3%;width:39vw;max-width:175px}.portfolio-home .footer-forest-scene{height:205px;bottom:-35px}.portfolio-home .footer-howl-sound{right:26%;top:92px;transform:scale(.75);transform-origin:top right}}
 @media(prefers-reduced-motion:reduce){.portfolio-home .footer-night-scene,.portfolio-home .footer-howl-sound i{animation:none!important;opacity:1}}
+
+
+/* Design Room becomes a walkable pixel forest level map. */
+.design-room-game{--dr-ink:#20182a;--dr-mauve:#714772;--dr-pink:#f19bc5;--dr-lilac:#c89bd1;--dr-paper:#fff9f2;max-width:1320px;padding-bottom:70px}
+.design-room-game .case-back{margin:24px 0 22px;color:#624765}
+.dr-game-intro{position:relative;overflow:hidden;background:#171321;color:#fbf4f5;border:3px solid #251a31;box-shadow:8px 8px 0 #cba5cb;padding:clamp(22px,4vw,56px);image-rendering:pixelated}
+.dr-intro-top{display:flex;justify-content:space-between;align-items:center;gap:16px;font:12px/1.4 "Pixeloid Sans",monospace;letter-spacing:.04em;color:#d6c5d8}
+.dr-level-tag{display:flex;align-items:center;gap:10px}
+.dr-level-tag i{width:11px;height:11px;background:#c8f36d;box-shadow:3px 3px 0 #769b45}
+.dr-top-label{color:#c89bd1}
+.dr-quote{position:relative;z-index:2;max-width:900px;margin:34px 0 30px;padding:0;border:0;color:#fbf1d2;font:clamp(19px,3vw,38px)/1.35 "Pixeloid Sans",monospace;letter-spacing:-.035em}
+.dr-title-row{position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin:0 0 28px}
+.dr-title-row .eyebrow{margin:0 0 12px;color:#d8b9d5;font:12px/1.4 "Pixeloid Sans",monospace}
+.dr-title-row h1{margin:0;color:#fff3f8;font:clamp(38px,6vw,76px)/1.1 "Pixeloid Sans",monospace;letter-spacing:-.045em}
+.dr-title-row h1 span{color:#f19bc5}
+.dr-title-row>p{max-width:390px;margin:0 0 5px;color:#d5cad8;font-size:16px;line-height:1.7}
+.dr-landscape{position:relative;height:clamp(150px,25vw,290px);overflow:hidden;border:2px solid #8b648b;background:#151222;box-shadow:5px 5px 0 #382842}
+.dr-forest-art{display:block;width:100%;height:100%;object-fit:cover;image-rendering:pixelated;shape-rendering:crispEdges}
+.dr-landscape-label{position:absolute;left:14px;top:14px;padding:8px 10px;background:#161321dd;border:1px solid #a780a7;color:#f4deef;font:10px/1.4 "Pixeloid Sans",monospace}
+.dr-landscape-label b{margin-left:12px;color:#c8f36d;letter-spacing:4px}
+.dr-level-map{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+.dr-level-map>a{display:grid;grid-template-columns:40px 1fr 18px;align-items:center;gap:11px;min-height:84px;padding:12px;background:#f9eff9;color:#261d2c;border:2px solid #c89bd1;box-shadow:4px 4px 0 #725277;transition:transform .18s,box-shadow .18s,background .18s}
+.dr-level-map>a:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #f19bc5;background:#fff7fb}
+.dr-level-number{display:grid;place-items:center;width:36px;height:36px;background:#38243c;color:#f7e9a0;border:2px solid #f19bc5;font:12px "Pixeloid Sans",monospace}
+.dr-level-map b,.dr-level-map small{display:block}
+.dr-level-map b{font:12px/1.5 "Pixeloid Sans",monospace}
+.dr-level-map small{margin-top:5px;color:#69576a;font-size:12px}
+.dr-level-map>a>i{font-style:normal;color:#714772;font-size:18px}
+.design-room-game .original-case{padding:42px 0 20px}
+.design-room-game .original-heading,.design-room-game .notion-properties,.design-room-game .notion-contents,.design-room-game .notion-source-note{display:none}
+.design-room-game .notion-source-cover{display:none}
+.design-room-game .notion-body{color:#423749}
+.design-room-game .notion-body>h3:first-child{max-width:none;margin:0 auto 28px;padding:21px 24px;background:#f8eff8;border:2px solid #30223a;box-shadow:5px 5px 0 #d9b8d4;color:#30223a;font:clamp(18px,2.2vw,25px)/1.65 "Pixeloid Sans",monospace;letter-spacing:-.02em}
+.design-room-game .notion-body blockquote{max-width:850px;border-left:5px solid #b978aa;background:#fcf3fa;color:#47334b;padding:16px 20px;font-size:19px}
+.design-room-game .notion-body h2{color:#37233d;font-family:"Pixeloid Sans",monospace;font-size:clamp(18px,2vw,24px);line-height:1.55;letter-spacing:0;background:#f3e9f5;border:2px solid #37233d;padding:18px;box-shadow:4px 4px 0 #cfaccd}
+.design-room-game .notion-body p{color:#554d59}
+.design-room-game .notion-body .notion-columns{gap:16px}
+.design-room-game .notion-body .notion-callout{margin:20px 0;background:#f4e9f4;border:2px solid #402a45;box-shadow:4px 4px 0 #d8b3d1;text-align:center;font-family:"Pixeloid Sans",monospace;font-size:13px}
+.design-room-game .notion-body .notion-page-link{border-block:2px solid #3c2a42;color:#3c2a42;font-family:"Pixeloid Sans",monospace;padding:18px}
+@media(max-width:700px){
+ .dr-intro-top{align-items:flex-start;flex-direction:column}.dr-quote{margin:24px 0}.dr-title-row{align-items:flex-start;flex-direction:column;gap:14px}.dr-title-row>p{font-size:15px}
+ .dr-level-map{grid-template-columns:1fr;gap:11px}.dr-level-map>a{min-height:70px}
+ .dr-landscape{height:180px}.dr-game-intro{box-shadow:5px 5px 0 #cba5cb;padding:18px}
+ .design-room-game .original-case{padding-top:30px}.design-room-game .notion-body>h3:first-child{padding:17px;font-size:16px}
+}
