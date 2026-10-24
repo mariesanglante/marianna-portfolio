@@ -49,6 +49,33 @@ function ForestLevelArt(){return <svg className="dr-forest-art" viewBox="0 0 120
   <path fill="#f19bc5" d="M83 310h8v-7h7v7h8v6H83zm945 0h8v-7h8v7h8v6h-24z"/>
   <path fill="#f8e697" d="M227 246h7v7h-7zm411 24h6v6h-6zm67-65h6v6h-6zm351 45h7v7h-7zm-900 30h6v6h-6z"/>
   <path fill="#34233d" d="M0 344h1200v16H0z"/>
+  {/* Refined wolf avatar, moon texture and foreground landmarks. */}
+  <g shapeRendering="crispEdges">
+    {/* Wolf face and coat: crisp ear insets, eye line, muzzle, ruff, flank and paw details. */}
+    <path fill="#f4edf2" d="M373 174h7v-8h6v9h-6v8h-7zm14 4h7v9h-7z"/>
+    <path fill="#bd80b2" d="M375 173h3v7h-3zm13 7h4v5h-4z"/>
+    <path fill="#786b82" d="M368 185h7v5h-7zm6 7h7v4h-7z"/>
+    <path fill="#fff0ad" d="M383 196h4v3h-4z"/>
+    <path fill="#171321" d="M392 201h7v4h-7zm7 4h7v4h-7zm7 4h7v4h-7z"/>
+    <path fill="#f8e6ee" d="M390 207h7v4h-7zm8 4h8v4h-8zm8 4h8v4h-8z"/>
+    <path fill="#a99daf" d="M375 216h7v9h-7zm-8 10h7v10h-7zm-8 12h7v10h-7zm-9 12h8v9h-8z"/>
+    <path fill="#f1e7ef" d="M379 222h6v9h-6zm-8 11h6v9h-6zm-8 11h6v9h-6zm-8 11h6v8h-6z"/>
+    <path fill="#756780" d="M325 263h10v8h-10zm8-11h8v7h-8zm10-12h8v7h-8zm10-12h8v7h-8z"/>
+    <path fill="#c7bacd" d="M300 265h8v7h-8zm16 7h9v5h-9zm50 9h9v5h-9zm-34 0h8v5h-8z"/>
+    <path fill="#f8e697" d="M318 273h4v3h-4zm43 6h4v3h-4z"/>
+    {/* Moon craters and stepped rim highlights. */}
+    <path fill="#d9c96f" d="M968 66h14v9h-14zm35 39h12v9h-12zm-22 30h10v8h-10zm38-71h9v7h-9z"/>
+    <path fill="#fff0ad" d="M954 60h7v28h-7zm8-12h8v7h-8zm70 39h6v23h-6zm-24 51h8v7h-8z"/>
+    <path fill="#d487b4" d="M982 89h7v7h-7zm29 41h7v7h-7z"/>
+    {/* Foreground landmarks: a few purposeful stones, fern tufts and grouped flowers. */}
+    <path fill="#80517b" d="M156 332h20v-7h14v7h10v7h-44zm806 4h18v-6h17v6h13v7h-48zm150-5h16v-7h15v7h11v7h-42z"/>
+    <path fill="#c89bd1" d="M165 327h10v5h-10zm810 5h9v5h-9zm149-1h10v5h-10z"/>
+    <path fill="#4e3556" d="M20 339h7v-18h6v18h8v-9h6v9h8v7H20zm1128 2h8v-20h6v20h9v-10h6v10h8v7h-37z"/>
+    <path fill="#f19bc5" d="M31 316h8v8h-8zm1120 0h8v8h-8z"/>
+    <path fill="#f8e697" d="M27 321h5v5h-5zm1124 1h5v5h-5z"/>
+    <path fill="#684569" d="M476 338h18v-7h8v7h11v6h-37zm231 1h18v-7h8v7h11v6h-37z"/>
+    <path fill="#d487b4" d="M485 332h6v6h-6zm231 1h6v6h-6z"/>
+  </g>
 </svg>}
 
 export default function DesignRoom(){return <><CaseHeader/><main id="main" className="wrap case-study tone-purple design-room-game">
