@@ -45,8 +45,9 @@ body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;plac
 .portfolio-home .footer-cta-copy:hover+.footer-pixel-shot i,.portfolio-home .footer-top>a:hover .footer-pixel-shot i{animation:pixel-shoot .78s steps(8,end) infinite}
 
 /* One tactile hover response for buttons and button-like links everywhere, including prototypes. */
-:where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):not(:disabled){transition:transform .16s ease,box-shadow .16s ease}
-:where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):hover:not(:disabled){transform:translate(-2px,-2px)!important;box-shadow:4px 4px 0 #171817!important}
+/* Keep the tactile site-shell hover out of interactive prototypes; their own controls keep their original responses. */
+body:not(:has([class*="-demo"],[class*="-prototype"],.pearl,.ap-device,.wt-stage,.simcare-site)) :where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):not(:disabled){transition:transform .16s ease,box-shadow .16s ease}
+body:not(:has([class*="-demo"],[class*="-prototype"],.pearl,.ap-device,.wt-stage,.simcare-site)) :where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):hover:not(:disabled){transform:translate(-2px,-2px)!important;box-shadow:4px 4px 0 #171817!important}
 @media(prefers-reduced-motion:reduce){:where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"],.pill-link,.all-cases-button,.nav-contact,.archive-nav a,.archive-card-action,.case-source a,.case-aside-archive):not(:disabled){transition:none}}
 
 /* The CV skill tree uses blocky panels and badge-like skill tiles while staying readable. */
