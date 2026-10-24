@@ -9,22 +9,22 @@ function ForestLevelArt(){return <svg className="dr-forest-art" viewBox="0 0 120
   </defs>
   <rect width="1200" height="360" fill="#181625"/>
   <rect width="1200" height="180" fill="url(#dr-night-stars)"/>
-  <!-- distant ridge -->
+  
   <path fill="#252039" d="M0 231 88 176l70 43 103-80 79 58 73-46 81 55 104-89 83 70 87-50 85 52 91-81 83 59 86-48 87 55v116H0z"/>
   <path fill="#302542" d="M0 255h132l68-41 71 42h97l64-36 66 34h124l78-50 73 51h126l74-43 74 43h152v105H0z"/>
-  <!-- clean stepping-stone path -->
+  
   <path fill="#725173" d="M490 360v-24h36v-20h32v-20h30v-20h34v-20h38v-20h34v-20h28v20h32v20h30v20h28v20h28v20h28v20h30v24z"/>
   <path fill="#a989a8" d="M535 360v-20h35v-20h35v-20h35v-20h36v-20h36v-20h25v20h32v20h29v20h30v20h32v20h38v20z"/>
   <path fill="#d0b5cb" d="M595 360v-18h32v-18h34v-18h36v-18h36v-18h20v18h32v18h31v18h33v18h34v18z"/>
-  <!-- moon and quiet stars -->
+  
   <path fill="#f4e49a" d="M945 36h48v8h24v16h16v24h8v40h-8v24h-16v16h-24v8h-48v-8h-24v-16h-16v-24h-8V84h8V60h16V44h24z"/>
   <path fill="#e0d080" d="M985 52h16v12h16v20h-12V72h-20v24h-16V72h16zm-34 64h16v16h-16zm60 18h16v12h-16z"/>
   <g fill="#f4e49a"><path d="M826 68h8v8h-8zm50 60h6v6h-6zm122-88h6v6h-6zm88 47h8v8h-8z"/></g>
   <g fill="#c89bd1"><path d="M756 70h7v7h-7zm-9-9h7v7h-7zm-9-9h7v7h-7zm224 122h7v7h-7zm-17 10h7v7h-7z"/></g>
-  <!-- distant trees -->
+  
   <path fill="#29213b" d="M350 253V175h-18v-20h18v-18h18v-23h20V95h24v19h18v23h18v18h18v20h-18v78zm340 2v-72h-18v-18h18v-18h17v-24h20v-20h22v20h19v24h17v18h18v18h-18v72z"/>
   <path fill="#473052" d="M374 174h18v-22h18v-24h16v24h18v22h-18v21h-18v21h-16v-21h-18zm326 23h18v-21h17v-23h17v23h18v21h-18v20h-17v17h-17v-17h-18z"/>
-  <!-- large framing trees: chunky canopies, clear trunks -->
+  
   <path fill="#241d35" d="M0 0h235v20h-19v20h-20v20h-24v19h-22v22h-22V80h-21V60H86V40H62V20H38V0zm1200 0H966v20h20v20h20v20h24v19h22v22h22V80h21V60h21V40h24V20h24V0z"/>
   <path fill="#382746" d="M0 0h171v15h-18v18h-18v18h-22v18H91v20H70V69H52V51H34V33H16V16H0zm1200 0h-171v15h18v18h18v18h22v18h22v20h21V69h18V51h18V33h18V16h16z"/>
   <g fill="#5c3a64">
@@ -32,11 +32,11 @@ function ForestLevelArt(){return <svg className="dr-forest-art" viewBox="0 0 120
     <path d="M185 7h18v14h-18zm-17 27h17v14h-17zm-16 27h16v14h-16zm911-54h18v14h-18zm17 27h17v14h-17zm16 27h16v14h-16z"/>
   </g>
   <g fill="#b77cac"><path d="M54 18h8v8h-8zm86 43h8v8h-8zm66-43h7v7h-7zm-35 31h7v7h-7zm920-31h8v8h-8zm-86 43h8v8h-8zm-66-43h7v7h-7zm35 31h7v7h-7z"/></g>
-  <!-- trunks and low fern line -->
+  
   <path fill="#30213b" d="M104 140h24v112h-24zm42 26h16v-20h18v20h20v86h-54zm906-26h24v112h-24zm-42 26h16v-20h18v20h20v86h-54z"/>
   <path fill="#68466c" d="M111 169h9v42h-9zm946 4h9v45h-9z"/>
   <path fill="#4e3556" d="M0 270h26v-18h17v18h18v-26h17v26h23v20H0zm173 4h21v-17h14v17h18v-25h16v25h18v19h-87zm692 0h20v-18h16v18h17v-25h17v25h21v18h-91zm229 0h22v-18h16v18h16v-25h16v25h20v20h-90z"/>
-  <!-- one readable wolf companion -->
+  
   <path fill="#d8d0dc" d="M281 286h20v-15h16v-18h14v-23h15v-18h14v-18h13v-23h15v20h16v14h19v13h-16v14h-13v15h-16v18h-13v20h26v12h-44v-10h-14v10h-49v-10h-20v-11z"/>
   <path fill="#a99daf" d="M303 276v-15h14v-20h14v-21h15v-18h12v-14h9v17h14v13h17v10h-15v15h-14v17h-15v16h-22v10h-20v-10h-15z"/>
   <path fill="#f1e7ef" d="M326 264v-17h13v-18h14v-17h12v-15h7v16h14v12h15v8h-14v12h-14v14h-13v14h-20v-9z"/>
@@ -44,7 +44,7 @@ function ForestLevelArt(){return <svg className="dr-forest-art" viewBox="0 0 120
   <path fill="#e694b6" d="M368 193h10v-7h7v7h-7v7h-10z"/>
   <path fill="#26202f" d="M382 195h8v5h-8z"/>
   <path fill="#f4e49a" d="M383 196h4v3h-4z"/>
-  <!-- sparse flowers and fireflies -->
+  
   <path fill="#b58ad0" d="M78 312h9v-17h8v17h13v-10h8v10h13v13H78zm945 1h12v-17h8v17h13v-10h8v10h12v13h-53z"/>
   <path fill="#f19bc5" d="M83 310h8v-7h7v7h8v6H83zm945 0h8v-7h8v7h8v6h-24z"/>
   <path fill="#f8e697" d="M227 246h7v7h-7zm411 24h6v6h-6zm67-65h6v6h-6zm351 45h7v7h-7zm-900 30h6v6h-6z"/>
