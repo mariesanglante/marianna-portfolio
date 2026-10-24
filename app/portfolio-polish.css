@@ -138,3 +138,25 @@ body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;plac
 .portfolio-home .footer-pixel-shot i:nth-child(3){--pixel-y:7px;animation-delay:200ms}
 .portfolio-home .footer-pixel-shot i:nth-child(4){--pixel-y:-5px;animation-delay:300ms}
 .portfolio-home .footer-pixel-shot i:nth-child(n+5){display:none}
+
+
+/* The footer pairs the copy with the wolf above a layered pixel forest. */
+.portfolio-home .footer{padding-block:30px 28px}
+.portfolio-home .footer-top{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;min-height:370px;padding:0 0 24px;isolation:isolate}
+.portfolio-home .footer-forest-scene{position:absolute;z-index:0;left:50%;bottom:-45px;width:100vw;height:300px;max-width:none;object-fit:cover;object-position:center bottom;transform:translateX(-50%);opacity:.84;pointer-events:none}
+.portfolio-home .footer-copy{position:relative;z-index:2;width:min(66%,760px);margin:0 0 8px}
+.portfolio-home .footer-copy p{padding:0;margin:0 0 22px;color:#d2c4dc!important;font-size:clamp(14px,1.6vw,19px);line-height:1.5}
+.portfolio-home .footer-top .footer-cta{position:relative;z-index:2;display:inline-flex;color:#f4f1f7!important;font-size:clamp(32px,5.4vw,76px);line-height:1.12;transition:color .2s,transform .2s}
+.portfolio-home .footer-top .footer-cta:hover,.portfolio-home .footer-top .footer-cta:hover .serif{color:#ff62c8!important;text-shadow:none!important;transform:translateY(-2px)}
+.portfolio-home .footer-top .footer-cta .serif{color:#f8e697;transition:color .2s}
+.portfolio-home .footer-night-scene{position:absolute;z-index:2;top:auto;right:1%;bottom:0;width:clamp(220px,25vw,310px);height:auto;max-height:100%;object-fit:contain;object-position:center bottom;transform-origin:74% 33%;animation:footer-wolf-howl 1.8s ease-in-out infinite}
+.portfolio-home .footer-howl-sound{position:absolute;z-index:3;right:clamp(170px,21vw,260px);top:132px;width:62px;height:45px;pointer-events:none}
+.portfolio-home .footer-howl-sound i{position:absolute;width:5px;height:5px;background:#f8e697;box-shadow:5px 0 #f8b7dc,10px 0 #b58ad0;opacity:0;image-rendering:pixelated;animation:footer-howl-call 1.7s steps(6,end) infinite}
+.portfolio-home .footer-howl-sound i:nth-child(1){left:0;top:24px;animation-delay:0ms}
+.portfolio-home .footer-howl-sound i:nth-child(2){left:10px;top:15px;animation-delay:220ms}
+.portfolio-home .footer-howl-sound i:nth-child(3){left:20px;top:7px;animation-delay:440ms}
+.portfolio-home .footer-bottom{position:relative;z-index:2}
+@keyframes footer-wolf-howl{0%,100%{transform:rotate(0) translateY(0)}35%{transform:rotate(-1.1deg) translateY(-2px)}68%{transform:rotate(.8deg) translateY(1px)}}
+@keyframes footer-howl-call{0%{opacity:0;transform:translate(0,0) scale(.5)}18%{opacity:1}100%{opacity:0;transform:translate(42px,-38px) scale(1.15)}}
+@media(max-width:700px){.portfolio-home .footer-top{min-height:275px;gap:8px;padding-bottom:12px}.portfolio-home .footer-copy{width:65%;margin-bottom:8px}.portfolio-home .footer-copy p{font-size:12px;margin-bottom:14px}.portfolio-home .footer-top .footer-cta{font-size:clamp(24px,6vw,40px)}.portfolio-home .footer-night-scene{right:-3%;width:39vw;max-width:175px}.portfolio-home .footer-forest-scene{height:205px;bottom:-35px}.portfolio-home .footer-howl-sound{right:26%;top:92px;transform:scale(.75);transform-origin:top right}}
+@media(prefers-reduced-motion:reduce){.portfolio-home .footer-night-scene,.portfolio-home .footer-howl-sound i{animation:none!important;opacity:1}}
