@@ -239,6 +239,4 @@ body:has(.cv-page) .cv-intro-bottom .pill-link:hover{background:#f8e3f5!importan
 .design-room-game .notion-body .notion-page-link:hover{background:#f8dced;transform:translate(-2px,-2px);box-shadow:7px 7px 0 #c89bd1;text-decoration:none}
 .design-room-game .notion-body .notion-page-link span{font-size:0;width:16px;height:16px;flex:none;background:currentColor;clip-path:polygon(0 34%,56% 34%,56% 0,100% 50%,56% 100%,56% 66%,0 66%);shape-rendering:crispEdges}
 
-/* Keep a quiet pixel moon fixed at the top of the screen. */
-body:has(.portfolio-home)::before{content:"";position:fixed;z-index:30;top:18px;right:clamp(18px,4vw,58px);width:42px;height:42px;pointer-events:none;background:#f8e697;clip-path:polygon(34% 0,70% 0,70% 10%,86% 10%,86% 24%,96% 24%,96% 64%,84% 64%,84% 82%,66% 82%,66% 94%,38% 94%,38% 84%,20% 84%,20% 70%,8% 70%,8% 34%,20% 34%,20% 18%,34% 18%);filter:drop-shadow(3px 3px 0 #171321)}
-@media(max-width:700px){body:has(.portfolio-home)::before{top:12px;right:14px;width:30px;height:30px}.portfolio-home .footer-night-scene,.portfolio-home .footer-howl-sound{display:none!important}}
+/* The fixed pixel moon was removed at the user's request. */
