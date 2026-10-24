@@ -127,3 +127,14 @@ body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;plac
 .portfolio-home .footer-pixel-shot i:nth-child(3){--pixel-y:8px;animation-delay:220ms}
 .portfolio-home .footer-pixel-shot i:nth-child(n+4){display:none}
 @media(max-width:700px){.portfolio-home .footer-night-scene{top:0;right:0;width:168px;height:168px}.portfolio-home .footer-top p{padding-top:142px}}
+
+
+/* Pink hover with detailed pixel-star trails echoing the moonlit sprite. */
+.portfolio-home .footer-top>a:hover,.portfolio-home .footer-top>a:hover .serif{color:#ff62c8!important;text-shadow:none!important}
+.portfolio-home .footer-pixel-shot i::before{background:#ff62c8;clip-path:polygon(45% 0,55% 0,55% 28%,72% 28%,72% 40%,100% 45%,100% 55%,72% 60%,72% 72%,55% 72%,55% 100%,45% 100%,45% 72%,28% 72%,28% 60%,0 55%,0 45%,28% 40%,28% 28%,45% 28%)}
+.portfolio-home .footer-pixel-shot i::after{left:-6px;top:4px;width:4px;height:4px;background:#f8e697;box-shadow:-5px 0 #bca7ff,-10px 0 #f8e697}
+.portfolio-home .footer-pixel-shot i:nth-child(1){--pixel-y:0px;animation-delay:0ms}
+.portfolio-home .footer-pixel-shot i:nth-child(2){--pixel-y:-10px;animation-delay:100ms}
+.portfolio-home .footer-pixel-shot i:nth-child(3){--pixel-y:7px;animation-delay:200ms}
+.portfolio-home .footer-pixel-shot i:nth-child(4){--pixel-y:-5px;animation-delay:300ms}
+.portfolio-home .footer-pixel-shot i:nth-child(n+5){display:none}
