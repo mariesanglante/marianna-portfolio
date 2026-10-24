@@ -1305,3 +1305,92 @@
 .rp-light .rp-demand.rp-flow-overspend .rp-energy-orb span { border-color:#b72d3c; }
 .rp-light .rp-demand.rp-flow-generation .rp-energy-orb span { border-color:#187847; }
 .rp-light .rp-demand.rp-flow-normal .rp-energy-orb span { border-color:#6939c0; }
+
+.rp-device-breakdown {
+  margin: 10px 0 14px;
+  padding: 15px;
+  border: 1px solid var(--rp-line);
+  border-radius: 14px;
+  background: var(--rp-raised);
+}
+.rp-device-breakdown-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+}
+.rp-device-breakdown-heading h3 {
+  margin: 5px 0 0;
+  color: var(--rp-text);
+  font-size: 16px;
+}
+.rp-device-breakdown-heading > strong {
+  color: var(--rp-accent);
+  font-size: 22px;
+  white-space: nowrap;
+}
+.rp-device-breakdown-heading > strong small,
+.rp-device-breakdown-value small {
+  font-size: 11px;
+  font-weight: 500;
+}
+.rp-device-breakdown-caption {
+  margin: 8px 0 14px;
+  color: var(--rp-muted);
+  font-size: 11px;
+}
+.rp-device-breakdown-list {
+  display: grid;
+  gap: 12px;
+}
+.rp-device-breakdown-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 6px 10px;
+}
+.rp-device-breakdown-label {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.rp-device-breakdown-label b {
+  overflow: hidden;
+  color: var(--rp-text);
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rp-device-breakdown-label small {
+  color: var(--rp-muted);
+  font-size: 10px;
+}
+.rp-device-breakdown-value {
+  color: var(--rp-text);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.rp-device-breakdown-track {
+  grid-column: 1 / -1;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: var(--rp-line);
+}
+.rp-device-breakdown-track i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--rp-button), var(--rp-accent));
+  transition: width 220ms ease;
+}
+.rp-device-row-usage {
+  color: var(--rp-accent);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.rp-device-row-usage small {
+  color: var(--rp-muted);
+  font-size: 10px;
+}
