@@ -240,3 +240,6 @@ body:has(.cv-page) .cv-intro-bottom .pill-link:hover{background:#f8e3f5!importan
 .design-room-game .notion-body .notion-page-link span{font-size:0;width:16px;height:16px;flex:none;background:currentColor;clip-path:polygon(0 34%,56% 34%,56% 0,100% 50%,56% 100%,56% 66%,0 66%);shape-rendering:crispEdges}
 
 /* The fixed pixel moon was removed at the user's request. */
+
+/* Keep the mobile footer clear of the duplicate wolf scene and howl marks. */
+@media(max-width:700px){.portfolio-home .footer-night-scene,.portfolio-home .footer-howl-sound{display:none!important}}
