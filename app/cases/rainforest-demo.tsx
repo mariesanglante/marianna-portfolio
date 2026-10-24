@@ -114,6 +114,14 @@ const descriptions: Partial<Record<Screen, [string, string]>> = {
     'Change periods, add a comparison and cost overlay, inspect a chart point, or download a sample CSV.',
   ],
 };
+function deviceKw(device: Device) {
+  if (!device.on) return 0;
+  if (device.type === 'Wallbox Charger') return 6.5;
+  if (device.type === 'Thermostat') return 0.8;
+  if (device.type === 'Smart Plug') return 1.2;
+  if (device.type === 'Washing Machine') return 1.5;
+  return 1.0;
+}
 function DeviceIcon({ type }: { type: DeviceType }) {
   return type === 'Thermostat' ? (
     <Thermometer />
@@ -1097,6 +1105,36 @@ export function RainforestDemo({
                 <Plus size={16} /> Add new
               </button>
             </div>
+            {devices.length > 0 && (
+              <section className="rp-device-breakdown" aria-label="Current energy by device">
+                <div className="rp-device-breakdown-heading">
+                  <div>
+                    <span className="rp-kicker">LIVE / ILLUSTRATIVE</span>
+                    <h3>Energy by device</h3>
+                  </div>
+                  <strong>{devices.reduce((sum, d) => sum + deviceKw(d), 0).toFixed(1)} <small>kW</small></strong>
+                </div>
+                <p className="rp-device-breakdown-caption">Current estimated demand · sample household</p>
+                <div className="rp-device-breakdown-list">
+                  {devices.map((d) => {
+                    const usage = deviceKw(d);
+                    const maxUsage = Math.max(...devices.map(deviceKw), 1);
+                    return (
+                      <div className="rp-device-breakdown-item" key={d.id}>
+                        <span className="rp-device-breakdown-label">
+                          <b>{d.name}</b>
+                          <small>{usage > 0 ? (d.type === 'Wallbox Charger' ? 'Charging' : 'In use') : 'Off'}</small>
+                        </span>
+                        <span className="rp-device-breakdown-value">{usage.toFixed(1)} <small>kW</small></span>
+                        <span className="rp-device-breakdown-track" aria-hidden="true">
+                          <i style={{ width: `${usage === 0 ? 0 : Math.max(4, (usage / maxUsage) * 100)}%` }} />
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
             {devices.length ? (
               devices.map((d) => (
                 <button
@@ -1121,6 +1159,7 @@ export function RainforestDemo({
                             : 'Off'}
                     </small>
                   </span>
+                  <span className="rp-device-row-usage">{deviceKw(d).toFixed(1)} <small>kW</small></span>
                   <ChevronRight size={19} />
                 </button>
               ))
