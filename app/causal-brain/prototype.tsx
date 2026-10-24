@@ -416,7 +416,7 @@ export default function Prototype({ tour = false }: { tour?: boolean }) {
                   style={imageStyle}
                 />
                 <svg
-                  className={`cb-weather-overlay ${layer === 'Precipitation' ? 'show-precipitation' : layer === 'Wind speed' ? 'show-wind' : layer === 'Temperature' ? 'show-temperature' : 'show-pressure'}`}
+                  className={`cb-weather-overlay ${heat ? 'show-heat' : layer === 'Precipitation' ? 'show-precipitation' : layer === 'Wind speed' ? 'show-wind' : layer === 'Temperature' ? 'show-temperature' : 'show-pressure'}`}
                   viewBox="0 0 1000 650"
                   preserveAspectRatio="none"
                   aria-label={`${layer} conditions for the ${event.toLowerCase()}`}
