@@ -228,3 +228,17 @@ body:has(.case-footer):not(:has(main.archive)) .next-case>span{display:grid;plac
  .portfolio-home .footer-forest-scene{height:100%;bottom:0;object-position:center bottom}
 }
 @media(prefers-reduced-motion:reduce){.portfolio-home .footer-night-scene{animation:none!important}}
+
+
+/* CV uses the homepage atmosphere and the same pink pixel hover as its other CTAs. */
+body:has(.cv-page){background-color:#fffdfd!important;background-image:radial-gradient(ellipse at 6% 8%,#f4c9eb55 0,transparent 39%),radial-gradient(ellipse at 96% 16%,#b7def455 0,transparent 38%),radial-gradient(ellipse at 78% 47%,#d7c8f344 0,transparent 42%),radial-gradient(ellipse at 13% 71%,#c8e8d444 0,transparent 40%),radial-gradient(ellipse at 86% 94%,#f6e8bd55 0,transparent 42%),repeating-linear-gradient(0deg,#664d6b05 0 1px,transparent 1px 4px)!important}
+body:has(.cv-page) .cv-intro-bottom .pill-link:hover{background:#f8e3f5!important;color:#171817!important;border-color:#171817!important;box-shadow:6px 6px 0 #e89bd7!important}
+
+/* Turn the Design Room case index link into a square pixel button. */
+.design-room-game .notion-body .notion-page-link{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;margin:36px 0;padding:18px 22px;border:2px solid #20182a!important;border-block:2px solid #20182a!important;background:#f4e9f4;color:#20182a;box-shadow:5px 5px 0 #c89bd1;font-family:"Pixeloid Sans",monospace!important;transition:transform .16s,box-shadow .16s,background .16s}
+.design-room-game .notion-body .notion-page-link:hover{background:#f8dced;transform:translate(-2px,-2px);box-shadow:7px 7px 0 #c89bd1;text-decoration:none}
+.design-room-game .notion-body .notion-page-link span{font-size:0;width:16px;height:16px;flex:none;background:currentColor;clip-path:polygon(0 34%,56% 34%,56% 0,100% 50%,56% 100%,56% 66%,0 66%);shape-rendering:crispEdges}
+
+/* Keep a quiet pixel moon fixed at the top of the screen. */
+body:has(.portfolio-home)::before{content:"";position:fixed;z-index:30;top:18px;right:clamp(18px,4vw,58px);width:42px;height:42px;pointer-events:none;background:#f8e697;clip-path:polygon(34% 0,70% 0,70% 10%,86% 10%,86% 24%,96% 24%,96% 64%,84% 64%,84% 82%,66% 82%,66% 94%,38% 94%,38% 84%,20% 84%,20% 70%,8% 70%,8% 34%,20% 34%,20% 18%,34% 18%);filter:drop-shadow(3px 3px 0 #171321)}
+@media(max-width:700px){body:has(.portfolio-home)::before{top:12px;right:14px;width:30px;height:30px}.portfolio-home .footer-night-scene,.portfolio-home .footer-howl-sound{display:none!important}}
