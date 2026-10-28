@@ -58,6 +58,90 @@
     "caption": "Ascy voice capture and notes overview."
   },
   {
+    "slug": "affinity-agreements-engine",
+    "name": "Affinity Agreements Engine",
+    "title": "Making complex agreements easier to manage.",
+    "category": "Product",
+    "role": "Product UX/UI · Enterprise workflows · Data-heavy UI",
+    "summary": "An internal enterprise platform connecting vehicle records, offers, organisations and vouchers. Redesigned navigation recovers 168 px of workspace.",
+    "period": "Enterprise operations · Internal platform",
+    "accent": "blue",
+    "nda": true,
+    "source": "https://affinity-agreements-engine-clickable-prototype.marianna276149.chatgpt.site",
+    "status": "Interactive prototype",
+    "facts": [
+      [
+        "168 px",
+        "Additional table width"
+      ],
+      [
+        "72 px",
+        "Compact navigation"
+      ],
+      [
+        "5",
+        "Connected entity types"
+      ]
+    ],
+    "sections": [
+      {
+        "title": "The challenge",
+        "body": [
+          "Affinity Agreements Engine connects vehicle inventories, commercial offers, organisations, members and vouchers through administrative workflows. The challenge was to reduce cognitive load without losing the business rules essential to operational work.",
+          "My scope covered navigation patterns, data-heavy tables, interaction states, and consistent access to connected workflows."
+        ]
+      },
+      {
+        "title": "Discover — audit and system mapping",
+        "body": [
+          "I reviewed existing interface requirements and flows across Vehicle Library, Create Vehicle, Vehicle Details, Offers, Organisations and Vouchers. I identified constraints in horizontal workspace, interaction consistency and navigation clarity.",
+          "Entity analysis established key dependencies: vehicle records can be reused across offers; Shared and Bespoke offers behave differently; published offers have restricted actions; organisations and members have their own relationships."
+        ]
+      },
+      {
+        "title": "Define — from entities to workflows",
+        "body": [
+          "The core problem statement was: How might we simplify complex administrative workflows while preserving accurate information, clear relationships and predictable business rules?",
+          "I organised the To-Be experience around connected list views, detail screens, creation flows, relevant states and contextual actions. The key UX decision was to model business objects before refining visual presentation."
+        ]
+      },
+      {
+        "title": "Develop — navigation redesign",
+        "body": [
+          "I designed an expanded sidebar and a 72 px compact navigation rail, returning 168 px of horizontal space to dense tables. The compact mode includes accessible navigation names and user-persisted preference.",
+          "The interface also considered overlay expansion, keyboard dismissal and predictable behaviour when moving between modules."
+        ]
+      },
+      {
+        "title": "Develop — offer workflows and tables",
+        "body": [
+          "I structured Create a Shared Offer and Apply an Existing Shared Offer as distinct journeys with clear entry points and review steps. The flows separate reusable offer configuration from assignment.",
+          "The Vehicle Library and connected modules prioritise scannable tables, consistent actions, relevant detail information and clear handling of incomplete, restricted or unavailable records."
+        ]
+      },
+      {
+        "title": "Design system and interaction states",
+        "body": [
+          "Reusable navigation, table, detail and form patterns bring consistency across modules. I accounted for empty states, unsaved changes, validation feedback and state-specific actions, so that the same interaction principles work beyond a single screen."
+        ]
+      },
+      {
+        "title": "Legacy CRM migration — extension scenario",
+        "body": [
+          "As a complementary product-strategy exercise, I mapped how this architecture could support a transition away from a legacy CRM. The method covers an As-Is inventory, To-Be data model, source-to-target mapping, record reconciliation, RBAC permissions, and integration states.",
+          "The proposed phased rollout includes controlled pilots, parallel verification, cutover planning and post-launch monitoring. This extension illustrates my approach to enterprise modernisation; it is not a claim that I performed a production migration for Affinity."
+        ]
+      },
+      {
+        "title": "Outcomes and live prototype",
+        "body": [
+          "The navigation redesign recovers 168 px of working width for data-heavy tables. Clearer separation of offer creation and assignment supports a more coherent workflow and reusable interaction architecture.",
+          "Explore the interactive prototype using the Original project archive link below. It demonstrates Offers, Vehicles, Organisations and Vouchers navigation and representative administrative flows."
+        ]
+      }
+    ]
+  },
+  {
     "slug": "causal-labs",
     "name": "Causal Labs",
     "title": "Weather intelligence for aviation decisions.",
