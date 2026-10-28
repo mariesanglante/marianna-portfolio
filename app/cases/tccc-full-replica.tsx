@@ -1,11 +1,12 @@
 "use client";
-import {useState} from "react";
+import {useEffect,useState} from "react";
 type Screen="home"|"list"|"editor";type RecordData={id:string;roster:string;priority:string;lastName:string;firstName:string;ssn:string;gender:string;injuryDate:string;branch:string;unit:string;allergies:string;injuries:string;injurySide:string;pulse:string;bloodPressure:string;avpu:string;pain:string;tourniquet:string;airway:string;breathing:string;fluids:string;analgesics:string;antibiotics:string;otherMedications:string;notes:string;responder:string;responderUnit:string;status:"draft"|"reviewed"};
 const empty=():RecordData=>({id:String(Date.now()),roster:"",priority:"",lastName:"",firstName:"",ssn:"",gender:"",injuryDate:"",branch:"",unit:"",allergies:"",injuries:"",injurySide:"",pulse:"",bloodPressure:"",avpu:"",pain:"",tourniquet:"",airway:"",breathing:"",fluids:"",analgesics:"",antibiotics:"",otherMedications:"",notes:"",responder:"",responderUnit:"",status:"draft"});
 const sections=[["patient","Інформація про пацієнта","PATIENT INFORMATION"],["injuries","Діаграма поранень","INJURY DIAGRAM"],["signs","Ознаки та симптоми","SIGNS & SYMPTOMS"],["treatments","Лікування","TREATMENTS"],["medications","Медикаменти","MEDICATIONS"],["notes","Примітки","NOTES"],["responder","Дані рятувальника","RESPONDER DETAILS"]] as const;
 const storeKey="portfolio-tccc-replica-demo-v1";
 export function TCCCFullReplica(){
 const [screen,setScreen]=useState<Screen>("home"),[section,setSection]=useState(0),[record,setRecord]=useState<RecordData>(empty),[records,setRecords]=useState<RecordData[]>([]),[visited,setVisited]=useState<number[]>([]),[menu,setMenu]=useState(false),[notice,setNotice]=useState(""),[search,setSearch]=useState(""),[saved,setSaved]=useState(false),[dark,setDark]=useState(true);
+useEffect(()=>{try{const raw=localStorage.getItem(storeKey);if(raw){const data=JSON.parse(raw);if(Array.isArray(data))setRecords(data)}}catch{setNotice("Не вдалося прочитати локальні чернетки.")}},[]);
 const change=(k:keyof RecordData,value:string)=>{setRecord(r=>({...r,[k]:value,status:"draft"}));setSaved(false)};
 const persist=(rec:RecordData)=>{const next=[rec,...records.filter(x=>x.id!==rec.id)];try{localStorage.setItem(storeKey,JSON.stringify(next));setRecords(next);setSaved(true);setNotice("Чернетку збережено в браузері. Дані не передано.");return true}catch{setNotice("Збереження не вдалося. Не закривайте форму, скопіюйте важливі записи.");return false}};
 const go=(i:number)=>{setVisited(v=>v.includes(i)?v:[...v,i]);setSection(i);setMenu(false);setNotice("");document.getElementById("tccc-replica-top")?.scrollIntoView({block:"start"})};
