@@ -1,5 +1,84 @@
 [
   {
+    "slug": "tccc-casualty-card",
+    "name": "TCCC Digital Casualty Card",
+    "title": "Documenting care when every handoff matters.",
+    "category": "Product",
+    "role": "Product design · UX research · Interaction design · Prototyping",
+    "summary": "A mobile-first concept for documenting casualty information and supporting continuity of information during medical handoffs. Informed by conversations with combat medics and desk research into US and NATO field documentation.",
+    "period": "Research-informed concept · Portfolio reconstruction 2026",
+    "accent": "green",
+    "status": "Interactive UX prototype · Not clinically validated",
+    "source": "https://github.com/mariesanglante/v0-warrior",
+    "showcase": "https://v0-warrior-9oeu4ei7c-marfantastik-gmailcoms-projects.vercel.app/",
+    "nda": false,
+    "sections": [
+      {
+        "title": "01 / Context & challenge",
+        "body": [
+          "Casualty documentation moves between people, environments and stages of care. The design challenge was to reduce documentation friction without making uncertain information appear complete or verified.",
+          "This is a conceptual interface rather than an approved clinical system. The portfolio case separates original research activities from later reconstruction and design hypotheses."
+        ]
+      },
+      {
+        "title": "02 / Discover — Primary research",
+        "body": [
+          "I spoke with combat medics to understand documentation practices and the constraints of recording information during field care. Original interview transcripts, participant counts and direct quotes are not included in the available project materials; this case therefore does not attribute specific findings or numerical results to participants.",
+          "Research artifact: a structured interview guide covering context of use, information priorities, interruptions, unidentified casualties, handoffs, connectivity, correction of mistakes and privacy. Questions focused on actual workflows rather than hypothetical feature preferences.",
+          "Research synthesis (design hypotheses, not verified interview statistics): allow unknown values, preserve draft state, distinguish documentation from transmission, and prevent loss of work when a user changes sections."
+        ]
+      },
+      {
+        "title": "03 / Discover — Desk research & benchmark",
+        "body": [
+          "I examined the documentation model around the US TCCC Casualty Card (DD Form 1380), including the MIST sequence: Mechanism of injury, Injuries, Signs and symptoms, Treatments. NATO-related field medical documentation was part of the comparative research scope, but this prototype is not represented as STANAG-certified.",
+          "Competitive artifact: a feature comparison between paper documentation, conventional long forms and a digital structured flow. Criteria: speed of entry, traceability, visibility of unknown information, handoff clarity, offline behavior, and accessibility.",
+          "Reference resources: Joint Trauma System and the official DD Form 1380. These materials inform the information architecture; they are not evidence of official endorsement or medical validation."
+        ]
+      },
+      {
+        "title": "04 / Define — Problem framing",
+        "body": [
+          "How might we support a combat medic in recording and handing over accurate casualty information under interruptions, limited time and uncertain connectivity, while clearly communicating incomplete or unverified fields?",
+          "Jobs to be done: capture the information available now; return to an unfinished record; review before handing off; understand what has and has not been saved or transferred.",
+          "Prioritization artifact: P0 — reliable draft persistence, straightforward navigation, meaningful errors and incomplete/unknown states. P1 — structured handoff review and export. Later — authenticated device-to-device exchange, encryption, audit log and medically validated terminology."
+        ]
+      },
+      {
+        "title": "05 / Develop — Information architecture & user flow",
+        "body": [
+          "The redesigned prototype is organized as Identify → Mechanism → Injuries → Signs → Treatments → Review. Each section is directly reachable; users can move backward or save a partial record.",
+          "Alternative path artifact: unidentified casualty → create a temporary record → enter available MIST information → keep draft → add identification later. Other branches cover interrupted entry, missing details, invalid persistence and export without confirmed receipt.",
+          "Information model: unique record ID, identification, mechanism, injuries, observations, interventions, documentation author, time and record status. Real clinical deployment would need stricter field definitions, secure timestamps, structured events and authorized review."
+        ]
+      },
+      {
+        "title": "06 / Develop — Interaction and UI decisions",
+        "body": [
+          "The interface uses a restrained, high-contrast visual hierarchy, clear step position, large touch targets, consistent input labels, explicit actions and concise status messages.",
+          "The core distinction is between Saved locally, Reviewed and Exported. No sharing action is allowed to imply successful receipt by another person without confirmation.",
+          "Content decisions: unknown values should not be silently replaced with arbitrary defaults; editing an existing record must open that record rather than a new empty one."
+        ]
+      },
+      {
+        "title": "07 / Deliver — Code-based audit & remediation",
+        "body": [
+          "A code review of the earlier React prototype identified simulated saving, disconnected mock listings, false-positive transmission indicators, simulated voice recognition and sections that could be bypassed without coordinated validation.",
+          "The revised demonstration replaces the primary experience with a coherent MIST flow, local browser draft storage, editable saved records, clear persistence errors, final review and a downloadable JSON demonstration export.",
+          "These are implementation changes supported by source review, not results from a completed field usability study. Browser-based end-to-end QA and clinical/security validation remain necessary."
+        ]
+      },
+      {
+        "title": "08 / Evaluation plan & limitations",
+        "body": [
+          "Proposed usability tasks: create an unidentified casualty draft; interrupt and resume; change previously entered information; review missing documentation; export a record; recover from a failed local save. Measure task completion, critical errors, recovery success and understanding of transmission status.",
+          "Recommended test environments: small mobile viewport, keyboard-only use, screen reader, network interruption, storage failure and realistic time constraints with de-identified scenarios.",
+          "This prototype is not intended for real patient data or medical decision-making. Production requirements include authenticated access, encrypted storage and transmission, audit trails, medical subject-matter validation, retention rules and secure offline synchronization."
+        ]
+      }
+    ]
+  },
+  {
     "slug": "mango-bank",
     "name": "ManGo Bank",
     "title": "A little crypto. A lot of freedom.",
