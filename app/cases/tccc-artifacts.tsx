@@ -1,6 +1,6 @@
-import type {ReactNode} from "react";
-const panel:React.CSSProperties={border:"1px solid #dce1e7",borderRadius:16,padding:22,margin:"22px 0",background:"#f7f9fa",color:"#1c2733"};
-const pill:React.CSSProperties={border:"1px solid #bdc8d2",borderRadius:8,padding:"8px 12px",background:"#fff",fontSize:13};
+import type {ReactNode,CSSProperties} from "react";
+const panel:CSSProperties={border:"1px solid #dce1e7",borderRadius:16,padding:22,margin:"22px 0",background:"#f7f9fa",color:"#1c2733"};
+const pill:CSSProperties={border:"1px solid #bdc8d2",borderRadius:8,padding:"8px 12px",background:"#fff",fontSize:13};
 function Card({title,subtitle,children}:{title:string;subtitle:string;children:ReactNode}){return <figure style={panel}><figcaption style={{marginBottom:18}}><strong style={{display:"block",fontSize:17}}>{title}</strong><span style={{fontSize:12,color:"#51606c"}}>{subtitle}</span></figcaption>{children}</figure>}
 function Flow({items}:{items:string[]}){return <div style={{display:"flex",flexWrap:"wrap",gap:8,alignItems:"center"}}>{items.map((v,i)=><span key={v} style={{display:"contents"}}><span style={pill}>{v}</span>{i<items.length-1&&<span aria-hidden>→</span>}</span>)}</div>}
 export function TCCCArtifact({section}:{section:number}) {
