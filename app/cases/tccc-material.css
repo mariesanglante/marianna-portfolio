@@ -1,1 +1,33 @@
 .tccc-native-section{background:#f5f6f9;color:#1a1b20;padding:clamp(26px,5vw,64px) 0;border-radius:24px;overflow:hidden}.tccc-native-heading{max-width:1140px;margin:0 auto 24px;padding:0 24px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}.tccc-native-eyebrow{font:700 11px/1.4 ui-monospace,monospace;letter-spacing:.14em;color:#596472}.tccc-native-heading h2{font-size:clamp(28px,4vw,48px);line-height:1.12;letter-spacing:-.04em;margin:12px 0}.tccc-native-heading p{font-size:15px;line-height:1.65;color:#58616d;max-width:670px}.tccc-native-indicator{display:inline-flex;gap:8px;align-items:center;padding:9px 13px;border-radius:99px;background:#e5ece8;color:#355d43;font:700 11px ui-monospace,monospace}.tccc-native-indicator span{width:8px;height:8px;border-radius:50%;background:#448864}.tccc-native-section .tr-app{background:transparent;padding:0 clamp(12px,3vw,28px);color:#eff2f6;font-family:inherit}.tccc-native-section .tr-frame{max-width:1140px;border:1px solid #36404b;border-radius:18px;overflow:hidden;box-shadow:0 25px 65px rgba(14,26,37,.18);background:#12171c}.tccc-native-section .tr-toolbar{background:#191f26;padding:17px 24px}.tccc-native-section .tr-panel{border-radius:14px;background:#202932;border-color:#394753}.tccc-native-section .tr-field input,.tccc-native-section .tr-field textarea,.tccc-native-section .tr-field select{border-radius:10px;background:#151d25}.tccc-native-section .tr-action,.tccc-native-section .tr-footer .primary{border-radius:12px;background:#c2e7d0!important;color:#143d27!important;font-family:inherit;font-weight:700;letter-spacing:.01em}.tccc-native-section button{transition:background-color .16s ease,box-shadow .16s ease,transform .16s ease}.tccc-native-section button:not(:disabled):active{transform:scale(.98)}.tccc-native-section button:focus-visible,.tccc-native-section input:focus-visible,.tccc-native-section select:focus-visible,.tccc-native-section textarea:focus-visible{outline:3px solid #a8d8ff;outline-offset:2px}.tccc-native-section .tr-progress button{height:7px;border-radius:9px}.tccc-native-section .tr-progress button.active{background:#b4dfc3}.tccc-native-section .tr-progress button.seen{background:#709a84}.tccc-native-section .tr-editor-top button,.tccc-native-section .tr-section-head button,.tccc-native-section .tr-record button{border-radius:10px}.tccc-native-section .tr-footer{z-index:2}.tccc-native-section .tr-toggle button{border-radius:8px}.tccc-native-section .tr-toggle button.active{background:#badfc8;color:#173827}.tccc-native-section .tr-drawer button.tr-selected{background:#2e4d40}.tccc-native-section .tr-banner{background:#303329;color:#e7dfb4}.tccc-native-section .tr-head{padding:clamp(22px,4vw,44px)}@media(max-width:640px){.tccc-native-section{border-radius:16px}.tccc-native-heading{padding:0 18px}.tccc-native-section .tr-frame{border-radius:14px}.tccc-native-section .tr-footer{position:sticky;bottom:0}}
+
+/* Material 3-inspired dark color tokens and reliable component contrast. */
+.tccc-native-section .tr-app {
+ --md-bg:#101318; --md-surface:#191d24; --md-container:#242a33;
+ --md-container-high:#303741; --md-outline:#65717f; --md-primary:#c0e7cf;
+ --md-on-primary:#103923; --md-on-surface:#f1f3f6; --md-secondary:#c1cbd7;
+ --md-muted:#bdc7d1; --md-warning:#ffdd91;
+ color:var(--md-on-surface);color-scheme:dark;
+}
+.tccc-native-section .tr-frame{background:var(--md-bg)!important;color:var(--md-on-surface)!important}
+.tccc-native-section .tr-toolbar,.tccc-native-section .tr-editor-top,.tccc-native-section .tr-footer{background:var(--md-surface)!important;color:var(--md-on-surface)!important;border-color:#47525d!important}
+.tccc-native-section .tr-panel,.tccc-native-section .tr-record{background:var(--md-container)!important;color:var(--md-on-surface)!important;border-color:#48545f!important}
+.tccc-native-section .tr-record{border-radius:14px;padding:18px;margin:10px 0;display:flex;flex-wrap:wrap}
+.tccc-native-section .tr-panel h3,.tccc-native-section .tr-record strong,.tccc-native-section .tr-head h2,.tccc-native-section .tr-main h2,.tccc-native-section .tr-section-head h3{color:var(--md-on-surface)!important}
+.tccc-native-section .tr-record p,.tccc-native-section .tr-record span,.tccc-native-section .tr-empty p,.tccc-native-section .tr-field,.tccc-native-section .tr-desc,.tccc-native-section .tr-head p{color:var(--md-muted)!important}
+.tccc-native-section .tr-toolbar button,.tccc-native-section .tr-editor-top button,.tccc-native-section .tr-section-head button,.tccc-native-section .tr-record button,.tccc-native-section .tr-footer button:not(.primary),.tccc-native-section .tr-drawer button{background:var(--md-container-high)!important;color:var(--md-on-surface)!important;border:1px solid var(--md-outline)!important}
+.tccc-native-section .tr-record button{font-weight:650;min-height:48px}
+.tccc-native-section .tr-toggle button{background:#343d49!important;color:#f2f5f7!important;border:1px solid #737f8c!important;min-height:52px}
+.tccc-native-section .tr-toggle button.active{background:var(--md-primary)!important;color:var(--md-on-primary)!important;border:2px solid var(--md-primary)!important}
+.tccc-native-section .tr-toggle button:not(.active){opacity:1!important}
+.tccc-native-section .tr-field input,.tccc-native-section .tr-field textarea,.tccc-native-section .tr-field select{background:#171e27!important;color:#fff!important;border:1px solid #86919d!important;min-height:52px;font-size:16px}
+.tccc-native-section .tr-field input::placeholder,.tccc-native-section .tr-field textarea::placeholder{color:#aebbc7;opacity:1}
+.tccc-native-section .tr-field-hint{display:block;margin-top:6px;color:#a9b9c6;font:11px/1.5 system-ui,sans-serif;font-weight:400}
+.tccc-native-section .tr-kicker{color:#bfe8cf!important}
+.tccc-native-section .tr-banner{background:#3b3322!important;color:#ffdf9c!important}
+.tccc-native-section .tr-notice{background:#353326;color:#ffe7a5;border-color:#ffcc72}
+.tccc-native-section .tr-progress{background:#1c222a}
+.tccc-native-section .tr-drawer{background:#141b20}
+.tccc-native-section .tr-drawer button.tr-selected{background:#345b49!important;color:#fff!important;border-color:#bfe8cf!important}
+.tccc-native-section .tr-app button{font-size:13px}
+.tccc-native-section .tr-app button:focus-visible{outline:3px solid #b2dcff!important;outline-offset:2px}
+.tccc-native-section .tr-app .tr-panel button,.tccc-native-section .tr-app .tr-toolbar button{min-height:44px}
