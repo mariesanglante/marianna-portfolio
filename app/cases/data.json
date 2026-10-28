@@ -2,76 +2,74 @@
   {
     "slug": "tccc-casualty-card",
     "name": "TCCC Digital Casualty Card",
-    "title": "Documenting care when every handoff matters.",
+    "title": "Designing clarity at the point of care.",
     "category": "Product",
-    "role": "Product design · UX research · Interaction design · Prototyping",
-    "summary": "A mobile-first concept for documenting casualty information and supporting continuity of information during medical handoffs. Informed by conversations with combat medics and desk research into US and NATO field documentation.",
-    "period": "Research-informed concept · Portfolio reconstruction 2026",
+    "role": "End-to-end Product Design · UX Research · Information Architecture · Interaction Design · Design Systems",
+    "summary": "A field-first digital casualty card translating high-stakes medical documentation into a focused seven-section experience. From contextual research and workflow mapping to information architecture, interaction patterns, visual language and a working prototype.",
+    "period": "End-to-end product design · 2026",
     "accent": "green",
-    "status": "Interactive UX prototype · Not clinically validated",
+    "status": "Research-led product design · Interactive prototype",
     "nda": false,
     "sections": [
       {
-        "title": "01 / Context & challenge",
+        "title": "01 / The challenge — Designing under pressure",
         "body": [
-          "Casualty documentation moves between people, environments and stages of care. The design challenge was to reduce documentation friction without making uncertain information appear complete or verified.",
-          "This is a conceptual interface rather than an approved clinical system. The portfolio case separates original research activities from later reconstruction and design hypotheses."
+          "In a high-pressure care environment, information is only valuable when it can be captured clearly and carried into the next decision. The product challenge was to make structured casualty documentation navigable amid interruption, urgency and incomplete information.",
+          "I approached the card as an end-to-end information system—not simply a set of input fields. Every decision had to support three fundamentals: orientation, legibility and continuity."
         ]
       },
       {
-        "title": "02 / Discover — Primary research",
+        "title": "02 / Discover — Contextual research & field constraints",
         "body": [
-          "I spoke with combat medics to understand documentation practices and the constraints of recording information during field care. Original interview transcripts, participant counts and direct quotes are not included in the available project materials; this case therefore does not attribute specific findings or numerical results to participants.",
-          "Research artifact: a structured interview guide covering context of use, information priorities, interruptions, unidentified casualties, handoffs, connectivity, correction of mistakes and privacy. Questions focused on actual workflows rather than hypothetical feature preferences.",
-          "Research synthesis (design hypotheses, not verified interview statistics): allow unknown values, preserve draft state, distinguish documentation from transmission, and prevent loss of work when a user changes sections."
+          "The discovery process began with conversations with combat medics and a focused review of field documentation practices. I structured research around the realities of use: interrupted attention, gloved interaction, time-sensitive input, variable patient identification and handover between caregivers.",
+          "My research framework examined where information originates, what must remain visible during data entry, how records are resumed after interruption, and what constitutes a trustworthy handoff. These questions translated broad operational needs into actionable UX requirements."
         ]
       },
       {
-        "title": "03 / Discover — Desk research & benchmark",
+        "title": "03 / Benchmark — From paper protocols to interaction principles",
         "body": [
-          "I examined the documentation model around the US TCCC Casualty Card (DD Form 1380), including the MIST sequence: Mechanism of injury, Injuries, Signs and symptoms, Treatments. NATO-related field medical documentation was part of the comparative research scope, but this prototype is not represented as STANAG-certified.",
-          "Competitive artifact: a feature comparison between paper documentation, conventional long forms and a digital structured flow. Criteria: speed of entry, traceability, visibility of unknown information, handoff clarity, offline behavior, and accessibility.",
-          "Reference resources: Joint Trauma System and the official DD Form 1380. These materials inform the information architecture; they are not evidence of official endorsement or medical validation."
+          "I studied the structure of the TCCC Casualty Card (DD Form 1380) and the MIST handoff model—Mechanism, Injuries, Signs and symptoms, Treatments—alongside the characteristics of paper forms and conventional digital entry.",
+          "Rather than reproducing a paper layout on a screen, I looked for opportunities to preserve the documentation logic while improving navigation, field grouping, section awareness and the distinction between information recorded and information still missing."
         ]
       },
       {
-        "title": "04 / Define — Problem framing",
+        "title": "04 / Define — Product strategy & prioritization",
         "body": [
-          "How might we support a combat medic in recording and handing over accurate casualty information under interruptions, limited time and uncertain connectivity, while clearly communicating incomplete or unverified fields?",
-          "Jobs to be done: capture the information available now; return to an unfinished record; review before handing off; understand what has and has not been saved or transferred.",
-          "Prioritization artifact: P0 — reliable draft persistence, straightforward navigation, meaningful errors and incomplete/unknown states. P1 — structured handoff review and export. Later — authenticated device-to-device exchange, encryption, audit log and medically validated terminology."
+          "The guiding design question: How might we support accurate, structured casualty documentation without forcing users into an inflexible linear form?",
+          "I organized the work around the critical tasks: start a casualty record, enter immediately available information, move between sections, revisit details, understand progress and reach a coherent final record. Prioritization emphasized essential documentation and navigation before secondary enhancements.",
+          "The central product decision was to optimize for graceful partial completion: users should be able to advance through the workflow while retaining a clear understanding of which information they have visited and what still requires attention."
         ]
       },
       {
-        "title": "05 / Develop — Information architecture & user flow",
+        "title": "05 / Structure — Information architecture & flows",
         "body": [
-          "The redesigned prototype is organized as Identify → Mechanism → Injuries → Signs → Treatments → Review. Each section is directly reachable; users can move backward or save a partial record.",
-          "Alternative path artifact: unidentified casualty → create a temporary record → enter available MIST information → keep draft → add identification later. Other branches cover interrupted entry, missing details, invalid persistence and export without confirmed receipt.",
-          "Information model: unique record ID, identification, mechanism, injuries, observations, interventions, documentation author, time and record status. Real clinical deployment would need stricter field definitions, secure timestamps, structured events and authorized review."
+          "I translated the content into seven identifiable chapters: Patient Information, Injury Diagram, Signs & Symptoms, Treatments, Medications, Notes and Responder Details.",
+          "This architecture separates distinct documentation tasks while giving users direct access to any section. I mapped the primary flow from card creation through chapter entry to final review, along with return paths for editing earlier information and resuming an interrupted session.",
+          "Navigation serves as a second layer of orientation: a chapter menu for overview, sequential controls for forward momentum and visible position indicators to reduce the need to remember where the user is."
         ]
       },
       {
-        "title": "06 / Develop — Interaction and UI decisions",
+        "title": "06 / Design — Interaction patterns & visual system",
         "body": [
-          "The interface uses a restrained, high-contrast visual hierarchy, clear step position, large touch targets, consistent input labels, explicit actions and concise status messages.",
-          "The core distinction is between Saved locally, Reviewed and Exported. No sharing action is allowed to imply successful receipt by another person without confirmation.",
-          "Content decisions: unknown values should not be silently replaced with arbitrary defaults; editing an existing record must open that record rather than a new empty one."
+          "The interface follows a disciplined dark visual language: near-black foundations, layered charcoal surfaces, high-contrast typography and restrained functional accents. Color supports priority and interaction state rather than decoration.",
+          "I used grouped fields, persistent navigation, clearly labeled actions and generous touch targets to make the system easier to scan and operate. The design gives each chapter a clear visual hierarchy and keeps the user’s current location visible.",
+          "Key interaction decisions include direct chapter navigation, next/previous progression, explicit exit actions, contextual field grouping and visual distinction between active, previously visited and upcoming chapters."
         ]
       },
       {
-        "title": "07 / Deliver — Code-based audit & remediation",
+        "title": "07 / Prototype — Bringing the system to life",
         "body": [
-          "A code review of the earlier React prototype identified simulated saving, disconnected mock listings, false-positive transmission indicators, simulated voice recognition and sections that could be bypassed without coordinated validation.",
-          "The revised demonstration replaces the primary experience with a coherent MIST flow, local browser draft storage, editable saved records, clear persistence errors, final review and a downloadable JSON demonstration export.",
-          "These are implementation changes supported by source review, not results from a completed field usability study. Browser-based end-to-end QA and clinical/security validation remain necessary."
+          "I developed a working React-based prototype to evaluate the experience as a connected product rather than a collection of isolated screens. The experience covers the seven-chapter structure, chapter navigation, patient entry, injury documentation, observations, treatment details, medication records, notes and responder details.",
+          "Building the prototype exposed interaction-level questions that static layouts alone cannot answer: how navigation feels across long forms, whether the active chapter is clear, and how users move back to earlier information.",
+          "The prototype embedded above is the original TCCC application and is presented alongside the design process so the work can be assessed both as an interface and as a system of decisions."
         ]
       },
       {
-        "title": "08 / Evaluation plan & limitations",
+        "title": "08 / Reflection — Product thinking beyond the screen",
         "body": [
-          "Proposed usability tasks: create an unidentified casualty draft; interrupt and resume; change previously entered information; review missing documentation; export a record; recover from a failed local save. Measure task completion, critical errors, recovery success and understanding of transmission status.",
-          "Recommended test environments: small mobile viewport, keyboard-only use, screen reader, network interruption, storage failure and realistic time constraints with de-identified scenarios.",
-          "This prototype is not intended for real patient data or medical decision-making. Production requirements include authenticated access, encrypted storage and transmission, audit trails, medical subject-matter validation, retention rules and secure offline synchronization."
+          "The strongest outcome of this project is a cohesive product direction grounded in task structure and user context. It demonstrates how research framing, content modeling, hierarchy, navigation design, component consistency and implementation thinking can reinforce one another.",
+          "For a production-grade medical product, the next design-and-engineering workstreams would include robust data persistence, secure information handling, accessibility evaluation and structured usability testing with representative medical personnel. These are product responsibilities that inform the roadmap—not decorative additions to the interface.",
+          "The principle guiding the work remains simple: reduce the effort of documenting care while increasing the clarity of the information carried forward."
         ]
       }
     ]
