@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { ACCESS_COOKIE, hasPrototypeAccess } from './lib/prototype-access';
 
 export async function proxy(request: NextRequest) {
-  // These four portfolio cases are public; every other case and prototype stays gated.
-  const publicCases = new Set(['/cases/mango-bank', '/cases/rainforest', '/cases/coinflix', '/cases/lumio-activation']);
+  // These selected portfolio cases are public; every other case and prototype stays gated.
+  const publicCases = new Set(['/cases/tccc-casualty-card', '/cases/mango-bank', '/cases/rainforest', '/cases/coinflix', '/cases/lumio-activation']);
   if (publicCases.has(request.nextUrl.pathname.replace(/\/$/, ''))) {
     return NextResponse.next();
   }
