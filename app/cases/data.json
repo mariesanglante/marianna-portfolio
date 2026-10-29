@@ -160,58 +160,51 @@
     ],
     "sections": [
       {
-        "title": "The challenge",
+        "title": "Context and architecture",
         "body": [
-          "Affinity Agreements Engine connects vehicle inventories, commercial offers, organisations, members and vouchers through administrative workflows. The challenge was to reduce cognitive load without losing the business rules essential to operational work.",
-          "My scope covered navigation patterns, data-heavy tables, interaction states, and consistent access to connected workflows."
+          "The source architecture establishes Vehicle Library → Offer → Organisation eligibility → Member access → Voucher → Statistics. Vehicles are reusable master records. Internal brand admins manage operations while Members use the external website; organisations do not access the admin platform. Global offers cover all organisations, Shared offers can be assigned to specific organisations, and Bespoke offers target one organisation."
         ]
       },
       {
-        "title": "Discover — audit and system mapping",
+        "title": "Discover — annotated six-screen UX audit",
         "body": [
-          "I reviewed existing interface requirements and flows across Vehicle Library, Create Vehicle, Vehicle Details, Offers, Organisations and Vouchers. I identified constraints in horizontal workspace, interaction consistency and navigation clarity.",
-          "Entity analysis established key dependencies: vehicle records can be reused across offers; Shared and Bespoke offers behave differently; published offers have restricted actions; organisations and members have their own relationships."
+          "The documented audit covers Vehicle Library, Create Vehicle data source, data source selection, Vehicle details form, Vehicle Details and vehicle selection inside Offer creation. Each annotated screen pairs findings with proposed changes, priority (P1/P2) and effort (S/M/L). Key issues include missing table filtering, oversized forms, unclear step progression, absent return navigation and the selected-vehicle area appearing above the picker."
         ]
       },
       {
-        "title": "Define — from entities to workflows",
+        "title": "Define — confirmed business rules",
         "body": [
-          "The core problem statement was: How might we simplify complex administrative workflows while preserving accurate information, clear relationships and predictable business rules?",
-          "I organised the To-Be experience around connected list views, detail screens, creation flows, relevant states and contextual actions. The key UX decision was to model business objects before refining visual presentation."
+          "CAP-linked and Standalone vehicles have distinct creation routes. CAP codes apply only to CAP-linked vehicles and are planned for phase 2. Only Active vehicles can be newly selected into offers, but inactive vehicles remain accessible internally even when removed from external availability and active-offer logic. Vehicles may be reused across many offers. Published offers permit removing vehicles or early expiration."
         ]
       },
       {
-        "title": "Develop — navigation redesign",
+        "title": "Develop — navigation and scalable tables",
         "body": [
-          "I designed an expanded sidebar and a 72 px compact navigation rail, returning 168 px of horizontal space to dense tables. The compact mode includes accessible navigation names and user-persisted preference.",
-          "The interface also considered overlay expansion, keyboard dismissal and predictable behaviour when moving between modules."
+          "I designed a 72 px compact navigation rail that recovers 168 px of working space. The vehicle table keeps image, name, description, CAP codes, status and created date, with proposed search, filters, result count, sorting, pagination and clear loading/empty/no-results states. Standalone vehicles receive an explicit label rather than a blank CAP code."
         ]
       },
       {
-        "title": "Develop — offer workflows and tables",
+        "title": "Develop — vehicle creation and offer selection",
         "body": [
-          "I structured Create a Shared Offer and Apply an Existing Shared Offer as distinct journeys with clear entry points and review steps. The flows separate reusable offer configuration from assignment.",
-          "The Vehicle Library and connected modules prioritise scannable tables, consistent actions, relevant detail information and clear handling of incomplete, restricted or unavailable records."
+          "The proposed wizard has two explicit steps: Data source and Vehicle details. The CAP-link versus Standalone choice determines the entry route. Forms use constrained widths, grouped Basic Details / Classification / Images, a unified upload area and consistent Back / Cancel / Next / Save hierarchy. Inside Offer creation, users should search, select, then configure vehicles in sequence, with compact selected rows and expandable image and discount controls."
         ]
       },
       {
-        "title": "Design system and interaction states",
+        "title": "Details, state management and permissions",
         "body": [
-          "Reusable navigation, table, detail and form patterns bring consistency across modules. I accounted for empty states, unsaved changes, validation feedback and state-specific actions, so that the same interaction principles work beyond a single screen."
+          "Vehicle Details should add breadcrumbs, prominent title/status, grouped data, quieter metadata and a smaller image gallery. Internal admin roles may have differing permissions, including controlled voucher invalidation. Members never access Agreements Engine. The experience must represent inactive historical vehicles, published-offer restrictions, empty states and explicit status-dependent actions."
         ]
       },
       {
-        "title": "Legacy CRM migration — extension scenario",
+        "title": "Legacy migration — product strategy extension",
         "body": [
-          "As a complementary product-strategy exercise, I mapped how this architecture could support a transition away from a legacy CRM. The method covers an As-Is inventory, To-Be data model, source-to-target mapping, record reconciliation, RBAC permissions, and integration states.",
-          "The proposed phased rollout includes controlled pilots, parallel verification, cutover planning and post-launch monitoring. This extension illustrates my approach to enterprise modernisation; it is not a claim that I performed a production migration for Affinity."
+          "A proposed enterprise modernisation exercise maps legacy vehicle, offer, organisation, member and voucher entities to a new model, including validation, deduplication, relationship reconciliation, synchronisation states and permission mapping. A staged rollout would use pilots, parallel verification and controlled cutover. This is a strategy extension, not a claim of a completed production migration."
         ]
       },
       {
-        "title": "Outcomes and live prototype",
+        "title": "Outcome and interactive prototype",
         "body": [
-          "The navigation redesign recovers 168 px of working width for data-heavy tables. Clearer separation of offer creation and assignment supports a more coherent workflow and reusable interaction architecture.",
-          "Explore the interactive prototype using the Original project archive link below. It demonstrates Offers, Vehicles, Organisations and Vouchers navigation and representative administrative flows."
+          "The documented UI gain is 168 px of additional horizontal space using compact navigation. The source UX audit creates a prioritised backlog of admin-table, wizard, detail-page, vehicle-taxonomy, action-hierarchy and availability-state patterns. The working clickable prototype covers Offers, Vehicles, Organisations and Vouchers."
         ]
       }
     ]
