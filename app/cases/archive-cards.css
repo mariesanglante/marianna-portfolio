@@ -53,3 +53,9 @@
 .archive-tccc-cover-foot{padding-top:8px;border-top:1px solid #405158}
 .archive-tccc-cover-foot span{font-size:17px;color:#bfe8cf}
 @media(max-width:480px){.archive-tccc-cover{padding:16px 16px 12px}.archive-tccc-cover-layout{grid-template-columns:1fr 44%}.archive-tccc-cover-copy{gap:10px}.archive-tccc-cover-copy strong{font-size:clamp(23px,7vw,35px)}.archive-tccc-cover-ui{padding:8px;gap:6px}.archive-tccc-cover-input{padding:6px}.archive-tccc-cover-top{font-size:8px}}
+
+/* Standalone generated scenes are public-safe artwork, framed without extra device effects. */
+.archive-preview-scene .archive-cover-art{inset:0}
+.archive-preview-scene .archive-cover-art>img{width:100%;max-width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0;filter:none}
+.archive-card:hover .archive-preview-scene .archive-cover-art>img{transform:none}
+.archive-preview-scene .archive-card-access{box-shadow:0 2px 8px #0002}

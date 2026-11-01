@@ -124,5 +124,23 @@
     "src": "/images/semaverse-vault.webp",
     "alt": "Semaverse AI investment platform research workspace",
     "layout": "screen"
+  },
+  "tccc-casualty-card": {
+    "src": "/images/covers/generated/tccc-casualty-card.webp",
+    "alt": "Illustrative TCCC phone mockup on olive canvas and stone",
+    "layout": "scene",
+    "publicArt": true
+  },
+  "affinity-agreements-engine": {
+    "src": "/images/covers/generated/affinity-agreements-engine.webp",
+    "alt": "Illustrative agreements workflow desktop scene",
+    "layout": "scene",
+    "publicArt": true
+  },
+  "usability-research": {
+    "src": "/images/covers/generated/usability-research.webp",
+    "alt": "Illustrative usability research tablet and workbench scene",
+    "layout": "scene",
+    "publicArt": true
   }
 }
