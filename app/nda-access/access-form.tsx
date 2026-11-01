@@ -12,7 +12,7 @@ export default function AccessForm() {
       if (!response.ok) { setError(result.error || 'Unable to unlock. Please try again.'); return; }
       const requested = new URLSearchParams(window.location.search).get('returnTo') || '/cases';
       // Only follow safe internal case routes; never redirect to external origins.
-      const isInternalCase = /^\\/cases\\/[a-z0-9][a-z0-9-]*(?:\\?.*)?$/.test(requested);
+      const isInternalCase = /^\/cases\/[a-z0-9][a-z0-9-]*(?:\?.*)?$/.test(requested);
       const destination = isInternalCase ? requested : '/cases';
       window.location.replace(destination);
     } catch { setError('Unable to connect. Please try again.'); }
